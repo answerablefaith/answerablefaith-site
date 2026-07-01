@@ -430,19 +430,26 @@
     }
 
     .check-list li::before {
-      content: "✓";
+      content: "";
       position: absolute;
       left: 0;
-      top: 0;
+      top: 1px;
       width: 18px;
       height: 18px;
-      display: grid;
-      place-items: center;
       border-radius: 999px;
-      color: white;
       background: var(--gold);
-      font-size: 11px;
-      font-weight: 900;
+    }
+
+    .check-list li::after {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 4px;
+      width: 5px;
+      height: 9px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
     }
 
     .screenshot-frame {
@@ -585,11 +592,10 @@
     .store-button {
       appearance: none;
       min-width: 178px;
-      display: inline-grid;
-      grid-template-columns: auto 1fr;
-      gap: 10px;
+      display: inline-flex;
       align-items: center;
-      padding: 12px 15px;
+      justify-content: center;
+      padding: 12px 18px;
       border-radius: 16px;
       color: #fff;
       background: var(--navy-2);
@@ -597,6 +603,7 @@
       box-shadow: 0 16px 34px rgba(7, 20, 39, 0.16);
       font: inherit;
       text-align: left;
+      text-decoration: none;
       cursor: pointer;
       transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
     }
@@ -607,30 +614,19 @@
       background: var(--navy);
     }
 
-    .store-button .store-icon {
-      width: 34px;
-      height: 34px;
-      display: grid;
-      place-items: center;
-      border-radius: 11px;
-      color: var(--gold-2);
-      background: rgba(255, 255, 255, 0.10);
-      font-size: 20px;
-    }
-
-    .store-button small,
-    .store-button strong {
+    .store-text small,
+    .store-text strong {
       display: block;
       line-height: 1.1;
     }
 
-    .store-button small {
+    .store-text small {
       color: rgba(255, 255, 255, 0.70);
       font-size: 11px;
       font-weight: 700;
     }
 
-    .store-button strong {
+    .store-text strong {
       margin-top: 3px;
       color: #fff;
       font-size: 17px;
@@ -689,7 +685,12 @@
       color: var(--gold-2);
       background: rgba(255, 255, 255, 0.08);
       border: 1px solid rgba(255, 255, 255, 0.14);
-      font-size: 34px;
+    }
+
+    .statement-icon svg {
+      width: 34px;
+      height: 34px;
+      display: block;
     }
 
     .statement h2 {
@@ -731,8 +732,17 @@
     }
 
     summary::-webkit-details-marker { display: none; }
-    summary::after { content: "⌄"; color: var(--gold); font-size: 18px; }
-    details[open] summary::after { transform: rotate(180deg); }
+    summary::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-right: 2px solid var(--gold);
+      border-bottom: 2px solid var(--gold);
+      transform: rotate(45deg);
+      transition: transform 160ms ease;
+      flex: 0 0 auto;
+    }
+    details[open] summary::after { transform: rotate(225deg); }
     details p { margin: 0; padding: 0 20px 20px; color: var(--muted); line-height: 1.6; }
 
     .cta-card {
@@ -972,14 +982,12 @@
             <h2>Take Answerable Faith with you</h2>
             <p>Practise your next answer wherever you are. The iOS and Android links are ready to be connected when the store pages are live.</p>
             <div class="store-buttons" aria-label="App download options">
-              <button class="store-button" type="button" aria-label="Download on the App Store coming soon">
-                <span class="store-icon"></span>
-                <span><small>Download on the</small><strong>App Store</strong></span>
-              </button>
-              <button class="store-button" type="button" aria-label="Get it on Google Play coming soon">
-                <span class="store-icon">▶</span>
-                <span><small>Get it on</small><strong>Google Play</strong></span>
-              </button>
+              <a class="store-button" href="#" onclick="return false;" aria-disabled="true" aria-label="Download on the App Store coming soon">
+                <span class="store-text"><small>Download on the</small><strong>App Store</strong></span>
+              </a>
+              <a class="store-button" href="#" onclick="return false;" aria-disabled="true" aria-label="Get it on Google Play coming soon">
+                <span class="store-text"><small>Get it on</small><strong>Google Play</strong></span>
+              </a>
             </div>
             <div class="download-note">Coming soon — store links will be added here.</div>
           </div>
@@ -992,7 +1000,11 @@
 
       <section id="statement" class="reveal">
         <div class="statement">
-          <div class="statement-icon">✝</div>
+          <div class="statement-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false" aria-hidden="true">
+              <path d="M28 4h8v16h14v8H36v32h-8V28H14v-8h14V4z" fill="currentColor"></path>
+            </svg>
+          </div>
           <div>
             <h2>Built to help Christians respond with clarity, patience and grace — not to win arguments.</h2>
             <p>Answerable is built around conviction and gentleness: biblically grounded answers, emotionally careful posture and language people can understand.</p>
@@ -1020,7 +1032,7 @@
             <p>Start with a real question, form your answer, and learn from a model response grounded in Scripture and reason.</p>
             <div class="cta-actions">
               <a class="button gold" href="#download">Get the app</a>
-              <a class="text-link" href="/support/">Contact us →</a>
+              <a class="text-link" href="/support/">Contact us</a>
             </div>
           </div>
         </div>
