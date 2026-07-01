@@ -1,0 +1,241 @@
+name: Replace symbol icons
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/replace-symbol-icons.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update-icons:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Replace character icons with SVG and CSS icons
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          path = Path("index.html")
+          text = path.read_text(encoding="utf-8")
+
+          text = text.replace(
+'''    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      color: white;
+      background: var(--gold);
+      font-size: 11px;
+      font-weight: 900;
+    }''',
+'''    .check-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 1px;
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background: var(--gold);
+    }
+
+    .check-list li::after {
+      content: "";
+      position: absolute;
+      left: 6px;
+      top: 4px;
+      width: 5px;
+      height: 9px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }''')
+
+          text = text.replace(
+'''    .store-button {
+      appearance: none;
+      min-width: 178px;
+      display: inline-grid;
+      grid-template-columns: auto 1fr;
+      gap: 10px;
+      align-items: center;
+      padding: 12px 15px;
+      border-radius: 16px;
+      color: #fff;
+      background: var(--navy-2);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: 0 16px 34px rgba(7, 20, 39, 0.16);
+      font: inherit;
+      text-align: left;
+      cursor: pointer;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+    }''',
+'''    .store-button {
+      appearance: none;
+      min-width: 178px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 16px;
+      color: #fff;
+      background: var(--navy-2);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: 0 16px 34px rgba(7, 20, 39, 0.16);
+      font: inherit;
+      text-align: left;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+    }''')
+
+          text = text.replace(
+'''    .store-button .store-icon {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--gold-2);
+      background: rgba(255, 255, 255, 0.10);
+      font-size: 20px;
+    }
+
+    .store-button small,
+    .store-button strong {
+      display: block;
+      line-height: 1.1;
+    }
+
+    .store-button small {
+      color: rgba(255, 255, 255, 0.70);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .store-button strong {
+      margin-top: 3px;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 820;
+      letter-spacing: -0.025em;
+    }''',
+'''    .store-text small,
+    .store-text strong {
+      display: block;
+      line-height: 1.1;
+    }
+
+    .store-text small {
+      color: rgba(255, 255, 255, 0.70);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .store-text strong {
+      margin-top: 3px;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 820;
+      letter-spacing: -0.025em;
+    }''')
+
+          text = text.replace(
+'''    .statement-icon {
+      width: 62px;
+      height: 62px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      color: var(--gold-2);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      font-size: 34px;
+    }''',
+'''    .statement-icon {
+      width: 62px;
+      height: 62px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      color: var(--gold-2);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .statement-icon svg {
+      width: 34px;
+      height: 34px;
+      display: block;
+    }''')
+
+          text = text.replace(
+'''    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "⌄"; color: var(--gold); font-size: 18px; }
+    details[open] summary::after { transform: rotate(180deg); }''',
+'''    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-right: 2px solid var(--gold);
+      border-bottom: 2px solid var(--gold);
+      transform: rotate(45deg);
+      transition: transform 160ms ease;
+      flex: 0 0 auto;
+    }
+    details[open] summary::after { transform: rotate(225deg); }''')
+
+          text = text.replace(
+'''              <button class="store-button" type="button" aria-label="Download on the App Store coming soon">
+                <span class="store-icon"></span>
+                <span><small>Download on the</small><strong>App Store</strong></span>
+              </button>
+              <button class="store-button" type="button" aria-label="Get it on Google Play coming soon">
+                <span class="store-icon">▶</span>
+                <span><small>Get it on</small><strong>Google Play</strong></span>
+              </button>''',
+'''              <a class="store-button" href="#" onclick="return false;" aria-disabled="true" aria-label="Download on the App Store coming soon">
+                <span class="store-text"><small>Download on the</small><strong>App Store</strong></span>
+              </a>
+              <a class="store-button" href="#" onclick="return false;" aria-disabled="true" aria-label="Get it on Google Play coming soon">
+                <span class="store-text"><small>Get it on</small><strong>Google Play</strong></span>
+              </a>''')
+
+          text = text.replace(
+'''          <div class="statement-icon">✝</div>''',
+'''          <div class="statement-icon" aria-hidden="true">
+            <svg viewBox="0 0 64 64" focusable="false" aria-hidden="true">
+              <path d="M28 4h8v16h14v8H36v32h-8V28H14v-8h14V4z" fill="currentColor"></path>
+            </svg>
+          </div>''')
+
+          text = text.replace('Contact us →', 'Contact us')
+
+          path.write_text(text, encoding="utf-8")
+
+          workflow = Path(".github/workflows/replace-symbol-icons.yml")
+          workflow.unlink(missing_ok=True)
+          PY
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "No changes to commit"
+          else
+            git add index.html .github/workflows/replace-symbol-icons.yml
+            git commit -m "Replace symbol icons with styled markup"
+            git push
+          fi
