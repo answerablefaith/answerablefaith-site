@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Answerable Faith</title>
-  <meta name="description" content="Answerable is a Christian apologetics app for practising clear, gracious answers through questions, model answers, Scripture study and conversation partners." />
+  <meta name="description" content="Answerable Faith helps Christians practise clear, gracious answers through focused questions, model answers, Scripture-led study and realistic conversation partners." />
   <link rel="canonical" href="https://answerablefaith.com/" />
 
   <style>
@@ -15,7 +15,6 @@
       --ink: #071427;
       --text: #1f2937;
       --muted: #657184;
-      --faint: #98a1ad;
       --navy: #082b4a;
       --navy-2: #061f36;
       --gold: #b98528;
@@ -29,26 +28,23 @@
       --serif: "SF Pro Display", "Avenir Next", "Inter", "Segoe UI", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
       color: var(--ink);
       font-family: var(--sans);
-      background: linear-gradient(180deg, #ffffff 0%, #ffffff 62%, #fbfaf6 100%);
+      background:
+        radial-gradient(circle at 12% 8%, rgba(216, 173, 84, 0.12), transparent 28rem),
+        radial-gradient(circle at 92% 34%, rgba(8, 43, 74, 0.07), transparent 30rem),
+        linear-gradient(180deg, #ffffff 0%, #ffffff 46%, #fbfaf6 100%);
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
+      overflow-x: hidden;
     }
 
-    a {
-      color: inherit;
-    }
+    a { color: inherit; }
 
     .wrap {
       width: min(1120px, calc(100% - 36px));
@@ -56,11 +52,16 @@
     }
 
     .nav {
-      height: 70px;
+      min-height: 72px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 18px;
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(18px);
       border-bottom: 1px solid rgba(7, 20, 39, 0.07);
     }
 
@@ -80,10 +81,6 @@
       height: 32px;
       display: grid;
       place-items: center;
-      background: transparent;
-      border: none;
-      box-shadow: none;
-      overflow: visible;
       flex: 0 0 auto;
     }
 
@@ -105,27 +102,31 @@
     .nav-links a {
       padding: 8px 9px;
       border-radius: 999px;
-      color: rgba(7, 20, 39, 0.64);
+      color: rgba(7, 20, 39, 0.66);
       text-decoration: none;
       font-size: 13px;
       font-weight: 650;
+      transition: color 180ms ease, background 180ms ease, transform 180ms ease;
     }
 
-    .nav-links a:hover {
+    .nav-links a:hover,
+    .nav-links a.active {
       color: var(--navy);
       background: rgba(8, 43, 74, 0.06);
+      transform: translateY(-1px);
     }
 
     .hero {
       display: grid;
       grid-template-columns: 0.95fr 1.05fr;
-      gap: clamp(32px, 5vw, 64px);
+      gap: clamp(32px, 6vw, 76px);
       align-items: center;
-      padding: 48px 0 42px;
+      padding: clamp(44px, 7vw, 92px) 0 clamp(44px, 6vw, 78px);
     }
 
-    .eyebrow {
-      margin-bottom: 14px;
+    .eyebrow,
+    .kicker {
+      margin: 0 0 14px;
       color: var(--gold);
       font-size: 11px;
       font-weight: 820;
@@ -133,109 +134,130 @@
       text-transform: uppercase;
     }
 
+    h1,
+    h2,
+    h3 {
+      font-family: var(--serif);
+      color: var(--navy-2);
+      text-wrap: balance;
+    }
+
     h1 {
       margin: 0;
       max-width: 610px;
-      font-family: var(--serif);
-      font-size: clamp(2.05rem, 3.55vw, 3.25rem);
-      line-height: 1.02;
-      letter-spacing: -0.046em;
-      font-weight: 690;
+      font-size: clamp(2.65rem, 5.6vw, 4.65rem);
+      line-height: 0.96;
+      letter-spacing: -0.052em;
+      font-weight: 620;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(1.9rem, 3.6vw, 3rem);
+      line-height: 1.04;
+      letter-spacing: -0.04em;
+      font-weight: 620;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: clamp(1.35rem, 2.5vw, 2.25rem);
+      line-height: 1.06;
+      letter-spacing: -0.038em;
+      font-weight: 620;
     }
 
     .lead {
-      max-width: 560px;
-      margin: 18px 0 0;
-      color: var(--muted);
-      font-size: clamp(0.98rem, 1.15vw, 1.06rem);
+      max-width: 590px;
+      margin: 20px 0 0;
+      color: var(--text);
+      font-size: clamp(1rem, 1.25vw, 1.12rem);
       line-height: 1.7;
     }
 
     .actions {
       display: flex;
-      gap: 10px;
+      gap: 12px;
       flex-wrap: wrap;
-      margin-top: 24px;
+      margin-top: 26px;
     }
 
     .button {
-      min-height: 41px;
+      min-height: 44px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 10px 15px;
+      gap: 9px;
+      padding: 11px 16px;
       border-radius: 999px;
       text-decoration: none;
       font-size: 14px;
       font-weight: 740;
-      transition: 160ms ease;
+      transition: 180ms ease;
     }
 
-    .button:hover {
-      transform: translateY(-1px);
-    }
+    .button:hover { transform: translateY(-2px); }
 
     .button.primary {
       color: #fff;
       background: var(--navy);
-      box-shadow: 0 12px 28px rgba(8, 43, 74, 0.18);
+      box-shadow: 0 14px 30px rgba(8, 43, 74, 0.20);
     }
 
     .button.secondary {
       color: var(--ink);
       background: var(--white);
-      border: 1px solid var(--line);
+      border: 1px solid var(--line-2);
     }
 
-    .hero-lines {
-      margin-top: 26px;
-      display: grid;
+    .modern-pills {
+      display: flex;
       gap: 9px;
-      max-width: 520px;
+      flex-wrap: wrap;
+      margin-top: 22px;
     }
 
-    .line-item {
-      display: grid;
-      grid-template-columns: 88px 1fr;
-      gap: 12px;
-      align-items: baseline;
-      padding: 9px 0;
-      border-top: 1px solid var(--line);
-    }
-
-    .line-item:first-child {
-      border-top: none;
-    }
-
-    .line-item span {
-      color: var(--gold);
+    .modern-pills span {
+      padding: 9px 12px;
+      border-radius: 999px;
+      color: var(--navy);
+      background: rgba(255, 255, 255, 0.70);
+      border: 1px solid rgba(185, 133, 40, 0.18);
+      box-shadow: 0 10px 24px rgba(7, 20, 39, 0.055);
       font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
+      font-weight: 760;
     }
 
-    .line-item strong {
-      font-size: 14px;
-      font-weight: 680;
-      letter-spacing: -0.01em;
-      color: var(--text);
-    }
-
-    .hero-art {
+    .hero-visual {
+      position: relative;
       display: grid;
-      grid-template-columns: 0.65fr 1fr;
+      grid-template-columns: 0.76fr 1fr;
       gap: 18px;
       align-items: center;
       padding: 18px;
-      min-height: 398px;
+      min-height: 430px;
       border-radius: 30px;
-      background: #ffffff;
+      background: rgba(255, 255, 255, 0.82);
       border: 1px solid rgba(7, 20, 39, 0.08);
       box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero-visual::before {
+      content: "";
+      position: absolute;
+      width: 380px;
+      height: 380px;
+      right: -120px;
+      top: -110px;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(216, 173, 84, 0.28), transparent 66%);
+      pointer-events: none;
     }
 
     .quote-card {
+      position: relative;
+      z-index: 1;
       padding: 20px;
       border-radius: 22px;
       background: #fff;
@@ -260,7 +282,7 @@
       font-size: 23px;
       line-height: 1.08;
       letter-spacing: -0.038em;
-      font-weight: 690;
+      font-weight: 620;
     }
 
     .quote-card p {
@@ -270,9 +292,11 @@
       line-height: 1.55;
     }
 
-    .phone {
+    .phone-frame {
+      position: relative;
+      z-index: 1;
       justify-self: center;
-      width: min(246px, 100%);
+      width: min(250px, 100%);
       padding: 8px;
       border-radius: 38px;
       background: #fff;
@@ -280,14 +304,20 @@
       box-shadow: 0 20px 54px rgba(7, 20, 39, 0.14);
     }
 
-    .phone img {
-      width: 100%;
+    .phone-frame img,
+    .screenshot-frame img,
+    .slide-image img {
       display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .phone-frame img {
       border-radius: 30px;
     }
 
     section {
-      padding: 44px 0 0;
+      padding: clamp(42px, 6vw, 74px) 0 0;
     }
 
     .section-head {
@@ -295,16 +325,7 @@
       grid-template-columns: 0.82fr 1fr;
       gap: 28px;
       align-items: end;
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      margin: 0;
-      font-family: var(--serif);
-      font-size: clamp(1.9rem, 3vw, 2.85rem);
-      line-height: 1.04;
-      letter-spacing: -0.038em;
-      font-weight: 690;
+      margin-bottom: 22px;
     }
 
     .section-head p {
@@ -314,66 +335,126 @@
       line-height: 1.65;
     }
 
-    .tour {
+    .steps {
       display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
     }
 
-    .tour-feature {
+    .step {
+      padding: 20px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid var(--line);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .step span {
+      display: inline-grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      margin-bottom: 14px;
+      border-radius: 999px;
+      color: var(--gold);
+      background: var(--gold-soft);
+      font-weight: 860;
+    }
+
+    .step h3 {
+      font-family: var(--sans);
+      font-size: 18px;
+      letter-spacing: -0.02em;
+      font-weight: 780;
+    }
+
+    .step p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .feature-grid {
       display: grid;
-      grid-template-columns: 0.85fr 1.15fr;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .feature-card {
+      display: grid;
+      grid-template-columns: 1fr 0.82fr;
       gap: 18px;
       align-items: center;
-      padding: 16px;
+      min-height: 470px;
+      padding: clamp(20px, 3vw, 32px);
       border-radius: 28px;
-      background: #fff;
+      background: rgba(255, 255, 255, 0.86);
       border: 1px solid var(--line);
       box-shadow: var(--shadow);
+      overflow: hidden;
     }
 
-    .tour-copy {
-      padding: 16px;
-    }
-
-    .tour-copy .tag {
-      color: var(--gold);
-      font-size: 11px;
-      font-weight: 820;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-    }
-
-    .tour-copy h3 {
-      margin: 10px 0 0;
-      font-family: var(--serif);
-      color: var(--navy);
-      font-size: clamp(1.45rem, 2.5vw, 2.25rem);
-      line-height: 1.06;
-      letter-spacing: -0.038em;
-      font-weight: 690;
-    }
-
-    .tour-copy p {
-      margin: 12px 0 0;
+    .feature-copy p {
+      margin: 14px 0 0;
       color: var(--muted);
       font-size: 15px;
       line-height: 1.65;
     }
 
-    .tour-shot {
+    .rule {
+      width: 58px;
+      height: 2px;
+      margin: 18px 0;
+      background: var(--gold);
+    }
+
+    .check-list {
+      display: grid;
+      gap: 10px;
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .check-list li {
+      position: relative;
+      padding-left: 27px;
+      color: var(--text);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      color: white;
+      background: var(--gold);
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .screenshot-frame {
       justify-self: center;
-      width: min(300px, 100%);
+      width: min(250px, 100%);
       padding: 8px;
       border-radius: 34px;
       background: var(--cream);
       border: 1px solid var(--line);
+      box-shadow: 0 16px 38px rgba(7, 20, 39, 0.11);
     }
 
-    .tour-shot img {
-      display: block;
-      width: 100%;
+    .screenshot-frame img {
       border-radius: 26px;
+      box-shadow: 0 9px 22px rgba(7, 20, 39, 0.09);
     }
 
     .screen-rail {
@@ -416,9 +497,7 @@
       align-items: center;
       justify-content: center;
       padding: 12px;
-      background:
-        radial-gradient(circle at 50% 0%, rgba(243, 229, 195, 0.95), transparent 48%),
-        var(--cream);
+      background: radial-gradient(circle at 50% 0%, rgba(243, 229, 195, 0.95), transparent 48%), var(--cream);
       overflow: hidden;
     }
 
@@ -427,7 +506,6 @@
       max-width: 100%;
       height: 100%;
       max-height: 100%;
-      display: block;
       object-fit: contain;
       border-radius: 17px;
       box-shadow: 0 9px 22px rgba(7, 20, 39, 0.09);
@@ -442,8 +520,10 @@
 
     .slide-copy h3 {
       margin: 0;
+      font-family: var(--sans);
       font-size: 15.5px;
       letter-spacing: -0.03em;
+      font-weight: 760;
       line-height: 1.2;
     }
 
@@ -454,65 +534,95 @@
       line-height: 1.45;
     }
 
-    .principles {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-    }
-
-    .principle {
-      padding: 18px 0;
-      border-radius: 0;
-      background: transparent;
-      border: 0;
-      border-top: 1px solid var(--line);
-      box-shadow: none;
-    }
-
-    .principle .num {
-      display: block;
-      color: var(--gold);
-      font-size: 11px;
-      font-weight: 820;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-
-    .principle h3 {
-      margin: 0;
-      font-size: 17px;
-      letter-spacing: -0.03em;
-    }
-
-    .principle p {
-      margin: 8px 0 0;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.54;
+    .statement,
+    .cta-card {
+      border-radius: 24px;
+      box-shadow: var(--shadow);
     }
 
     .statement {
-      margin-top: 14px;
-      padding: 24px;
-      border-radius: 24px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 18px;
+      align-items: center;
+      padding: clamp(22px, 3.2vw, 34px);
       background: var(--navy);
       color: white;
-      box-shadow: var(--shadow);
+    }
+
+    .statement-icon {
+      width: 62px;
+      height: 62px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      color: var(--gold-2);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      font-size: 34px;
     }
 
     .statement h2 {
       color: #fff;
-      max-width: 720px;
-      font-size: clamp(1.75rem, 2.7vw, 2.55rem);
+      font-size: clamp(1.55rem, 3vw, 2.5rem);
     }
 
     .statement p {
-      max-width: 680px;
-      color: rgba(255, 255, 255, 0.74);
+      margin: 10px 0 0;
+      color: rgba(255, 255, 255, 0.76);
       font-size: 15px;
       line-height: 1.62;
     }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px 20px;
+    }
+
+    details {
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid var(--line);
+      box-shadow: var(--soft-shadow);
+      overflow: hidden;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 18px 20px;
+      color: var(--navy-2);
+      font-weight: 780;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "⌄"; color: var(--gold); font-size: 18px; }
+    details[open] summary::after { transform: rotate(180deg); }
+    details p { margin: 0; padding: 0 20px 20px; color: var(--muted); line-height: 1.6; }
+
+    .cta-card {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 22px;
+      align-items: center;
+      padding: clamp(24px, 4vw, 42px);
+      color: white;
+      background:
+        radial-gradient(circle at 88% 45%, rgba(216, 173, 84, 0.23), transparent 17rem),
+        linear-gradient(135deg, var(--navy-2), var(--navy));
+      overflow: hidden;
+    }
+
+    .cta-card h2 { color: white; }
+    .cta-card p { margin: 12px 0 0; color: rgba(255, 255, 255, 0.78); line-height: 1.62; }
+    .cta-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 22px; }
+    .button.gold { color: var(--navy-2); background: var(--gold-2); box-shadow: 0 12px 26px rgba(0,0,0,0.16); }
+    .text-link { color: white; text-decoration: none; font-weight: 800; align-self: center; }
 
     .support-card {
       display: grid;
@@ -526,16 +636,8 @@
       box-shadow: var(--soft-shadow);
     }
 
-    .support-copy {
-      padding: 16px;
-    }
-
-    .support-copy p {
-      margin: 10px 0 0;
-      color: var(--muted);
-      font-size: 15px;
-      line-height: 1.62;
-    }
+    .support-copy { padding: 16px; }
+    .support-copy p { margin: 10px 0 0; color: var(--muted); font-size: 15px; line-height: 1.62; }
 
     .email-box {
       display: flex;
@@ -557,624 +659,52 @@
       text-transform: uppercase;
     }
 
-    .email {
-      display: block;
-      word-break: break-word;
-      font-size: clamp(1.05rem, 2vw, 1.28rem);
-      letter-spacing: -0.03em;
-      font-weight: 780;
-    }
-
-    .copy-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-top: 14px;
-    }
-
-    .copy-button {
-      appearance: none;
-      border: 1px solid rgba(255, 255, 255, 0.20);
-      background: rgba(255, 255, 255, 0.10);
-      color: white;
-      border-radius: 999px;
-      padding: 9px 12px;
-      font: inherit;
-      font-size: 13px;
-      font-weight: 720;
-      cursor: pointer;
-    }
-
-    .copy-note {
-      color: rgba(255, 255, 255, 0.72);
-      font-size: 13px;
-      letter-spacing: 0;
-      text-transform: none;
-      font-weight: 500;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .email { display: block; word-break: break-word; font-size: clamp(1.05rem, 2vw, 1.28rem); letter-spacing: -0.03em; font-weight: 780; }
+    .copy-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+    .copy-button { appearance: none; border: 1px solid rgba(255,255,255,0.20); background: rgba(255,255,255,0.10); color: white; border-radius: 999px; padding: 9px 12px; font: inherit; font-size: 13px; font-weight: 720; cursor: pointer; }
+    .copy-note { color: rgba(255, 255, 255, 0.72); font-size: 13px; }
 
     footer {
       padding: 30px 0 40px;
-      color: var(--soft);
+      color: var(--muted);
       text-align: center;
       font-size: 13px;
     }
 
-
-
-
-    /* Modern interactive layer: fun, polished, not childish */
-    :root {
-      --cursor-x: 50%;
-      --cursor-y: 50%;
-      --scroll-progress: 0%;
-    }
-
-    body {
-      overflow-x: hidden;
-      background:
-        radial-gradient(circle at 12% 8%, rgba(216, 173, 84, 0.10), transparent 28rem),
-        radial-gradient(circle at 88% 42%, rgba(8, 43, 74, 0.07), transparent 30rem),
-        linear-gradient(180deg, #ffffff 0%, #ffffff 58%, #fbfaf6 100%);
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      z-index: -5;
-      pointer-events: none;
-      background:
-        radial-gradient(circle at var(--cursor-x) var(--cursor-y), rgba(216, 173, 84, 0.16), transparent 19rem);
-      opacity: 0.9;
-    }
-
-    .scroll-progress {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: var(--scroll-progress);
-      height: 3px;
-      z-index: 100;
-      background: linear-gradient(90deg, var(--gold), var(--navy));
-      transform-origin: left;
-      box-shadow: 0 0 18px rgba(185, 133, 40, 0.24);
-    }
-
-    .mesh {
-      position: fixed;
-      z-index: -4;
-      pointer-events: none;
-      border-radius: 999px;
-      filter: blur(18px);
-      opacity: 0.55;
-      will-change: transform;
-    }
-
-    .mesh-one {
-      width: 240px;
-      height: 240px;
-      left: -100px;
-      top: 18%;
-      background: rgba(216, 173, 84, 0.18);
-      animation: meshDriftOne 16s ease-in-out infinite;
-    }
-
-    .mesh-two {
-      width: 300px;
-      height: 300px;
-      right: -140px;
-      top: 38%;
-      background: rgba(8, 43, 74, 0.11);
-      animation: meshDriftTwo 18s ease-in-out infinite;
-    }
-
-    .mesh-three {
-      width: 180px;
-      height: 180px;
-      right: 21%;
-      bottom: 6%;
-      background: rgba(216, 173, 84, 0.14);
-      animation: meshDriftThree 14s ease-in-out infinite;
-    }
-
-    @keyframes meshDriftOne {
-      0%, 100% { transform: translate3d(0,0,0) scale(1); }
-      50% { transform: translate3d(72px,38px,0) scale(1.12); }
-    }
-
-    @keyframes meshDriftTwo {
-      0%, 100% { transform: translate3d(0,0,0) scale(1); }
-      50% { transform: translate3d(-78px,-34px,0) scale(1.08); }
-    }
-
-    @keyframes meshDriftThree {
-      0%, 100% { transform: translate3d(0,0,0) scale(1); }
-      50% { transform: translate3d(36px,-54px,0) scale(1.15); }
-    }
-
-    h1 {
-      font-family: var(--serif);
-      font-weight: 620;
-      letter-spacing: -0.052em;
-      text-align: center;
-      max-width: 780px;
-      text-wrap: balance;
-    }
-
-    h2 {
-      font-family: var(--serif);
-      font-weight: 620;
-      letter-spacing: -0.04em;
-      text-align: center;
-      text-wrap: balance;
-    }
-
-    .tour-copy h3 {
-      font-family: var(--serif);
-      font-weight: 620;
-      letter-spacing: -0.038em;
-      text-wrap: balance;
-    }
-
-    .hero {
-      text-align: center;
-      position: relative;
-    }
-
-    .hero > div:first-child {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .lead {
-      text-align: center;
-      max-width: 660px;
-    }
-
-    .actions,
-    .modern-pills {
-      justify-content: center;
-    }
-
-    .modern-pills {
-      display: flex;
-      gap: 9px;
-      flex-wrap: wrap;
-      margin-top: 22px;
-    }
-
-    .modern-pills span {
-      position: relative;
-      isolation: isolate;
-      overflow: hidden;
-      padding: 9px 12px;
-      border-radius: 999px;
-      color: var(--navy);
-      background: rgba(255, 255, 255, 0.62);
-      border: 1px solid rgba(185, 133, 40, 0.16);
-      box-shadow: 0 10px 24px rgba(7, 20, 39, 0.055);
-      font-size: 12px;
-      font-weight: 760;
-      backdrop-filter: blur(12px);
-      transition: transform 190ms ease, border-color 190ms ease, background 190ms ease;
-    }
-
-    .modern-pills span::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      z-index: -1;
-      background: linear-gradient(120deg, rgba(216, 173, 84, 0.18), transparent 45%, rgba(8, 43, 74, 0.08));
-      opacity: 0;
-      transition: opacity 190ms ease;
-    }
-
-    .modern-pills span:hover {
-      transform: translateY(-3px);
-      border-color: rgba(185, 133, 40, 0.30);
-      background: rgba(255, 255, 255, 0.82);
-    }
-
-    .modern-pills span:hover::before {
-      opacity: 1;
-    }
-
-    .hero-lines {
-      width: min(590px, 100%);
-      margin-left: auto;
-      margin-right: auto;
-      text-align: left;
-    }
-
-    .section-head {
-      text-align: center;
-      grid-template-columns: 1fr;
-      justify-items: center;
-      gap: 12px;
-    }
-
-    .section-head p {
-      max-width: 680px;
-    }
-
-    .nav {
-      position: sticky;
-      top: 0;
-      z-index: 30;
-      background: transparent;
-      backdrop-filter: none;
-      border-bottom-color: transparent;
-      transition: background 190ms ease, backdrop-filter 190ms ease, box-shadow 190ms ease, border-color 190ms ease;
-    }
-
-    .nav.scrolled {
-      background: rgba(255, 255, 255, 0.50);
-      backdrop-filter: blur(18px);
-      box-shadow: 0 12px 34px rgba(7, 20, 39, 0.055);
-      border-bottom-color: rgba(7, 20, 39, 0.05);
-    }
-
-    .nav-links a {
-      position: relative;
-      transition: transform 180ms ease, background 180ms ease, color 180ms ease;
-    }
-
-    .nav-links a::after {
-      content: "";
-      position: absolute;
-      left: 12px;
-      right: 12px;
-      bottom: 4px;
-      height: 2px;
-      border-radius: 999px;
-      background: linear-gradient(90deg, var(--gold), var(--navy));
-      transform: scaleX(0);
-      transform-origin: center;
-      transition: transform 180ms ease;
-    }
-
-    .nav-links a:hover {
-      transform: translateY(-1px);
-    }
-
-    .nav-links a:hover::after {
-      transform: scaleX(1);
-    }
-
-    @keyframes pageIn {
-      from { opacity: 0; transform: translateY(22px); filter: blur(8px); }
-      to { opacity: 1; transform: translateY(0); filter: blur(0); }
-    }
-
-    @keyframes phoneFloat {
-      0%, 100% { transform: translateY(0) rotate(-0.35deg); }
-      50% { transform: translateY(-10px) rotate(0.55deg); }
-    }
-
-    @keyframes cardGlow {
-      0%, 100% { box-shadow: var(--shadow); }
-      50% { box-shadow: 0 28px 70px rgba(7, 20, 39, 0.13); }
-    }
-
-    .hero > div:first-child,
-    .hero-art {
-      animation: pageIn 760ms cubic-bezier(.2,.8,.2,1) both;
-    }
-
-    .hero-art {
-      position: relative;
-      overflow: hidden;
-      transform-style: preserve-3d;
-      will-change: transform;
-      animation-delay: 130ms, 0ms;
-    }
-
-    .hero-art::before {
-      content: "";
-      position: absolute;
-      inset: -1px;
-      border-radius: 30px;
-      pointer-events: none;
-      background:
-        linear-gradient(130deg, transparent 0%, rgba(216, 173, 84, 0.12) 28%, transparent 45%),
-        radial-gradient(circle at var(--cursor-x) var(--cursor-y), rgba(216, 173, 84, 0.10), transparent 22rem);
-      opacity: 0.9;
-    }
-
-    .phone {
-      animation: phoneFloat 5.8s ease-in-out infinite;
-      will-change: transform;
-    }
-
-    .button,
-    .slide,
-    .tour-feature,
-    .support-card,
-    .quote-card,
-    .principle,
-    .copy-button,
-    .line-item,
-    .tour-shot {
-      transition:
-        transform 210ms cubic-bezier(.2,.8,.2,1),
-        box-shadow 210ms ease,
-        border-color 210ms ease,
-        background 210ms ease,
-        filter 210ms ease;
-    }
-
-    .button {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .button:hover {
-      transform: translateY(-3px) scale(1.015);
-      filter: saturate(1.08);
-    }
-
-    .button::after {
-      content: "";
-      position: absolute;
-      inset: -55%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.26), transparent);
-      transform: translateX(-130%) rotate(12deg);
-      transition: transform 680ms ease;
-    }
-
-    .button:hover::after {
-      transform: translateX(130%) rotate(12deg);
-    }
-
-    .quote-card:hover,
-    .tour-feature:hover,
-    .support-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 24px 58px rgba(7, 20, 39, 0.115);
-      border-color: rgba(185, 133, 40, 0.24);
-    }
-
-    .line-item:hover {
-      transform: translateX(7px);
-      padding-left: 10px;
-      background: rgba(185, 133, 40, 0.055);
-      border-radius: 14px;
-    }
-
-    .screen-rail {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .screen-rail::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 86px;
-      height: 100%;
-      pointer-events: none;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.82));
-    }
-
-    .slider {
-      scroll-behavior: smooth;
-    }
-
-    .slide {
-      transform-origin: center bottom;
-    }
-
-    .slide:hover {
-      transform: translateY(-8px) scale(1.015);
-      box-shadow: 0 18px 38px rgba(7, 20, 39, 0.13);
-      border-color: rgba(185, 133, 40, 0.32);
-      z-index: 2;
-    }
-
-    .slide-image img,
-    .tour-shot img {
-      transition: transform 280ms ease, box-shadow 280ms ease;
-    }
-
-    .slide:hover .slide-image img,
-    .tour-shot:hover img {
-      transform: scale(1.035);
-      box-shadow: 0 14px 30px rgba(7, 20, 39, 0.13);
-    }
-
-    .slide-copy h3::before {
-      content: "✦";
-      color: var(--gold);
-      margin-right: 6px;
-      font-size: 11px;
-    }
-
-    .principle:hover {
-      transform: translateY(-5px);
-      border-top-color: rgba(185, 133, 40, 0.42);
-    }
-
-    .reveal {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 720ms ease, transform 720ms ease;
-    }
-
-    .reveal.is-visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .tap-spark {
-      position: fixed;
-      z-index: 998;
-      width: 7px;
-      height: 7px;
-      pointer-events: none;
-      border-radius: 999px;
-      background: var(--gold);
-      animation: tapSpark 650ms ease-out forwards;
-    }
-
-    @keyframes tapSpark {
-      to {
-        opacity: 0;
-        transform: translate(var(--tx), var(--ty)) scale(0.3);
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
-        animation-duration: 1ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: 1ms !important;
-      }
-
-      body::before,
-      .mesh {
-        display: none;
-      }
-    }
-
-
-
-    /* Fix navy sections: avoid awkward empty space on the right */
-    .statement {
-      text-align: center;
-      display: grid;
-      justify-items: center;
-      padding: 30px 28px;
-    }
-
-    .statement h2,
-    .statement p {
-      max-width: none;
-      width: min(860px, 100%);
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .statement p {
-      margin-bottom: 0;
-    }
-
-    .email-box {
-      align-items: center;
-      text-align: center;
-    }
-
-    .copy-row {
-      justify-content: center;
-    }
-
-
-    @media (max-width: 900px) {
-      .hero,
-      .hero-art,
-      .section-head,
-      .tour-feature,
-      .support-card {
-        grid-template-columns: 1fr;
-      }
-
-      .quote-card {
-        order: 2;
-      }
-
-      .principles {
-        grid-template-columns: 1fr;
-      }
-
-      .slider {
-        grid-auto-columns: minmax(220px, 60%);
-      }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 680ms ease, transform 680ms ease; }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 980px) {
+      .hero, .feature-grid, .feature-card, .section-head, .steps, .faq-grid, .support-card, .cta-card { grid-template-columns: 1fr; }
+      .hero { text-align: center; }
+      h1, .lead { margin-left: auto; margin-right: auto; }
+      .actions, .modern-pills { justify-content: center; }
+      .hero-visual { grid-template-columns: 1fr; max-width: 580px; margin: 0 auto; }
+      .feature-card { min-height: 0; }
     }
 
     @media (max-width: 640px) {
-      .wrap {
-        width: min(100% - 24px, 1120px);
-      }
-
-      .nav {
-        height: auto;
-        padding: 15px 0;
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      .nav-links {
-        justify-content: flex-start;
-      }
-
-      .hero {
-        padding: 30px 0 36px;
-      }
-
-      h1 {
-        font-size: 2.25rem;
-      }
-
-      section {
-        padding-top: 40px;
-      }
-
-      .hero-art {
-        min-height: 0;
-        padding: 14px;
-      }
-
-      .phone {
-        width: min(238px, 82vw);
-      }
-
-      .slide-image {
-        height: 288px;
-        flex-basis: 288px;
-      }
-
-      .slider {
-        grid-auto-columns: minmax(210px, 82%);
-      }
+      .wrap { width: min(100% - 24px, 1120px); }
+      .nav { height: auto; padding: 15px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { justify-content: flex-start; }
+      .hero { padding-top: 34px; }
+      h1 { font-size: 2.75rem; }
+      .slider { grid-auto-columns: minmax(210px, 82%); }
+      .statement { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 
 <body>
-  <div class="scroll-progress" aria-hidden="true"></div>
-  <div class="mesh mesh-one" aria-hidden="true"></div>
-  <div class="mesh mesh-two" aria-hidden="true"></div>
-  <div class="mesh mesh-three" aria-hidden="true"></div>
   <div class="wrap">
     <nav class="nav" aria-label="Main navigation">
       <a class="brand" href="/">
-        <span class="logo"><img src="answerable-logo-transparent.png" alt="Answerable logo"></span>
+        <span class="logo"><img src="answerable-logo-transparent.png" alt="Answerable Faith logo"></span>
         <span>Answerable Faith</span>
       </a>
 
       <div class="nav-links">
-        <a href="/">Home</a>
+        <a class="active" href="/">Home</a>
         <a href="/support/">Contact us</a>
         <a href="/privacy/">Privacy Policy</a>
         <a href="/terms/">Terms of Service</a>
@@ -1183,7 +713,7 @@
 
     <header class="hero">
       <div>
-        <div class="eyebrow">Christian apologetics trainer</div>
+        <p class="eyebrow">Christian apologetics trainer</p>
         <h1>One question at a time</h1>
         <p class="lead">
           Answerable helps Christians practise clear, gracious answers through focused questions,
@@ -1191,51 +721,75 @@
         </p>
 
         <div class="actions">
-          <a class="button primary" href="#tour">See how it works</a>
-          <a class="button secondary" href="/support/">Contact us</a>
+          <a class="button primary" href="/support/">Get the app</a>
+          <a class="button secondary" href="#how-it-works">See how it works</a>
         </div>
         <div class="modern-pills" aria-label="Answerable Faith highlights">
           <span>Guided practice</span>
           <span>Conversation training</span>
           <span>Scripture-led study</span>
         </div>
-
-        <div class="hero-lines">
-          <div class="line-item"><span>Draw</span><strong>Start with a real apologetics question</strong></div>
-          <div class="line-item"><span>Answer</span><strong>Practise before revealing the model response</strong></div>
-          <div class="line-item"><span>Review</span><strong>Return to Scripture and strengthen the answer</strong></div>
-        </div>
       </div>
 
-      <div class="hero-art">
+      <div class="hero-visual">
         <div class="quote-card">
           <span class="small">Practice mode</span>
           <strong>Does Exodus say God hardens Pharaoh’s heart?</strong>
           <p>Read context, form an answer, then compare it with a model response.</p>
         </div>
 
-        <div class="phone">
+        <div class="phone-frame">
           <img src="IMG_5209.jpeg" alt="Answerable practice screen">
         </div>
       </div>
     </header>
 
     <main>
-      <section id="tour" class="reveal">
-        <div class="tour">
-          <article class="tour-feature">
-            <div class="tour-copy">
-              <span class="tag">Conversation partners</span>
-              <h3>Practise with people, not just prompts</h3>
-              <p>
-                Choose conversation partners with different beliefs, temperaments and objections.
-                The goal is not to win an argument, but to learn how to respond with clarity and patience.
-              </p>
-            </div>
+      <section id="how-it-works" class="reveal">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>Practise the flow you want in real conversations: draw a question, answer before peeking, then review with Scripture and a model response.</p>
+        </div>
 
-            <div class="tour-shot">
-              <img src="IMG_5217.jpeg" alt="Conversation partner selection screen">
+        <div class="steps">
+          <article class="step"><span>1</span><h3>Draw</h3><p>Start with a real apologetics question across key topics.</p></article>
+          <article class="step"><span>2</span><h3>Answer</h3><p>Practise forming a clear answer before revealing the model response.</p></article>
+          <article class="step"><span>3</span><h3>Review</h3><p>Return to Scripture, strengthen the answer and save what you learn.</p></article>
+        </div>
+      </section>
+
+      <section id="tour" class="reveal">
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-copy">
+              <p class="kicker">Featured</p>
+              <h2>Practice Mode</h2>
+              <div class="rule"></div>
+              <p>Sharpen your answers with focused questions, helpful context and model responses grounded in Scripture and reason.</p>
+              <ul class="check-list">
+                <li>Topical questions that matter</li>
+                <li>Answer before you read</li>
+                <li>Compare with model responses</li>
+                <li>Return to Scripture with clarity</li>
+              </ul>
             </div>
+            <div class="screenshot-frame"><img src="IMG_5209.jpeg" alt="Practice mode screen"></div>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-copy">
+              <p class="kicker">Featured</p>
+              <h2>Conversation Partners</h2>
+              <div class="rule"></div>
+              <p>Practise with people, not just prompts. Choose partners with different beliefs, temperaments and objections.</p>
+              <ul class="check-list">
+                <li>Prepare for realistic conversations</li>
+                <li>Respond with patience and clarity</li>
+                <li>Learn without trying to win arguments</li>
+                <li>Build confidence to love and speak well</li>
+              </ul>
+            </div>
+            <div class="screenshot-frame"><img src="IMG_5217.jpeg" alt="Conversation partner selection screen"></div>
           </article>
         </div>
       </section>
@@ -1243,9 +797,7 @@
       <section id="screens" class="reveal">
         <div class="section-head">
           <h2>Inside Answerable</h2>
-          <p>
-            Home, Practice, Partners, Scripture Study, Library and Test Yourself.
-          </p>
+          <p>Real app screens for Home, Practice, Partners, Scripture Study, Library and Test Yourself.</p>
         </div>
 
         <div class="screen-rail">
@@ -1278,40 +830,39 @@
         </div>
       </section>
 
-      <section id="principles" class="reveal">
-        <div class="section-head">
-          <h2>Practice, then review</h2>
-          <p>
-            Answer first, compare with a model response, then revisit the passage.
-          </p>
-        </div>
-
-        <div class="principles">
-          <article class="principle">
-            <span class="num">01</span>
-            <h3>Answer before you read</h3>
-            <p>Practise forming the response yourself before opening the model answer.</p>
-          </article>
-
-          <article class="principle">
-            <span class="num">02</span>
-            <h3>Study the passage</h3>
-            <p>Use Scripture context and key terms to understand what the question is really asking.</p>
-          </article>
-
-          <article class="principle">
-            <span class="num">03</span>
-            <h3>Build a library</h3>
-            <p>Save, search and revisit cards across doctrine, Scripture, ethics and more.</p>
-          </article>
-        </div>
-
+      <section id="statement" class="reveal">
         <div class="statement">
-          <h2>Train for better conversations, not arguments</h2>
-          <p>
-            Answerable is built around conviction and gentleness: biblically grounded answers,
-            emotionally careful posture and language people can understand.
-          </p>
+          <div class="statement-icon">✝</div>
+          <div>
+            <h2>Built to help Christians respond with clarity, patience and grace — not to win arguments.</h2>
+            <p>Answerable is built around conviction and gentleness: biblically grounded answers, emotionally careful posture and language people can understand.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="reveal">
+        <div class="section-head">
+          <h2>Frequently asked questions</h2>
+          <p>Quick answers for visitors deciding whether Answerable Faith is for them.</p>
+        </div>
+        <div class="faq-grid">
+          <details><summary>What is Answerable Faith?</summary><p>A Christian apologetics trainer for practising thoughtful, Scripture-led answers to real questions.</p></details>
+          <details><summary>Who is it for?</summary><p>Christians who want to grow in confidence, clarity and grace when talking with friends, family, students or seekers.</p></details>
+          <details><summary>How do conversation partners work?</summary><p>Partners represent different beliefs, temperaments and objections so you can prepare for realistic conversations.</p></details>
+          <details><summary>How can I contact you?</summary><p>Use the contact page or email support@answerablefaith.com.</p></details>
+        </div>
+      </section>
+
+      <section id="cta" class="reveal">
+        <div class="cta-card">
+          <div>
+            <h2>Ready to practise your next answer?</h2>
+            <p>Start with a real question, form your answer, and learn from a model response grounded in Scripture and reason.</p>
+            <div class="cta-actions">
+              <a class="button gold" href="/support/">Get the app</a>
+              <a class="text-link" href="/support/">Contact us →</a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -1319,12 +870,8 @@
         <div class="support-card">
           <div class="support-copy">
             <h2>Contact us</h2>
-            <p>
-              For app support, feedback, or issue reports, email us directly or open the contact page.
-            </p>
-            <p>
-              <a href="/support/">Open contact page</a> · <a href="/privacy/">Privacy policy</a> · <a href="/terms/">Terms of service</a>
-            </p>
+            <p>For app support, feedback or issue reports, email us directly or open the contact page.</p>
+            <p><a href="/support/">Open contact page</a> · <a href="/privacy/">Privacy policy</a> · <a href="/terms/">Terms of service</a></p>
           </div>
 
           <div class="email-box">
@@ -1337,7 +884,6 @@
           </div>
         </div>
       </section>
-
     </main>
 
     <footer>
@@ -1360,30 +906,8 @@
         note.textContent = email;
       }
     }
-  </script>
 
-  <script>
-    const nav = document.querySelector(".nav");
-    const heroArt = document.querySelector(".hero-art");
     const revealItems = document.querySelectorAll(".reveal");
-    const progress = document.querySelector(".scroll-progress");
-
-    function updateFrame() {
-      if (nav) {
-        nav.classList.toggle("scrolled", window.scrollY > 18);
-      }
-
-      if (progress) {
-        const total = document.documentElement.scrollHeight - window.innerHeight;
-        const pct = total > 0 ? (window.scrollY / total) * 100 : 0;
-        document.documentElement.style.setProperty("--scroll-progress", pct + "%");
-      }
-    }
-
-    updateFrame();
-    window.addEventListener("scroll", updateFrame, { passive: true });
-    window.addEventListener("resize", updateFrame, { passive: true });
-
     const revealObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
@@ -1394,54 +918,9 @@
     }, { threshold: 0.12 });
 
     revealItems.forEach(function (item, index) {
-      item.style.transitionDelay = Math.min(index * 70, 300) + "ms";
+      item.style.transitionDelay = Math.min(index * 60, 260) + "ms";
       revealObserver.observe(item);
     });
-
-    if (heroArt && window.matchMedia("(pointer: fine)").matches) {
-      heroArt.addEventListener("mousemove", function (event) {
-        const rect = heroArt.getBoundingClientRect();
-        const x = (event.clientX - rect.left) / rect.width - 0.5;
-        const y = (event.clientY - rect.top) / rect.height - 0.5;
-        heroArt.style.transform = "perspective(900px) rotateY(" + (x * 5.5).toFixed(2) + "deg) rotateX(" + (-y * 5.5).toFixed(2) + "deg)";
-      });
-
-      heroArt.addEventListener("mouseleave", function () {
-        heroArt.style.transform = "";
-      });
-    }
-
-    document.addEventListener("pointermove", function (event) {
-      const x = Math.round((event.clientX / window.innerWidth) * 100);
-      const y = Math.round((event.clientY / window.innerHeight) * 100);
-      document.documentElement.style.setProperty("--cursor-x", x + "%");
-      document.documentElement.style.setProperty("--cursor-y", y + "%");
-    }, { passive: true });
-
-    function tapSpark(x, y) {
-      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-      for (let i = 0; i < 8; i++) {
-        const spark = document.createElement("span");
-        spark.className = "tap-spark";
-        spark.style.left = x + "px";
-        spark.style.top = y + "px";
-        spark.style.setProperty("--tx", (Math.random() * 82 - 41) + "px");
-        spark.style.setProperty("--ty", (Math.random() * -72 - 12) + "px");
-        spark.style.background = i % 2 ? "var(--gold)" : "var(--navy)";
-        document.body.appendChild(spark);
-        setTimeout(function () {
-          spark.remove();
-        }, 680);
-      }
-    }
-
-    document.querySelectorAll(".button.primary, .copy-button").forEach(function (item) {
-      item.addEventListener("click", function (event) {
-        tapSpark(event.clientX, event.clientY);
-      });
-    });
   </script>
-
 </body>
 </html>
