@@ -1,0 +1,52 @@
+name: One-time header label update
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/contact-us-header-fix.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update-header-label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Replace Support label in headers
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          files = [
+              Path("index.html"),
+              Path("privacy/index.html"),
+              Path("terms/index.html"),
+              Path("support/index.html"),
+          ]
+          old = '<a href="/support/">Support</a>'
+          new = '<a href="/support/">Contact us</a>'
+
+          for path in files:
+              if path.exists():
+                  text = path.read_text(encoding="utf-8")
+                  path.write_text(text.replace(old, new), encoding="utf-8")
+
+          workflow = Path(".github/workflows/contact-us-header-fix.yml")
+          workflow.unlink(missing_ok=True)
+          PY
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "No changes to commit"
+          else
+            git add index.html privacy/index.html terms/index.html support/index.html .github/workflows/contact-us-header-fix.yml
+            git commit -m "Update header support label to Contact us"
+            git push
+          fi
