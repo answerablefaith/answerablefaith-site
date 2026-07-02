@@ -32,61 +32,89 @@ jobs:
           python3 - <<'PY'
           from pathlib import Path
           import re
+          import sys
 
-          CSS_LINK = '<link rel="stylesheet" href="/site-header.css?v=20260702-header1" />'
-          JS_LINK = '<script src="/site-header.js?v=20260702-header1" defer></script>'
+          CSS_LINK = '<link rel="stylesheet" href="/site-header.css?v=20260702-header3" />'
+          JS_LINK = '<script src="/site-header.js?v=20260702-header3" defer></script>'
           MENU_BUTTON = '<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span><span>Menu</span></button>'
-          BLOG_CSS = 'href="/blog/blog.css?v=20260702-layout6"'
+          BLOG_CSS = 'href="/blog/blog.css?v=20260702-layout7"'
+          NAV_LINKS = '''<div class="nav-links" id="primary-nav">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/support/">Contact us</a>
+        <a href="/privacy/">Privacy Policy</a>
+        <a href="/terms/">Terms of Service</a>
+      </div>'''
 
           pages = [Path('index.html'), Path('support/index.html'), Path('privacy/index.html'), Path('terms/index.html')]
           pages += sorted(Path('blog').glob('**/*.html'))
 
           changed = False
+          failures = []
+
           for path in pages:
               if not path.exists():
                   continue
               html = path.read_text(encoding='utf-8')
               original = html
 
+              # Clean duplicate shared header includes and then add current versions.
+              html = re.sub(r'\n?\s*<link rel="stylesheet" href="/site-header\.css\?v=[^"]+"\s*/>', '', html)
+              html = re.sub(r'\n?\s*<script src="/site-header\.js\?v=[^"]+" defer></script>', '', html)
+              html = html.replace('</head>', f'  {CSS_LINK}\n</head>', 1)
+              html = html.replace('</body>', f'  {JS_LINK}\n</body>', 1)
+
               # Cache-bust blog CSS where used.
               html = re.sub(r'href="/blog/blog\.css(?:\?v=[^"]*)?"', BLOG_CSS, html)
 
-              # Add shared header CSS after icons or before </head>.
-              if '/site-header.css' not in html:
-                  html = html.replace('</head>', f'  {CSS_LINK}\n</head>', 1)
+              # Replace the entire nav-links block with the same link order everywhere.
+              html = re.sub(r'<div class="nav-links"(?: id="primary-nav")?>.*?</div>', NAV_LINKS, html, count=1, flags=re.S)
 
-              # Add shared header JS.
-              if '/site-header.js' not in html:
-                  html = html.replace('</body>', f'  {JS_LINK}\n</body>', 1)
+              # Active page state.
+              active_path = '/'
+              if str(path).startswith('blog/'):
+                  active_path = '/blog/'
+              elif str(path).startswith('support/'):
+                  active_path = '/support/'
+              elif str(path).startswith('privacy/'):
+                  active_path = '/privacy/'
+              elif str(path).startswith('terms/'):
+                  active_path = '/terms/'
 
-              # Add Blog link to support/privacy/terms if missing.
-              if 'href="/blog/"' not in html and 'class="nav-links"' in html:
-                  html = html.replace('<a href="/support/">Contact us</a>', '<a href="/blog/">Blog</a>\n        <a href="/support/">Contact us</a>', 1)
+              html = html.replace(' class="active"', '')
+              html = html.replace(f'<a href="{active_path}">', f'<a class="active" href="{active_path}">', 1)
 
-              # Ensure nav links have id for aria-controls.
-              html = re.sub(r'<div class="nav-links"(?! id=)', '<div class="nav-links" id="primary-nav"', html, count=1)
+              # Remove old/duplicate nav toggle, then add the one standard button after the brand.
+              html = re.sub(r'\s*<button class="nav-toggle".*?</button>\s*', '\n', html, count=1, flags=re.S)
+              html = re.sub(r'(</a>\s*)(<div class="nav-links" id="primary-nav">)', r'\1' + MENU_BUTTON + r'\n      \2', html, count=1, flags=re.S)
 
-              # Add mobile menu button after the brand link.
-              if 'class="nav-toggle"' not in html:
-                  html = re.sub(
-                      r'(</a>\s*)(<div class="nav-links")',
-                      r'\1' + MENU_BUTTON + r'\n      \2',
-                      html,
-                      count=1,
-                      flags=re.S
-                  )
-
-              # Add body class hook for consistent header CSS.
-              html = html.replace('<body>', '<body class="site-header-fix">', 1)
-              html = html.replace('<body class="site-header-fix" class="site-header-fix">', '<body class="site-header-fix">')
+              # Body hook.
+              html = re.sub(r'<body(?: class="[^"]*")?>', '<body class="site-header-fix">', html, count=1)
 
               # Article hero hook where useful.
               html = html.replace('<header class="article-hero">', '<header class="article-hero article-hero-upgraded">')
+
+              # QA checks.
+              checks = [
+                  ('shared css', '/site-header.css?v=20260702-header3' in html),
+                  ('shared js', '/site-header.js?v=20260702-header3' in html),
+                  ('nav toggle', 'class="nav-toggle"' in html),
+                  ('blog link', 'href="/blog/"' in html),
+                  ('primary nav id', 'id="primary-nav"' in html),
+                  ('body class', '<body class="site-header-fix">' in html),
+              ]
+              missing = [name for name, ok in checks if not ok]
+              if missing:
+                  failures.append(f'{path}: missing {", ".join(missing)}')
 
               if html != original:
                   path.write_text(html, encoding='utf-8')
                   changed = True
                   print(f'Patched {path}')
+
+          if failures:
+              print('\n'.join(failures))
+              sys.exit(1)
 
           if not changed:
               print('All headers already standardised.')
