@@ -13,6 +13,13 @@ Important pages:
 - Privacy: https://answerablefaith.com/privacy/
 - Terms: https://answerablefaith.com/terms/
 
+Public-safe blog source:
+
+- Use `answerable-blog-source-extract-no-conversations.md` as the preferred public source map for blog writing.
+- That file contains selected question-card material only.
+- Do not use, recreate, quote, or summarise premium scenario dialogue, conversation chains, weak/strong response chains, or files under app conversation folders.
+- Public articles should quote or closely adapt the approved source extract where possible.
+
 Content focus:
 
 - Christian apologetics
@@ -31,7 +38,6 @@ Content focus:
 
 Editorial principles:
 
-- Quote or closely adapt Answerable app training content where possible.
 - Do not invent theological claims.
 - Avoid straw-manning atheists, Muslims, Jewish readers, Jehovah’s Witnesses, deconstructing Christians, or spiritual seekers.
 - Keep answers clear enough for regular Christians and church groups.
@@ -40,4 +46,4 @@ Editorial principles:
 
 Product positioning:
 
-Most apologetics sites only give answers. Answerable Faith aims to help Christians practise those answers through model responses, Scripture-led study, and realistic conversation partners.
+Most apologetics sites only give answers. Answerable Faith aims to help Christians practise those answers through model responses, Scripture-led study, and realistic conversation partners inside the app.
