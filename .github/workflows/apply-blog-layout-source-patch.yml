@@ -1,0 +1,87 @@
+name: Apply blog layout source patch
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "blog/**/*.html"
+      - "blog/blog.css"
+      - ".github/workflows/apply-blog-layout-source-patch.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Patch blog source pages
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          SCRIPT = '''
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle?.addEventListener('click', function () {
+      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!isOpen));
+      navLinks?.classList.toggle('is-open', !isOpen);
+      document.body.classList.toggle('nav-open', !isOpen);
+    });
+  </script>
+'''
+
+          changed = False
+          for path in sorted(Path('blog').glob('**/*.html')):
+            html = path.read_text(encoding='utf-8')
+            original = html
+
+            # Force browsers to load the new layout CSS.
+            html = re.sub(r'href="/blog/blog\.css(?:\?v=[^"]*)?"', 'href="/blog/blog.css?v=20260702-layout3"', html)
+
+            # Add actual mobile menu button to blog pages, not just CSS.
+            if 'class="nav-toggle"' not in html:
+              html = re.sub(
+                r'(</a>\s*)<div class="nav-links"',
+                r'\1<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>\n      <div class="nav-links" id="primary-nav"',
+                html,
+                count=1
+              )
+            elif 'id="primary-nav"' not in html:
+              html = html.replace('<div class="nav-links"', '<div class="nav-links" id="primary-nav"', 1)
+
+            # Add mobile menu script to blog pages.
+            if "document.querySelector('.nav-toggle')" not in html:
+              html = html.replace('</body>', SCRIPT + '</body>', 1)
+
+            # Add a class hook for better article hero/layout targeting.
+            if '<header class="article-hero article-hero-upgraded"' not in html:
+              html = html.replace('<header class="article-hero">', '<header class="article-hero article-hero-upgraded">')
+
+            if html != original:
+              path.write_text(html, encoding='utf-8')
+              changed = True
+              print(f'Patched {path}')
+
+          if not changed:
+            print('Blog source pages already patched.')
+          PY
+
+      - name: Commit patched blog pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add blog
+          if git diff --cached --quiet; then
+            echo "No blog source changes to commit."
+          else
+            git commit -m "Apply blog layout source patch"
+            git push
+          fi
