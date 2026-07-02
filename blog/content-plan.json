@@ -1,0 +1,31 @@
+[
+  {
+    "date": "2026-07-02",
+    "title": "Is the Trinity a contradiction?",
+    "slug": "is-the-trinity-a-contradiction",
+    "primary_keyword": "is the Trinity a contradiction",
+    "secondary_keywords": [
+      "how can God be one and three",
+      "Christian answer to Trinity contradiction",
+      "one being three persons"
+    ],
+    "topic_cluster": "Doctrine of God",
+    "search_intent": "A Christian, seeker, or sceptic wants to know whether the Trinity is logically contradictory.",
+    "source_app_content": [
+      "questions.json id g02",
+      "conversations.json chain g02"
+    ],
+    "audience": [
+      "regular Christians",
+      "evangelical groups",
+      "small groups",
+      "student ministry",
+      "church leaders"
+    ],
+    "internal_links": [
+      "/",
+      "/blog/",
+      "/#download"
+    ]
+  }
+]
