@@ -18,8 +18,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Patch blog source pages
+      - name: Patch blog source pages directly
         run: |
           python3 - <<'PY'
           from pathlib import Path
@@ -40,38 +42,48 @@ jobs:
 
           changed = False
           for path in sorted(Path('blog').glob('**/*.html')):
-            html = path.read_text(encoding='utf-8')
-            original = html
+              html = path.read_text(encoding='utf-8')
+              original = html
 
-            # Force browsers to load the new layout CSS.
-            html = re.sub(r'href="/blog/blog\.css(?:\?v=[^"]*)?"', 'href="/blog/blog.css?v=20260702-layout3"', html)
-
-            # Add actual mobile menu button to blog pages, not just CSS.
-            if 'class="nav-toggle"' not in html:
+              # Force browsers to load the new CSS.
               html = re.sub(
-                r'(</a>\s*)<div class="nav-links"',
-                r'\1<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>\n      <div class="nav-links" id="primary-nav"',
-                html,
-                count=1
+                  r'href="/blog/blog\.css(?:\?v=[^"]*)?"',
+                  'href="/blog/blog.css?v=20260702-layout4"',
+                  html
               )
-            elif 'id="primary-nav"' not in html:
-              html = html.replace('<div class="nav-links"', '<div class="nav-links" id="primary-nav"', 1)
 
-            # Add mobile menu script to blog pages.
-            if "document.querySelector('.nav-toggle')" not in html:
-              html = html.replace('</body>', SCRIPT + '</body>', 1)
+              # Add a real mobile Menu button before nav links. Handles one-line and multiline navs.
+              if 'class="nav-toggle"' not in html:
+                  html = re.sub(
+                      r'(</a>\s*)(<div class="nav-links")',
+                      r'\1<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>\n      \2',
+                      html,
+                      count=1,
+                      flags=re.S
+                  )
 
-            # Add a class hook for better article hero/layout targeting.
-            if '<header class="article-hero article-hero-upgraded"' not in html:
+              # Add id to nav links for aria-controls.
+              html = re.sub(
+                  r'<div class="nav-links"(?! id=)',
+                  '<div class="nav-links" id="primary-nav"',
+                  html,
+                  count=1
+              )
+
+              # Add hook class for the improved hero layout.
               html = html.replace('<header class="article-hero">', '<header class="article-hero article-hero-upgraded">')
 
-            if html != original:
-              path.write_text(html, encoding='utf-8')
-              changed = True
-              print(f'Patched {path}')
+              # Add mobile menu script.
+              if "document.querySelector('.nav-toggle')" not in html:
+                  html = html.replace('</body>', SCRIPT + '</body>', 1)
+
+              if html != original:
+                  path.write_text(html, encoding='utf-8')
+                  changed = True
+                  print(f'Patched {path}')
 
           if not changed:
-            print('Blog source pages already patched.')
+              print('Blog source pages already patched.')
           PY
 
       - name: Commit patched blog pages
