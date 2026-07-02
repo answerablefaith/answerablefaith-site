@@ -1,0 +1,165 @@
+/* Shared Answerable Faith header */
+.site-header-fix .nav {
+  min-height: 88px;
+  height: auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255,255,255,0.88);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(7,20,39,0.07);
+}
+
+.site-header-fix .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: var(--ink, #071427);
+  font-weight: 780;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  white-space: nowrap;
+}
+
+.site-header-fix .logo {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+}
+
+.site-header-fix .logo img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  display: block;
+}
+
+.site-header-fix .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.site-header-fix .nav-links a {
+  padding: 8px 9px;
+  border-radius: 999px;
+  color: rgba(7,20,39,0.66);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.site-header-fix .nav-links a:hover,
+.site-header-fix .nav-links a.active {
+  color: var(--navy, #082b4a);
+  background: rgba(8,43,74,0.06);
+}
+
+.site-header-fix .nav-toggle {
+  display: none;
+  appearance: none;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 58px;
+  padding: 12px 18px;
+  border-radius: 7px;
+  border: 2px solid rgba(7,20,39,0.22);
+  background: rgba(255,255,255,0.82);
+  color: var(--ink, #071427);
+  font: inherit;
+  font-size: 1.15rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.site-header-fix .nav-toggle .hamburger {
+  width: 26px;
+  height: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 auto;
+}
+
+.site-header-fix .nav-toggle .hamburger span {
+  display: block;
+  height: 3px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+@media (max-width: 760px) {
+  .site-header-fix .wrap {
+    width: min(100% - 24px, 1120px);
+  }
+
+  .site-header-fix .nav {
+    min-height: 76px;
+    padding: 12px 0;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .site-header-fix .brand {
+    font-size: clamp(1.05rem, 5.1vw, 1.45rem);
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .site-header-fix .logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .site-header-fix .logo img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .site-header-fix .nav-toggle {
+    display: inline-flex;
+    margin-left: auto;
+  }
+
+  .site-header-fix .nav-links {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.96);
+    border: 1px solid rgba(7,20,39,0.10);
+    box-shadow: 0 12px 30px rgba(7,20,39,0.08);
+    gap: 6px;
+  }
+
+  .site-header-fix .nav-links.is-open,
+  .site-header-fix body.nav-open .nav-links,
+  body.site-header-fix.nav-open .nav-links {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .site-header-fix .nav-links a {
+    display: block;
+    padding: 13px 14px;
+    border-radius: 13px;
+    color: var(--navy-2, #061f36);
+    background: rgba(8,43,74,0.035);
+    font-size: 15px;
+  }
+}
