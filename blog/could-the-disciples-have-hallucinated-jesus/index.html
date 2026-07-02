@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://answerablefaith.com/blog/could-the-disciples-have-hallucinated-jesus/" />
   <link rel="icon" type="image/png" href="/answerable-logo-transparent.png" />
   <link rel="apple-touch-icon" href="/answerable-logo-transparent.png" />
-  <link rel="stylesheet" href="/blog/blog.css" />
+  <link rel="stylesheet" href="/blog/blog.css?v=20260702-layout4" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BlogPosting","headline":"Could the disciples have hallucinated Jesus?","description":"A careful Christian answer to the hallucination theory of the resurrection, adapted from Answerable app training.","datePublished":"2026-07-02","dateModified":"2026-07-02","author":{"@type":"Organization","name":"Answerable Faith"},"publisher":{"@type":"Organization","name":"Answerable Faith","logo":{"@type":"ImageObject","url":"https://answerablefaith.com/answerable-logo-transparent.png"}},"mainEntityOfPage":"https://answerablefaith.com/blog/could-the-disciples-have-hallucinated-jesus/"}
   </script>
@@ -18,30 +18,9 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Could the disciples have hallucinated Jesus?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The article follows the app in saying hallucination does not explain the whole resurrection witness."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Answerable deny grief experiences?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. The app warns against the weak answer that hallucinations simply do not happen."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the key issue?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The key issue is whether hallucination explains group testimony, bodily claims, the empty tomb and the public movement that followed."
-      }
-    }
+    {"@type":"Question","name":"Could the disciples have hallucinated Jesus?","acceptedAnswer":{"@type":"Answer","text":"The article follows the app in saying hallucination does not explain the whole resurrection witness."}},
+    {"@type":"Question","name":"Does Answerable deny grief experiences?","acceptedAnswer":{"@type":"Answer","text":"No. The app warns against the weak answer that hallucinations simply do not happen."}},
+    {"@type":"Question","name":"What is the key issue?","acceptedAnswer":{"@type":"Answer","text":"The key issue is whether hallucination explains group testimony, bodily claims, the empty tomb and the public movement that followed."}}
   ]
 }
   </script>
@@ -50,10 +29,11 @@
   <div class="wrap">
     <nav class="nav" aria-label="Main navigation">
       <a class="brand" href="/"><span class="logo"><img src="/answerable-logo-transparent.png" alt="Answerable Faith logo"></span><span>Answerable Faith</span></a>
-      <div class="nav-links"><a href="/">Home</a><a class="active" href="/blog/">Blog</a><a href="/support/">Contact us</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a></div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <div class="nav-links" id="primary-nav"><a href="/">Home</a><a class="active" href="/blog/">Blog</a><a href="/support/">Contact us</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a></div>
     </nav>
 
-    <header class="article-hero">
+    <header class="article-hero article-hero-upgraded">
       <p class="eyebrow">Resurrection · Objections</p>
       <h1>Could the disciples have hallucinated Jesus?</h1>
       <p class="standfirst">Grief can produce powerful experiences, but the app argues that hallucination does not explain the full resurrection testimony.</p>
@@ -64,14 +44,13 @@
       <article class="article-body">
         <p><strong>Short answer:</strong> Hallucination does not explain the resurrection evidence as Christians understand it: group testimony, physical interaction, an empty tomb and a public movement.</p>
 
-        
         <!-- seo-ai-summary -->
         <div class="app-card" aria-labelledby="answer-in-brief">
           <strong id="answer-in-brief">Answer in brief</strong>
           <ul>
-          <li>The app does not deny that grief experiences can happen.</li>
-          <li>The question is whether hallucination explains the whole resurrection witness.</li>
-          <li>Answerable points to group testimony, physical interaction, an empty tomb and a transformed public movement.</li>
+            <li>The app does not deny that grief experiences can happen.</li>
+            <li>The question is whether hallucination explains the whole resurrection witness.</li>
+            <li>Answerable points to group testimony, physical interaction, an empty tomb and a transformed public movement.</li>
           </ul>
         </div>
 
@@ -126,14 +105,13 @@
           <details><summary>Why mention Paul?</summary><p>The app notes that hallucination does not easily explain why an enemy such as Paul changed and began proclaiming Christ.</p></details>
         </section>
 
-
         <!-- related-articles -->
         <section aria-labelledby="related-articles-heading">
           <h2 id="related-articles-heading">Related Answerable articles</h2>
           <ul>
-          <li><a href="/blog/did-scribes-change-the-new-testament/">Did scribes change the New Testament?</a></li>
-          <li><a href="/blog/is-the-trinity-a-contradiction/">Is the Trinity a contradiction?</a></li>
-          <li><a href="/blog/how-should-christians-answer-slavery-in-the-bible/">How should Christians answer slavery in the Bible?</a></li>
+            <li><a href="/blog/did-scribes-change-the-new-testament/">Did scribes change the New Testament?</a></li>
+            <li><a href="/blog/is-the-trinity-a-contradiction/">Is the Trinity a contradiction?</a></li>
+            <li><a href="/blog/how-should-christians-answer-slavery-in-the-bible/">How should Christians answer slavery in the Bible?</a></li>
           </ul>
         </section>
 
@@ -143,5 +121,15 @@
     </main>
     <footer><p>&copy; 2026 answerablefaith.com. All rights reserved.</p></footer>
   </div>
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    navToggle?.addEventListener('click', function () {
+      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!isOpen));
+      navLinks?.classList.toggle('is-open', !isOpen);
+      document.body.classList.toggle('nav-open', !isOpen);
+    });
+  </script>
 </body>
 </html>
