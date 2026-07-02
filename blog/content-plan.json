@@ -4,47 +4,123 @@
     "title": "Is the Trinity a contradiction?",
     "slug": "is-the-trinity-a-contradiction",
     "primary_keyword": "is the Trinity a contradiction",
-    "secondary_keywords": ["how can God be one and three", "Christian answer to Trinity contradiction", "one being three persons"],
+    "secondary_keywords": [
+      "how can God be one and three",
+      "Christian answer to Trinity contradiction",
+      "one being three persons"
+    ],
     "topic_cluster": "Doctrine of God",
     "search_intent": "A Christian, seeker, or sceptic wants to know whether the Trinity is logically contradictory.",
-    "source_app_content": ["questions.json id g02", "conversations.json chain g02"],
-    "audience": ["regular Christians", "evangelical groups", "small groups", "student ministry", "church leaders"],
-    "internal_links": ["/", "/blog/", "/#download"]
+    "source_basis": [
+      "answerable-blog-source-extract-no-conversations.md",
+      "questions.json id g02"
+    ],
+    "used_approved_source_extract": true,
+    "premium_content_used": false,
+    "audience": [
+      "regular Christians",
+      "evangelical groups",
+      "small groups",
+      "student ministry",
+      "church leaders"
+    ],
+    "internal_links": [
+      "/",
+      "/blog/",
+      "/#download"
+    ]
   },
   {
     "date": "2026-07-02",
     "title": "Did scribes change the New Testament?",
     "slug": "did-scribes-change-the-new-testament",
     "primary_keyword": "did scribes change the New Testament",
-    "secondary_keywords": ["New Testament copying errors", "Bible manuscript variants", "was the New Testament corrupted"],
+    "secondary_keywords": [
+      "New Testament copying errors",
+      "Bible manuscript variants",
+      "was the New Testament corrupted"
+    ],
     "topic_cluster": "The Bible",
     "search_intent": "A Christian, student, or sceptic wants to know whether copying errors destroyed confidence in the New Testament text.",
-    "source_app_content": ["questions.json id b08", "conversations.json chain b08"],
-    "audience": ["regular Christians", "evangelical groups", "Bible study groups", "student ministry", "church leaders"],
-    "internal_links": ["/", "/blog/", "/#download"]
+    "source_basis": [
+      "answerable-blog-source-extract-no-conversations.md",
+      "questions.json id b08"
+    ],
+    "used_approved_source_extract": true,
+    "premium_content_used": false,
+    "audience": [
+      "regular Christians",
+      "evangelical groups",
+      "Bible study groups",
+      "student ministry",
+      "church leaders"
+    ],
+    "internal_links": [
+      "/",
+      "/blog/",
+      "/#download"
+    ]
   },
   {
     "date": "2026-07-02",
     "title": "Could the disciples have hallucinated Jesus?",
     "slug": "could-the-disciples-have-hallucinated-jesus",
     "primary_keyword": "could the disciples have hallucinated Jesus",
-    "secondary_keywords": ["hallucination theory resurrection", "Christian answer resurrection hallucination", "resurrection evidence hallucinations"],
+    "secondary_keywords": [
+      "hallucination theory resurrection",
+      "Christian answer resurrection hallucination",
+      "resurrection evidence hallucinations"
+    ],
     "topic_cluster": "Resurrection",
     "search_intent": "A reader wants to know whether grief or group hallucination explains the resurrection testimony.",
-    "source_app_content": ["questions.json id r03", "conversations.json chain r03"],
-    "audience": ["regular Christians", "evangelical groups", "Easter preparation", "student ministry", "church leaders"],
-    "internal_links": ["/", "/blog/", "/#download"]
+    "source_basis": [
+      "answerable-blog-source-extract-no-conversations.md",
+      "questions.json id r03"
+    ],
+    "used_approved_source_extract": true,
+    "premium_content_used": false,
+    "audience": [
+      "regular Christians",
+      "evangelical groups",
+      "Easter preparation",
+      "student ministry",
+      "church leaders"
+    ],
+    "internal_links": [
+      "/",
+      "/blog/",
+      "/#download"
+    ]
   },
   {
     "date": "2026-07-02",
     "title": "How should Christians answer slavery in the Bible?",
     "slug": "how-should-christians-answer-slavery-in-the-bible",
     "primary_keyword": "slavery in the Bible Christian answer",
-    "secondary_keywords": ["how to answer slavery in the Bible", "Bible and slavery objection", "Christian apologetics slavery"],
+    "secondary_keywords": [
+      "how to answer slavery in the Bible",
+      "Bible and slavery objection",
+      "Christian apologetics slavery"
+    ],
     "topic_cluster": "Ethics",
     "search_intent": "A Christian or sceptic wants a morally clear and careful answer to slavery texts in the Bible.",
-    "source_app_content": ["questions.json id e02", "conversations.json chain e02"],
-    "audience": ["regular Christians", "evangelical groups", "small groups", "youth ministry", "church leaders"],
-    "internal_links": ["/", "/blog/", "/#download"]
+    "source_basis": [
+      "answerable-blog-source-extract-no-conversations.md",
+      "questions.json id e02"
+    ],
+    "used_approved_source_extract": true,
+    "premium_content_used": false,
+    "audience": [
+      "regular Christians",
+      "evangelical groups",
+      "small groups",
+      "youth ministry",
+      "church leaders"
+    ],
+    "internal_links": [
+      "/",
+      "/blog/",
+      "/#download"
+    ]
   }
 ]
