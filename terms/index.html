@@ -222,8 +222,9 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="/site-header.css?v=20260702-header1" />
 </head>
-<body>
+<body class="site-header-fix">
   <div class="wrap">
     <nav class="nav" aria-label="Main navigation">
       <a class="brand" href="/">
@@ -231,8 +232,10 @@
         <span>Answerable Faith</span>
       </a>
 
-      <div class="nav-links">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span><span>Menu</span></button>
+      <div class="nav-links" id="primary-nav">
         <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
         <a href="/support/">Contact us</a>
         <a href="/privacy/">Privacy Policy</a>
         <a href="/terms/">Terms of Service</a>
@@ -359,5 +362,6 @@
   <footer>
     <p>&copy; 2026 answerablefaith.com. All rights reserved.</p>
   </footer>
+  <script src="/site-header.js?v=20260702-header1" defer></script>
 </body>
 </html>

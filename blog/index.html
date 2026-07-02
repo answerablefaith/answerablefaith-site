@@ -8,16 +8,18 @@
   <link rel="canonical" href="https://answerablefaith.com/blog/" />
   <link rel="icon" type="image/png" href="/answerable-logo-transparent.png" />
   <link rel="apple-touch-icon" href="/answerable-logo-transparent.png" />
-  <link rel="stylesheet" href="/blog/blog.css" />
+  <link rel="stylesheet" href="/blog/blog.css?v=20260702-layout6" />
+  <link rel="stylesheet" href="/site-header.css?v=20260702-header1" />
 </head>
-<body>
+<body class="site-header-fix">
   <div class="wrap">
     <nav class="nav" aria-label="Main navigation">
       <a class="brand" href="/">
         <span class="logo"><img src="/answerable-logo-transparent.png" alt="Answerable Faith logo"></span>
         <span>Answerable Faith</span>
       </a>
-      <div class="nav-links">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span><span>Menu</span></button>
+      <div class="nav-links" id="primary-nav">
         <a href="/">Home</a>
         <a class="active" href="/blog/">Blog</a>
         <a href="/support/">Contact us</a>
@@ -79,5 +81,6 @@
       <p>&copy; 2026 answerablefaith.com. All rights reserved.</p>
     </footer>
   </div>
+  <script src="/site-header.js?v=20260702-header1" defer></script>
 </body>
 </html>
