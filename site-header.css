@@ -1,7 +1,17 @@
 /* Shared Answerable Faith header */
+body.site-header-fix {
+  --header-max-width: 1120px;
+}
+
+body.site-header-fix > .wrap:first-child,
+body.site-header-fix .wrap:has(> .nav) {
+  width: min(var(--header-max-width), calc(100% - 36px));
+  margin: 0 auto;
+}
+
 .site-header-fix .nav {
   min-height: 88px;
-  height: auto;
+  height: 88px;
   padding: 0;
   display: flex;
   align-items: center;
@@ -35,6 +45,9 @@
   display: grid;
   place-items: center;
   flex: 0 0 auto;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
 }
 
 .site-header-fix .logo img {
@@ -49,16 +62,19 @@
   align-items: center;
   justify-content: flex-end;
   gap: 4px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  margin-left: auto;
 }
 
 .site-header-fix .nav-links a {
-  padding: 8px 9px;
+  padding: 8px 10px;
   border-radius: 999px;
   color: rgba(7,20,39,0.66);
   text-decoration: none;
   font-size: 13px;
+  line-height: 1.1;
   font-weight: 650;
+  white-space: nowrap;
 }
 
 .site-header-fix .nav-links a:hover,
@@ -101,13 +117,24 @@
   background: currentColor;
 }
 
+@media (max-width: 860px) {
+  .site-header-fix .nav-links a {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 12.5px;
+  }
+}
+
 @media (max-width: 760px) {
+  body.site-header-fix > .wrap:first-child,
+  body.site-header-fix .wrap:has(> .nav),
   .site-header-fix .wrap {
     width: min(100% - 24px, 1120px);
   }
 
   .site-header-fix .nav {
     min-height: 76px;
+    height: auto;
     padding: 12px 0;
     align-items: center;
     flex-direction: row;
@@ -148,7 +175,6 @@
   }
 
   .site-header-fix .nav-links.is-open,
-  .site-header-fix body.nav-open .nav-links,
   body.site-header-fix.nav-open .nav-links {
     display: grid;
     grid-template-columns: 1fr;
