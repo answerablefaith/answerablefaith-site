@@ -122,5 +122,47 @@
       "/blog/",
       "/#download"
     ]
+  },
+  {
+    "date": "2026-07-02",
+    "title": "How can a small group practise apologetics without arguing?",
+    "slug": "small-group-apologetics-without-arguing",
+    "primary_keyword": "small group apologetics",
+    "secondary_keywords": [
+      "Christian apologetics for small groups",
+      "how to practise apologetics without arguing",
+      "youth group apologetics training",
+      "gracious apologetics practice"
+    ],
+    "topic_cluster": "Church training and gracious posture",
+    "search_intent": "A pastor, small-group leader, youth leader, or regular Christian wants a practical way to practise hard apologetics questions without turning the group combative.",
+    "source_basis": [
+      "answerable-blog-source-extract-no-conversations.md",
+      "tone training from question cards g02, b08 and r03"
+    ],
+    "used_approved_source_extract": true,
+    "premium_content_used": false,
+    "audience": [
+      "regular Christians",
+      "church small groups",
+      "youth and student ministries",
+      "pastors",
+      "ministry leaders"
+    ],
+    "internal_links": [
+      "/",
+      "/blog/",
+      "/#download",
+      "/blog/is-the-trinity-a-contradiction/",
+      "/blog/did-scribes-change-the-new-testament/",
+      "/blog/could-the-disciples-have-hallucinated-jesus/"
+    ],
+    "likely_follow_up_questions": [
+      "Which apologetics question should a small group start with?",
+      "How do we keep apologetics training gentle?",
+      "How can youth leaders practise hard questions safely?"
+    ],
+    "natural_app_conversion_path": "Invite group leaders and Christians to practise model answers and Scripture-led responses in the Answerable app before real conversations.",
+    "strengthens_existing_cluster_or_starts_new_one": "Starts a church training and gracious posture cluster while linking existing doctrine, Bible and resurrection posts."
   }
 ]
