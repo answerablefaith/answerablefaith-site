@@ -1,0 +1,48 @@
+name: Connect blog navigation
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "index.html"
+      - "blog/**"
+      - ".github/workflows/connect-blog-nav.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch-nav:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Add Blog link to homepage menu
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          path = Path("index.html")
+          html = path.read_text(encoding="utf-8")
+          target = '        <a href="/support/">Contact us</a>'
+          insert = '        <a href="/blog/">Blog</a>\n        <a href="/support/">Contact us</a>'
+          if 'href="/blog/"' not in html and target in html:
+              html = html.replace(target, insert, 1)
+              path.write_text(html, encoding="utf-8")
+              print("Blog link added to homepage navigation.")
+          else:
+              print("Blog link already present or nav target not found.")
+          PY
+
+      - name: Commit navigation change
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "No navigation changes to commit."
+          else
+            git commit -m "Add blog link to homepage navigation"
+            git push
+          fi
