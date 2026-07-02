@@ -1,11 +1,17 @@
-name: Apply blog layout source patch
+name: Standardise site header
 
 on:
   push:
     branches: ["main"]
     paths:
+      - "index.html"
+      - "support/index.html"
+      - "privacy/index.html"
+      - "terms/index.html"
       - "blog/**/*.html"
       - "blog/blog.css"
+      - "site-header.css"
+      - "site-header.js"
       - ".github/workflows/apply-blog-layout-source-patch.yml"
   workflow_dispatch:
 
@@ -21,61 +27,61 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Patch blog source pages directly
+      - name: Patch source pages directly
         run: |
           python3 - <<'PY'
           from pathlib import Path
           import re
 
-          SCRIPT = '''
-  <script>
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    navToggle?.addEventListener('click', function () {
-      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', String(!isOpen));
-      navLinks?.classList.toggle('is-open', !isOpen);
-      document.body.classList.toggle('nav-open', !isOpen);
-    });
-  </script>
-'''
+          CSS_LINK = '<link rel="stylesheet" href="/site-header.css?v=20260702-header1" />'
+          JS_LINK = '<script src="/site-header.js?v=20260702-header1" defer></script>'
+          MENU_BUTTON = '<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="hamburger" aria-hidden="true"><span></span><span></span><span></span></span><span>Menu</span></button>'
+          BLOG_CSS = 'href="/blog/blog.css?v=20260702-layout6"'
+
+          pages = [Path('index.html'), Path('support/index.html'), Path('privacy/index.html'), Path('terms/index.html')]
+          pages += sorted(Path('blog').glob('**/*.html'))
 
           changed = False
-          for path in sorted(Path('blog').glob('**/*.html')):
+          for path in pages:
+              if not path.exists():
+                  continue
               html = path.read_text(encoding='utf-8')
               original = html
 
-              # Force browsers to load the new CSS.
-              html = re.sub(
-                  r'href="/blog/blog\.css(?:\?v=[^"]*)?"',
-                  'href="/blog/blog.css?v=20260702-layout4"',
-                  html
-              )
+              # Cache-bust blog CSS where used.
+              html = re.sub(r'href="/blog/blog\.css(?:\?v=[^"]*)?"', BLOG_CSS, html)
 
-              # Add a real mobile Menu button before nav links. Handles one-line and multiline navs.
+              # Add shared header CSS after icons or before </head>.
+              if '/site-header.css' not in html:
+                  html = html.replace('</head>', f'  {CSS_LINK}\n</head>', 1)
+
+              # Add shared header JS.
+              if '/site-header.js' not in html:
+                  html = html.replace('</body>', f'  {JS_LINK}\n</body>', 1)
+
+              # Add Blog link to support/privacy/terms if missing.
+              if 'href="/blog/"' not in html and 'class="nav-links"' in html:
+                  html = html.replace('<a href="/support/">Contact us</a>', '<a href="/blog/">Blog</a>\n        <a href="/support/">Contact us</a>', 1)
+
+              # Ensure nav links have id for aria-controls.
+              html = re.sub(r'<div class="nav-links"(?! id=)', '<div class="nav-links" id="primary-nav"', html, count=1)
+
+              # Add mobile menu button after the brand link.
               if 'class="nav-toggle"' not in html:
                   html = re.sub(
                       r'(</a>\s*)(<div class="nav-links")',
-                      r'\1<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>\n      \2',
+                      r'\1' + MENU_BUTTON + r'\n      \2',
                       html,
                       count=1,
                       flags=re.S
                   )
 
-              # Add id to nav links for aria-controls.
-              html = re.sub(
-                  r'<div class="nav-links"(?! id=)',
-                  '<div class="nav-links" id="primary-nav"',
-                  html,
-                  count=1
-              )
+              # Add body class hook for consistent header CSS.
+              html = html.replace('<body>', '<body class="site-header-fix">', 1)
+              html = html.replace('<body class="site-header-fix" class="site-header-fix">', '<body class="site-header-fix">')
 
-              # Add hook class for the improved hero layout.
+              # Article hero hook where useful.
               html = html.replace('<header class="article-hero">', '<header class="article-hero article-hero-upgraded">')
-
-              # Add mobile menu script.
-              if "document.querySelector('.nav-toggle')" not in html:
-                  html = html.replace('</body>', SCRIPT + '</body>', 1)
 
               if html != original:
                   path.write_text(html, encoding='utf-8')
@@ -83,17 +89,17 @@ jobs:
                   print(f'Patched {path}')
 
           if not changed:
-              print('Blog source pages already patched.')
+              print('All headers already standardised.')
           PY
 
-      - name: Commit patched blog pages
+      - name: Commit standardised headers
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add blog
+          git add index.html support/index.html privacy/index.html terms/index.html blog
           if git diff --cached --quiet; then
-            echo "No blog source changes to commit."
+            echo "No source page changes to commit."
           else
-            git commit -m "Apply blog layout source patch"
+            git commit -m "Standardise responsive header across site"
             git push
           fi
