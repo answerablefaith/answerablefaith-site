@@ -24,6 +24,14 @@ Public-safe blog source:
 - Do not use, recreate, quote, or summarise premium scenario dialogue, conversation chains, weak/strong response chains, or files under app conversation folders.
 - Public articles should quote or closely adapt the approved source extract where possible.
 
+Language and editorial standard:
+
+- Use British English throughout public website copy.
+- Use spellings such as sceptic, analyse, organised, behaviour, favour, centre, travelling and modelling where relevant.
+- Use practise for the verb and practice for the noun.
+- Do not mix American spellings into titles, headings, metadata, FAQs, CTAs or body copy unless quoting a source exactly.
+- Keep difficult topics truthful, steady and encouraging for normal Christians.
+
 Content focus:
 
 - Christian apologetics
