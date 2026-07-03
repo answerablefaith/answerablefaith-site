@@ -1,6 +1,54 @@
 [
   {
     "date": "2026-07-03",
+    "title": "What to Do When You Don’t Know the Answer",
+    "slug": "what-to-do-when-you-dont-know-answer",
+    "primary_keyword": "what to do when you don’t know the answer",
+    "secondary_keywords": [
+      "Christian apologetics when you do not know the answer",
+      "how to answer hard questions honestly",
+      "gracious apologetics conversation",
+      "what should Christians say when they are stuck"
+    ],
+    "topic_cluster": "Conversation tactics and gracious posture",
+    "search_intent": "A regular Christian, small-group leader, youth leader or student wants to know what to say when someone asks a hard question they cannot answer immediately.",
+    "source_basis": [
+      "answerable-blog-source-extract-no-conversations.md tone training only",
+      "llms.txt editorial principles",
+      "public-safe ministry practice guidance"
+    ],
+    "app_question_id": null,
+    "used_approved_source_extract": true,
+    "premium_content_used": false,
+    "audience": [
+      "regular Christians",
+      "church small groups",
+      "youth and student ministries",
+      "evangelism training",
+      "thoughtful seekers"
+    ],
+    "internal_links": [
+      "/",
+      "/blog/",
+      "/#download",
+      "/blog/small-group-apologetics-without-arguing/",
+      "/blog/bible-reliability-questions-without-sounding-defensive/",
+      "/blog/is-the-trinity-a-contradiction/",
+      "/blog/did-scribes-change-the-new-testament/",
+      "/blog/could-the-disciples-have-hallucinated-jesus/",
+      "/blog/how-should-christians-answer-slavery-in-the-bible/"
+    ],
+    "likely_follow_up_questions": [
+      "Is it bad if a Christian does not know the answer?",
+      "What should I say when I am stuck?",
+      "Does apologetics mean I need to answer everything instantly?",
+      "How can a small group practise honest answers?"
+    ],
+    "natural_app_conversion_path": "Invite Christians to practise difficult questions in Answerable before real conversations, especially when they need a patient and honest way to respond.",
+    "strengthens_existing_cluster_or_starts_new_one": "Strengthens the conversation tactics and gracious posture cluster without reusing a doctrinal question card or duplicating an existing core answer."
+  },
+  {
+    "date": "2026-07-03",
     "title": "Bible Reliability Questions: How to Answer Without Sounding Defensive",
     "slug": "bible-reliability-questions-without-sounding-defensive",
     "primary_keyword": "Bible reliability questions",
