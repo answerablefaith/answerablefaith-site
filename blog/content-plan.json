@@ -1,6 +1,57 @@
 [
   {
     "date": "2026-07-03",
+    "title": "How to Explain the Trinity Without Teaching Three Gods",
+    "slug": "explain-trinity-without-teaching-three-gods",
+    "primary_keyword": "explain the Trinity without teaching three gods",
+    "secondary_keywords": [
+      "does the Trinity mean three gods",
+      "how to explain the Trinity simply",
+      "one God three persons",
+      "Christian answer to Trinity and polytheism"
+    ],
+    "topic_cluster": "Doctrine of God",
+    "search_intent": "A Christian, small-group leader, youth leader, or seeker wants a careful way to explain why the Trinity is not belief in three gods.",
+    "source_basis": [
+      "answerable-blog-source-extract-no-conversations.md",
+      "questions.json id g02"
+    ],
+    "used_approved_source_extract": true,
+    "premium_content_used": false,
+    "audience": [
+      "regular Christians",
+      "church small groups",
+      "youth and student ministries",
+      "introductory doctrine classes",
+      "thoughtful seekers"
+    ],
+    "internal_links": [
+      "/",
+      "/blog/",
+      "/#download",
+      "/blog/is-the-trinity-a-contradiction/",
+      "/blog/small-group-apologetics-without-arguing/",
+      "/blog/bible-reliability-questions-without-sounding-defensive/"
+    ],
+    "likely_follow_up_questions": [
+      "Does the Trinity mean Christians believe in three gods?",
+      "What is the difference between being and person?",
+      "Should I use analogies to explain the Trinity?",
+      "How can I explain the Trinity gently to a sceptical friend?"
+    ],
+    "natural_app_conversion_path": "Invite Christians to practise a short, careful Trinity answer in Answerable before live conversations, especially where the doctrine may sound like polytheism.",
+    "strengthens_existing_cluster_or_starts_new_one": "Strengthens the Doctrine of God cluster by adding a practical follow-up to the existing Trinity contradiction article.",
+    "schema_types_added": [
+      "BlogPosting",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "sitemap_updated": true,
+    "llms_txt_updated": true,
+    "created_or_refreshed": "created"
+  },
+  {
+    "date": "2026-07-03",
     "title": "Bible Reliability Questions: How to Answer Without Sounding Defensive",
     "slug": "bible-reliability-questions-without-sounding-defensive",
     "primary_keyword": "Bible reliability questions",
