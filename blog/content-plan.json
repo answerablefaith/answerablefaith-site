@@ -1,5 +1,49 @@
 [
   {
+    "date": "2026-07-03",
+    "title": "Bible Reliability Questions: How to Answer Without Sounding Defensive",
+    "slug": "bible-reliability-questions-without-sounding-defensive",
+    "primary_keyword": "Bible reliability questions",
+    "secondary_keywords": [
+      "how to answer Bible reliability questions",
+      "New Testament variants",
+      "Christian answer to manuscript variants",
+      "Bible reliability without sounding defensive"
+    ],
+    "topic_cluster": "The Bible",
+    "search_intent": "A Christian, student, small-group leader, or seeker wants a calm way to answer Bible reliability questions about manuscripts and variants without sounding defensive.",
+    "source_basis": [
+      "answerable-blog-source-extract-no-conversations.md",
+      "questions.json id b08"
+    ],
+    "used_approved_source_extract": true,
+    "premium_content_used": false,
+    "audience": [
+      "regular Christians",
+      "student ministry",
+      "church small groups",
+      "Bible study groups",
+      "thoughtful seekers"
+    ],
+    "internal_links": [
+      "/",
+      "/blog/",
+      "/#download",
+      "/blog/did-scribes-change-the-new-testament/",
+      "/blog/could-the-disciples-have-hallucinated-jesus/",
+      "/blog/is-the-trinity-a-contradiction/",
+      "/blog/small-group-apologetics-without-arguing/"
+    ],
+    "likely_follow_up_questions": [
+      "Do variants mean the New Testament was corrupted?",
+      "Which New Testament variants matter most?",
+      "How should I answer a friend who says the Bible changed over time?",
+      "How can a small group practise Bible reliability questions?"
+    ],
+    "natural_app_conversion_path": "Invite Christians and group leaders to practise Bible reliability answers in Answerable before real conversations, focusing on clear claims and gracious tone.",
+    "strengthens_existing_cluster_or_starts_new_one": "Strengthens the Bible reliability cluster by linking the specific scribal-copying article to a broader reader-intent article about answering Bible reliability questions calmly."
+  },
+  {
     "date": "2026-07-02",
     "title": "Is the Trinity a contradiction?",
     "slug": "is-the-trinity-a-contradiction",
