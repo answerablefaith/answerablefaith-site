@@ -1,5 +1,66 @@
 [
   {
+    "date": "2026-07-06",
+    "title": "How Do I Answer the Divine Hiddenness Argument?",
+    "slug": "how-do-i-answer-divine-hiddenness-argument",
+    "primary_keyword": "divine hiddenness argument Christian answer",
+    "secondary_keywords": [
+      "how to answer divine hiddenness argument",
+      "why is God hidden",
+      "Christian response to God’s hiddenness",
+      "God’s hiddenness and suffering"
+    ],
+    "topic_cluster": "Philosophy and Doctrine of God",
+    "search_intent": "A Christian, student, small-group leader or thoughtful seeker wants a calm answer to the claim that God would be more obvious if He existed.",
+    "source_basis": [
+      "answerable-blog-question-ledger-clean.json",
+      "questions.json id add183"
+    ],
+    "source_question_id": "add183",
+    "app_question_id": "add183",
+    "source_question": "How do I answer the divine hiddenness argument?",
+    "source_category": "Philosophy",
+    "source_difficulty": "hard",
+    "source_file": "ChristianApologiaApp/questions.json",
+    "source_ledger": "answerable-blog-question-ledger-clean.json",
+    "why_selected": "This unused question opens a new Philosophy and Doctrine of God cluster, has clear search intent, offers strong pastoral usefulness, and does not duplicate the existing Trinity, Bible reliability, resurrection, ethics, or conversation-tactics posts.",
+    "primary_search_query": "divine hiddenness argument Christian answer",
+    "secondary_query_family": [
+      "why is God hidden",
+      "how should Christians answer divine hiddenness",
+      "why doesn’t God make Himself obvious",
+      "Christian response to God’s silence"
+    ],
+    "ai_answer_target": "Christianity answers the divine hiddenness argument by saying God has given real witness through creation, conscience, Scripture and supremely Jesus Christ, while still calling people to trust, humility and repentance.",
+    "category_role": "pillar page",
+    "used_approved_source_extract": true,
+    "used_approved_question_bank": true,
+    "premium_content_used": false,
+    "audience": [
+      "regular Christians",
+      "student ministry",
+      "church small groups",
+      "thoughtful seekers",
+      "pastoral apologetics leaders"
+    ],
+    "internal_links": [
+      "/",
+      "/blog/",
+      "/#download",
+      "/blog/what-to-do-when-you-dont-know-answer/",
+      "/blog/is-the-trinity-a-contradiction/",
+      "/blog/could-the-disciples-have-hallucinated-jesus/"
+    ],
+    "likely_follow_up_questions": [
+      "Why doesn’t God make Himself undeniable?",
+      "Is doubt always rebellion?",
+      "How should I answer someone who feels God is absent?",
+      "Where does Jesus fit in the divine hiddenness argument?"
+    ],
+    "natural_app_conversion_path": "Invite Christians to practise philosophical and pastoral objections in Answerable with model answers, Scripture-led study and a gracious posture.",
+    "strengthens_existing_cluster_or_starts_new_one": "Starts a Philosophy and Doctrine of God cluster while linking naturally to Trinity, resurrection, and gracious-conversation articles."
+  },
+  {
     "date": "2026-07-03",
     "title": "What to Do When You Don’t Know the Answer",
     "slug": "what-to-do-when-you-dont-know-answer",
