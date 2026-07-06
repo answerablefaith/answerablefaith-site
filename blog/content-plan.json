@@ -13,7 +13,7 @@
     "topic_cluster": "Conversation tactics and gracious posture",
     "search_intent": "A regular Christian, small-group leader, youth leader or student wants to know what to say when someone asks a hard question they cannot answer immediately.",
     "source_basis": [
-      "answerable-blog-source-extract-no-conversations.md tone training only",
+      "answerable-blog-source-extract.md tone training only",
       "llms.txt editorial principles",
       "public-safe ministry practice guidance"
     ],
@@ -61,7 +61,7 @@
     "topic_cluster": "The Bible",
     "search_intent": "A Christian, student, small-group leader, or seeker wants a calm way to answer Bible reliability questions about manuscripts and variants without sounding defensive.",
     "source_basis": [
-      "answerable-blog-source-extract-no-conversations.md",
+      "answerable-blog-source-extract.md",
       "questions.json id b08"
     ],
     "used_approved_source_extract": true,
@@ -104,7 +104,7 @@
     "topic_cluster": "Doctrine of God",
     "search_intent": "A Christian, seeker, or sceptic wants to know whether the Trinity is logically contradictory.",
     "source_basis": [
-      "answerable-blog-source-extract-no-conversations.md",
+      "answerable-blog-source-extract.md",
       "questions.json id g02"
     ],
     "used_approved_source_extract": true,
@@ -135,7 +135,7 @@
     "topic_cluster": "The Bible",
     "search_intent": "A Christian, student, or sceptic wants to know whether copying errors destroyed confidence in the New Testament text.",
     "source_basis": [
-      "answerable-blog-source-extract-no-conversations.md",
+      "answerable-blog-source-extract.md",
       "questions.json id b08"
     ],
     "used_approved_source_extract": true,
@@ -166,7 +166,7 @@
     "topic_cluster": "Resurrection",
     "search_intent": "A reader wants to know whether grief or group hallucination explains the resurrection testimony.",
     "source_basis": [
-      "answerable-blog-source-extract-no-conversations.md",
+      "answerable-blog-source-extract.md",
       "questions.json id r03"
     ],
     "used_approved_source_extract": true,
@@ -197,7 +197,7 @@
     "topic_cluster": "Ethics",
     "search_intent": "A Christian or sceptic wants a morally clear and careful answer to slavery texts in the Bible.",
     "source_basis": [
-      "answerable-blog-source-extract-no-conversations.md",
+      "answerable-blog-source-extract.md",
       "questions.json id e02"
     ],
     "used_approved_source_extract": true,
@@ -229,7 +229,7 @@
     "topic_cluster": "Church training and gracious posture",
     "search_intent": "A pastor, small-group leader, youth leader, or regular Christian wants a practical way to practise hard apologetics questions without turning the group combative.",
     "source_basis": [
-      "answerable-blog-source-extract-no-conversations.md",
+      "answerable-blog-source-extract.md",
       "tone training from question cards g02, b08 and r03"
     ],
     "used_approved_source_extract": true,
