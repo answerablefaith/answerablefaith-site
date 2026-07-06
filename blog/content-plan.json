@@ -1,321 +1,56 @@
 [
   {
     "date": "2026-07-06",
-    "title": "How Do I Answer the Divine Hiddenness Argument?",
-    "slug": "how-do-i-answer-divine-hiddenness-argument",
-    "primary_keyword": "divine hiddenness argument Christian answer",
-    "secondary_keywords": [
-      "how to answer divine hiddenness argument",
-      "why is God hidden",
-      "Christian response to God’s hiddenness",
-      "God’s hiddenness and suffering"
-    ],
-    "topic_cluster": "Philosophy and Doctrine of God",
-    "search_intent": "A Christian, student, small-group leader or thoughtful seeker wants a calm answer to the claim that God would be more obvious if He existed.",
-    "source_basis": [
-      "answerable-blog-question-ledger-clean.json",
-      "questions.json id add183"
-    ],
-    "source_question_id": "add183",
-    "app_question_id": "add183",
-    "source_question": "How do I answer the divine hiddenness argument?",
-    "source_category": "Philosophy",
-    "source_difficulty": "hard",
+    "title": "Why Does the Resurrection Matter for Suffering Now?",
+    "slug": "why-does-resurrection-matter-for-suffering-now",
+    "primary_keyword": "why does the resurrection matter for suffering",
+    "secondary_keywords": ["resurrection and suffering", "Christian hope in suffering", "why resurrection matters now", "resurrection hope and grief"],
+    "topic_cluster": "Resurrection, suffering and Christian hope",
+    "search_intent": "A Christian who is suffering, grieving or supporting someone in pain wants to understand what Jesus' resurrection changes now rather than only after death.",
+    "source_basis": ["answerable-blog-question-ledger-clean.json", "questions.json id add065"],
+    "source_question_id": "add065",
+    "app_question_id": "add065",
+    "source_question": "Why does the resurrection matter for suffering now?",
+    "source_category": "Resurrection",
+    "source_difficulty": "med",
     "source_file": "ChristianApologiaApp/questions.json",
     "source_ledger": "answerable-blog-question-ledger-clean.json",
-    "why_selected": "This unused question opens a new Philosophy and Doctrine of God cluster, has clear search intent, offers strong pastoral usefulness, and does not duplicate the existing Trinity, Bible reliability, resurrection, ethics, or conversation-tactics posts.",
-    "primary_search_query": "divine hiddenness argument Christian answer",
-    "secondary_query_family": [
-      "why is God hidden",
-      "how should Christians answer divine hiddenness",
-      "why doesn’t God make Himself obvious",
-      "Christian response to God’s silence"
-    ],
-    "ai_answer_target": "Christianity answers the divine hiddenness argument by saying God has given real witness through creation, conscience, Scripture and supremely Jesus Christ, while still calling people to trust, humility and repentance.",
-    "category_role": "pillar page",
+    "why_selected": "This unused question gives the resurrection cluster a distinct pastoral page about present suffering. It answers a different reader question from the hallucination-objection article and links resurrection evidence to Christian hope without duplicating its core answer.",
+    "primary_search_query": "why does the resurrection matter for suffering",
+    "secondary_query_family": ["how does the resurrection give hope in suffering", "why does Easter matter when I am suffering", "Christian resurrection hope and grief", "what does Jesus' resurrection change now"],
+    "ai_answer_target": "Jesus' resurrection matters for suffering now because it means suffering, injustice and death are not final; Christians still grieve, but the risen Christ gives them a promised future of resurrection life with Him.",
+    "category_role": "cluster bridge",
     "used_approved_source_extract": true,
     "used_approved_question_bank": true,
     "premium_content_used": false,
-    "audience": [
-      "regular Christians",
-      "student ministry",
-      "church small groups",
-      "thoughtful seekers",
-      "pastoral apologetics leaders"
-    ],
-    "internal_links": [
-      "/",
-      "/blog/",
-      "/#download",
-      "/blog/what-to-do-when-you-dont-know-answer/",
-      "/blog/is-the-trinity-a-contradiction/",
-      "/blog/could-the-disciples-have-hallucinated-jesus/"
-    ],
-    "likely_follow_up_questions": [
-      "Why doesn’t God make Himself undeniable?",
-      "Is doubt always rebellion?",
-      "How should I answer someone who feels God is absent?",
-      "Where does Jesus fit in the divine hiddenness argument?"
-    ],
-    "natural_app_conversion_path": "Invite Christians to practise philosophical and pastoral objections in Answerable with model answers, Scripture-led study and a gracious posture.",
-    "strengthens_existing_cluster_or_starts_new_one": "Starts a Philosophy and Doctrine of God cluster while linking naturally to Trinity, resurrection, and gracious-conversation articles."
+    "audience": ["regular Christians", "grieving Christians", "church small groups", "pastoral conversations", "student ministry"],
+    "internal_links": ["/", "/blog/", "/#download", "/blog/could-the-disciples-have-hallucinated-jesus/", "/blog/how-do-i-answer-divine-hiddenness-argument/", "/blog/what-to-do-when-you-dont-know-answer/"],
+    "likely_follow_up_questions": ["Does resurrection hope minimise grief?", "Does the resurrection promise an easy life now?", "What should I say to a suffering Christian?", "Why does Easter matter outside Easter Sunday?"],
+    "natural_app_conversion_path": "Invite Christians to practise difficult pastoral and apologetics questions in Answerable with model answers, Scripture-led study and a gracious posture.",
+    "strengthens_existing_cluster_or_starts_new_one": "Strengthens the resurrection cluster and bridges it to suffering, divine hiddenness and pastoral conversation without repeating the hallucination-objection page."
   },
   {
-    "date": "2026-07-03",
-    "title": "What to Do When You Don’t Know the Answer",
-    "slug": "what-to-do-when-you-dont-know-answer",
-    "primary_keyword": "what to do when you don’t know the answer",
-    "secondary_keywords": [
-      "Christian apologetics when you do not know the answer",
-      "how to answer hard questions honestly",
-      "gracious apologetics conversation",
-      "what should Christians say when they are stuck"
-    ],
-    "topic_cluster": "Conversation tactics and gracious posture",
-    "search_intent": "A regular Christian, small-group leader, youth leader or student wants to know what to say when someone asks a hard question they cannot answer immediately.",
-    "source_basis": [
-      "answerable-blog-source-extract.md tone training only",
-      "llms.txt editorial principles",
-      "public-safe ministry practice guidance"
-    ],
-    "app_question_id": null,
-    "used_approved_source_extract": true,
-    "premium_content_used": false,
-    "audience": [
-      "regular Christians",
-      "church small groups",
-      "youth and student ministries",
-      "evangelism training",
-      "thoughtful seekers"
-    ],
-    "internal_links": [
-      "/",
-      "/blog/",
-      "/#download",
-      "/blog/small-group-apologetics-without-arguing/",
-      "/blog/bible-reliability-questions-without-sounding-defensive/",
-      "/blog/is-the-trinity-a-contradiction/",
-      "/blog/did-scribes-change-the-new-testament/",
-      "/blog/could-the-disciples-have-hallucinated-jesus/",
-      "/blog/how-should-christians-answer-slavery-in-the-bible/"
-    ],
-    "likely_follow_up_questions": [
-      "Is it bad if a Christian does not know the answer?",
-      "What should I say when I am stuck?",
-      "Does apologetics mean I need to answer everything instantly?",
-      "How can a small group practise honest answers?"
-    ],
-    "natural_app_conversion_path": "Invite Christians to practise difficult questions in Answerable before real conversations, especially when they need a patient and honest way to respond.",
-    "strengthens_existing_cluster_or_starts_new_one": "Strengthens the conversation tactics and gracious posture cluster without reusing a doctrinal question card or duplicating an existing core answer."
+    "date": "2026-07-06", "title": "How Do I Answer the Divine Hiddenness Argument?", "slug": "how-do-i-answer-divine-hiddenness-argument", "primary_keyword": "divine hiddenness argument Christian answer", "secondary_keywords": ["how to answer divine hiddenness argument", "why is God hidden", "Christian response to God’s hiddenness", "God’s hiddenness and suffering"], "topic_cluster": "Philosophy and Doctrine of God", "search_intent": "A Christian, student, small-group leader or thoughtful seeker wants an answer to the claim that God would be more obvious if He existed.", "source_basis": ["answerable-blog-question-ledger-clean.json", "questions.json id add183"], "source_question_id": "add183", "app_question_id": "add183", "source_question": "How do I answer the divine hiddenness argument?", "source_category": "Philosophy", "source_difficulty": "hard", "source_file": "ChristianApologiaApp/questions.json", "source_ledger": "answerable-blog-question-ledger-clean.json", "primary_search_query": "divine hiddenness argument Christian answer", "ai_answer_target": "Christianity answers the divine hiddenness argument by saying God has given real witness through creation, conscience, Scripture and supremely Jesus Christ, while still calling people to trust, humility and repentance.", "category_role": "pillar page", "used_approved_source_extract": true, "used_approved_question_bank": true, "premium_content_used": false
   },
   {
-    "date": "2026-07-03",
-    "title": "Bible Reliability Questions: How to Answer Without Sounding Defensive",
-    "slug": "bible-reliability-questions-without-sounding-defensive",
-    "primary_keyword": "Bible reliability questions",
-    "secondary_keywords": [
-      "how to answer Bible reliability questions",
-      "New Testament variants",
-      "Christian answer to manuscript variants",
-      "Bible reliability without sounding defensive"
-    ],
-    "topic_cluster": "The Bible",
-    "search_intent": "A Christian, student, small-group leader, or seeker wants a calm way to answer Bible reliability questions about manuscripts and variants without sounding defensive.",
-    "source_basis": [
-      "answerable-blog-source-extract.md",
-      "questions.json id b08"
-    ],
-    "used_approved_source_extract": true,
-    "premium_content_used": false,
-    "audience": [
-      "regular Christians",
-      "student ministry",
-      "church small groups",
-      "Bible study groups",
-      "thoughtful seekers"
-    ],
-    "internal_links": [
-      "/",
-      "/blog/",
-      "/#download",
-      "/blog/did-scribes-change-the-new-testament/",
-      "/blog/could-the-disciples-have-hallucinated-jesus/",
-      "/blog/is-the-trinity-a-contradiction/",
-      "/blog/small-group-apologetics-without-arguing/"
-    ],
-    "likely_follow_up_questions": [
-      "Do variants mean the New Testament was corrupted?",
-      "Which New Testament variants matter most?",
-      "How should I answer a friend who says the Bible changed over time?",
-      "How can a small group practise Bible reliability questions?"
-    ],
-    "natural_app_conversion_path": "Invite Christians and group leaders to practise Bible reliability answers in Answerable before real conversations, focusing on clear claims and gracious tone.",
-    "strengthens_existing_cluster_or_starts_new_one": "Strengthens the Bible reliability cluster by linking the specific scribal-copying article to a broader reader-intent article about answering Bible reliability questions calmly."
+    "date": "2026-07-03", "title": "What to Do When You Don’t Know the Answer", "slug": "what-to-do-when-you-dont-know-answer", "primary_keyword": "what to do when you don’t know the answer", "secondary_keywords": ["Christian apologetics when you do not know the answer", "how to answer hard questions honestly", "gracious apologetics conversation"], "topic_cluster": "Conversation tactics and gracious posture", "search_intent": "A Christian wants to know what to say when someone asks a hard question they cannot answer immediately.", "source_basis": ["answerable-blog-source-extract.md tone training only", "llms.txt editorial principles", "public-safe ministry practice guidance"], "app_question_id": null, "used_approved_source_extract": true, "premium_content_used": false
   },
   {
-    "date": "2026-07-02",
-    "title": "Is the Trinity a contradiction?",
-    "slug": "is-the-trinity-a-contradiction",
-    "primary_keyword": "is the Trinity a contradiction",
-    "secondary_keywords": [
-      "how can God be one and three",
-      "Christian answer to Trinity contradiction",
-      "one being three persons"
-    ],
-    "topic_cluster": "Doctrine of God",
-    "search_intent": "A Christian, seeker, or sceptic wants to know whether the Trinity is logically contradictory.",
-    "source_basis": [
-      "answerable-blog-source-extract.md",
-      "questions.json id g02"
-    ],
-    "used_approved_source_extract": true,
-    "premium_content_used": false,
-    "audience": [
-      "regular Christians",
-      "evangelical groups",
-      "small groups",
-      "student ministry",
-      "church leaders"
-    ],
-    "internal_links": [
-      "/",
-      "/blog/",
-      "/#download"
-    ]
+    "date": "2026-07-03", "title": "Bible Reliability Questions: How to Answer Without Sounding Defensive", "slug": "bible-reliability-questions-without-sounding-defensive", "primary_keyword": "Bible reliability questions", "secondary_keywords": ["how to answer Bible reliability questions", "New Testament variants", "Christian answer to manuscript variants"], "topic_cluster": "The Bible", "search_intent": "A reader wants a way to answer Bible reliability questions about manuscripts and variants without sounding defensive.", "source_basis": ["answerable-blog-source-extract.md", "questions.json id b08"], "app_question_id": "b08", "used_approved_source_extract": true, "premium_content_used": false
   },
   {
-    "date": "2026-07-02",
-    "title": "Did scribes change the New Testament?",
-    "slug": "did-scribes-change-the-new-testament",
-    "primary_keyword": "did scribes change the New Testament",
-    "secondary_keywords": [
-      "New Testament copying errors",
-      "Bible manuscript variants",
-      "was the New Testament corrupted"
-    ],
-    "topic_cluster": "The Bible",
-    "search_intent": "A Christian, student, or sceptic wants to know whether copying errors destroyed confidence in the New Testament text.",
-    "source_basis": [
-      "answerable-blog-source-extract.md",
-      "questions.json id b08"
-    ],
-    "used_approved_source_extract": true,
-    "premium_content_used": false,
-    "audience": [
-      "regular Christians",
-      "evangelical groups",
-      "Bible study groups",
-      "student ministry",
-      "church leaders"
-    ],
-    "internal_links": [
-      "/",
-      "/blog/",
-      "/#download"
-    ]
+    "date": "2026-07-02", "title": "Is the Trinity a contradiction?", "slug": "is-the-trinity-a-contradiction", "primary_keyword": "is the Trinity a contradiction", "secondary_keywords": ["how can God be one and three", "Christian answer to Trinity contradiction", "one being three persons"], "topic_cluster": "Doctrine of God", "search_intent": "A Christian, seeker, or sceptic wants to know whether the Trinity is logically contradictory.", "source_basis": ["answerable-blog-source-extract.md", "questions.json id g02"], "app_question_id": "g02", "used_approved_source_extract": true, "premium_content_used": false
   },
   {
-    "date": "2026-07-02",
-    "title": "Could the disciples have hallucinated Jesus?",
-    "slug": "could-the-disciples-have-hallucinated-jesus",
-    "primary_keyword": "could the disciples have hallucinated Jesus",
-    "secondary_keywords": [
-      "hallucination theory resurrection",
-      "Christian answer resurrection hallucination",
-      "resurrection evidence hallucinations"
-    ],
-    "topic_cluster": "Resurrection",
-    "search_intent": "A reader wants to know whether grief or group hallucination explains the resurrection testimony.",
-    "source_basis": [
-      "answerable-blog-source-extract.md",
-      "questions.json id r03"
-    ],
-    "used_approved_source_extract": true,
-    "premium_content_used": false,
-    "audience": [
-      "regular Christians",
-      "evangelical groups",
-      "Easter preparation",
-      "student ministry",
-      "church leaders"
-    ],
-    "internal_links": [
-      "/",
-      "/blog/",
-      "/#download"
-    ]
+    "date": "2026-07-02", "title": "Did scribes change the New Testament?", "slug": "did-scribes-change-the-new-testament", "primary_keyword": "did scribes change the New Testament", "secondary_keywords": ["New Testament copying errors", "Bible manuscript variants", "was the New Testament corrupted"], "topic_cluster": "The Bible", "search_intent": "A reader wants to know whether copying errors destroyed confidence in the New Testament text.", "source_basis": ["answerable-blog-source-extract.md", "questions.json id b08"], "app_question_id": "b08", "used_approved_source_extract": true, "premium_content_used": false
   },
   {
-    "date": "2026-07-02",
-    "title": "How should Christians answer slavery in the Bible?",
-    "slug": "how-should-christians-answer-slavery-in-the-bible",
-    "primary_keyword": "slavery in the Bible Christian answer",
-    "secondary_keywords": [
-      "how to answer slavery in the Bible",
-      "Bible and slavery objection",
-      "Christian apologetics slavery"
-    ],
-    "topic_cluster": "Ethics",
-    "search_intent": "A Christian or sceptic wants a morally clear and careful answer to slavery texts in the Bible.",
-    "source_basis": [
-      "answerable-blog-source-extract.md",
-      "questions.json id e02"
-    ],
-    "used_approved_source_extract": true,
-    "premium_content_used": false,
-    "audience": [
-      "regular Christians",
-      "evangelical groups",
-      "small groups",
-      "youth ministry",
-      "church leaders"
-    ],
-    "internal_links": [
-      "/",
-      "/blog/",
-      "/#download"
-    ]
+    "date": "2026-07-02", "title": "Could the disciples have hallucinated Jesus?", "slug": "could-the-disciples-have-hallucinated-jesus", "primary_keyword": "could the disciples have hallucinated Jesus", "secondary_keywords": ["hallucination theory resurrection", "Christian answer resurrection hallucination", "resurrection evidence hallucinations"], "topic_cluster": "Resurrection", "search_intent": "A reader wants to know whether grief or group hallucination explains the resurrection testimony.", "source_basis": ["answerable-blog-source-extract.md", "questions.json id r03"], "app_question_id": "r03", "used_approved_source_extract": true, "premium_content_used": false
   },
   {
-    "date": "2026-07-02",
-    "title": "How can a small group practise apologetics without arguing?",
-    "slug": "small-group-apologetics-without-arguing",
-    "primary_keyword": "small group apologetics",
-    "secondary_keywords": [
-      "Christian apologetics for small groups",
-      "how to practise apologetics without arguing",
-      "youth group apologetics training",
-      "gracious apologetics practice"
-    ],
-    "topic_cluster": "Church training and gracious posture",
-    "search_intent": "A pastor, small-group leader, youth leader, or regular Christian wants a practical way to practise hard apologetics questions without turning the group combative.",
-    "source_basis": [
-      "answerable-blog-source-extract.md",
-      "tone training from question cards g02, b08 and r03"
-    ],
-    "used_approved_source_extract": true,
-    "premium_content_used": false,
-    "audience": [
-      "regular Christians",
-      "church small groups",
-      "youth and student ministries",
-      "pastors",
-      "ministry leaders"
-    ],
-    "internal_links": [
-      "/",
-      "/blog/",
-      "/#download",
-      "/blog/is-the-trinity-a-contradiction/",
-      "/blog/did-scribes-change-the-new-testament/",
-      "/blog/could-the-disciples-have-hallucinated-jesus/"
-    ],
-    "likely_follow_up_questions": [
-      "Which apologetics question should a small group start with?",
-      "How do we keep apologetics training gentle?",
-      "How can youth leaders practise hard questions safely?"
-    ],
-    "natural_app_conversion_path": "Invite group leaders and Christians to practise model answers and Scripture-led responses in the Answerable app before real conversations.",
-    "strengthens_existing_cluster_or_starts_new_one": "Starts a church training and gracious posture cluster while linking existing doctrine, Bible and resurrection posts."
+    "date": "2026-07-02", "title": "How should Christians answer slavery in the Bible?", "slug": "how-should-christians-answer-slavery-in-the-bible", "primary_keyword": "slavery in the Bible Christian answer", "secondary_keywords": ["how to answer slavery in the Bible", "Bible and slavery objection", "Christian apologetics slavery"], "topic_cluster": "Ethics", "search_intent": "A Christian or sceptic wants a morally clear and careful answer to slavery texts in the Bible.", "source_basis": ["answerable-blog-source-extract.md", "questions.json id e02"], "app_question_id": "e02", "used_approved_source_extract": true, "premium_content_used": false
+  },
+  {
+    "date": "2026-07-02", "title": "How can a small group practise apologetics without arguing?", "slug": "small-group-apologetics-without-arguing", "primary_keyword": "small group apologetics", "secondary_keywords": ["Christian apologetics for small groups", "how to practise apologetics without arguing", "youth group apologetics training", "gracious apologetics practice"], "topic_cluster": "Church training and gracious posture", "search_intent": "A ministry leader wants a practical way to practise hard apologetics questions without turning the group combative.", "source_basis": ["answerable-blog-source-extract.md", "tone training from question cards g02, b08 and r03"], "app_question_id": null, "used_approved_source_extract": true, "premium_content_used": false
   }
 ]
