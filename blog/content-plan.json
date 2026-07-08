@@ -121,16 +121,25 @@
   },
   {
     "date": "2026-07-02",
-    "title": "Did scribes change the New Testament?",
+    "date_updated": "2026-07-08",
+    "title": "Did Scribes Change the New Testament?",
     "slug": "did-scribes-change-the-new-testament",
     "primary_keyword": "did scribes change the New Testament",
-    "secondary_keywords": ["New Testament copying errors", "Bible manuscript variants", "was the New Testament corrupted"],
+    "secondary_keywords": ["New Testament copying errors", "Bible manuscript variants", "was the New Testament corrupted", "did scribes change the Bible", "New Testament variants explained"],
     "topic_cluster": "The Bible",
     "search_intent": "A reader wants to know whether copying errors destroyed confidence in the New Testament text.",
     "source_basis": ["answerable-blog-source-extract.md", "questions.json id b08"],
     "app_question_id": "b08",
     "used_approved_source_extract": true,
-    "premium_content_used": false
+    "premium_content_used": false,
+    "answer_system_quote_target": "Scribes copied the New Testament by hand, so variants exist, but variants are not the same as losing the text; manuscript witnesses can be compared and the Christian message has not been lost.",
+    "category_role": "supporting page",
+    "readability_refresh": "Simplified for Hemingway grade 9 or lower: shorter sentences, clearer variant definition, calmer reassurance and no AI mention because it is not directly relevant.",
+    "audience": ["regular Christians", "student ministry", "Bible reliability discussions", "evangelism training", "thoughtful seekers"],
+    "internal_links": ["/", "/blog/", "/#download", "/blog/bible-reliability-questions-without-sounding-defensive/", "/blog/could-the-disciples-have-hallucinated-jesus/", "/blog/what-to-do-when-you-dont-know-answer/"],
+    "likely_follow_up_questions": ["Did scribes make mistakes?", "Does that mean the New Testament was lost?", "Do major doctrines depend on disputed readings?", "Should Christians avoid this topic?"],
+    "natural_app_conversion_path": "Invite Christians to practise Bible reliability questions with model answers, Scripture-led study and a gracious posture.",
+    "strengthens_existing_cluster_or_starts_new_one": "Strengthens the Bible reliability cluster as the specific copying-error page alongside the broader Bible reliability article."
   },
   {
     "date": "2026-07-02",
