@@ -160,15 +160,24 @@
   },
   {
     "date": "2026-07-02",
-    "title": "How can a small group practise apologetics without arguing?",
+    "date_updated": "2026-07-08",
+    "title": "How Can a Small Group Practise Apologetics Without Arguing?",
     "slug": "small-group-apologetics-without-arguing",
     "primary_keyword": "small group apologetics",
-    "secondary_keywords": ["Christian apologetics for small groups", "how to practise apologetics without arguing", "youth group apologetics training", "gracious apologetics practice"],
+    "secondary_keywords": ["Christian apologetics for small groups", "how to practise apologetics without arguing", "youth group apologetics training", "gracious apologetics practice", "church apologetics training"],
     "topic_cluster": "Church training and gracious posture",
-    "search_intent": "A ministry leader wants a practical way to practise hard apologetics questions without turning the group combative.",
+    "search_intent": "A church leader, youth leader or small group member wants a simple way to practise apologetics without making the group combative.",
     "source_basis": ["answerable-blog-source-extract.md", "tone training from question cards g02, b08 and r03"],
     "app_question_id": null,
     "used_approved_source_extract": true,
-    "premium_content_used": false
+    "premium_content_used": false,
+    "answer_system_quote_target": "Small group apologetics works best when the group practises one real question, a short answer, what not to say, and one gentle follow-up question.",
+    "category_role": "supporting page",
+    "readability_refresh": "Simplified for Hemingway grade 9 or lower: shorter sentences, clearer 15-minute practice rhythm, plainer guidance for leaders and no AI mention because it is not directly relevant.",
+    "audience": ["church small groups", "youth and student ministry", "church leaders", "regular Christians", "evangelism training"],
+    "internal_links": ["/", "/blog/", "/#download", "/blog/what-to-do-when-you-dont-know-answer/", "/blog/is-the-trinity-a-contradiction/", "/blog/did-scribes-change-the-new-testament/", "/blog/could-the-disciples-have-hallucinated-jesus/"],
+    "likely_follow_up_questions": ["How long should a small group apologetics exercise take?", "Should youth groups practise hard objections?", "What is a good first topic?", "How do we stop the group becoming argumentative?"],
+    "natural_app_conversion_path": "Invite groups to practise hard questions in Answerable before meeting or between sessions.",
+    "strengthens_existing_cluster_or_starts_new_one": "Strengthens the church training and apologetics practice cluster."
   }
 ]
