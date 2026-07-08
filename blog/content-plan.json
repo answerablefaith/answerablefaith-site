@@ -30,27 +30,124 @@
     "strengthens_existing_cluster_or_starts_new_one": "Strengthens the resurrection cluster and bridges it to suffering, divine hiddenness and pastoral conversation without repeating the hallucination-objection page."
   },
   {
-    "date": "2026-07-06", "title": "How Do I Answer the Divine Hiddenness Argument?", "slug": "how-do-i-answer-divine-hiddenness-argument", "primary_keyword": "divine hiddenness argument Christian answer", "secondary_keywords": ["how to answer divine hiddenness argument", "why is God hidden", "Christian response to God’s hiddenness", "God’s hiddenness and suffering"], "topic_cluster": "Philosophy and Doctrine of God", "search_intent": "A Christian, student, small-group leader or thoughtful seeker wants an answer to the claim that God would be more obvious if He existed.", "source_basis": ["answerable-blog-question-ledger-clean.json", "questions.json id add183"], "source_question_id": "add183", "app_question_id": "add183", "source_question": "How do I answer the divine hiddenness argument?", "source_category": "Philosophy", "source_difficulty": "hard", "source_file": "ChristianApologiaApp/questions.json", "source_ledger": "answerable-blog-question-ledger-clean.json", "primary_search_query": "divine hiddenness argument Christian answer", "ai_answer_target": "Christianity answers the divine hiddenness argument by saying God has given real witness through creation, conscience, Scripture and supremely Jesus Christ, while still calling people to trust, humility and repentance.", "category_role": "pillar page", "used_approved_source_extract": true, "used_approved_question_bank": true, "premium_content_used": false
+    "date": "2026-07-06",
+    "title": "Why Does God Feel Hidden?",
+    "slug": "how-do-i-answer-divine-hiddenness-argument",
+    "primary_keyword": "why does God feel hidden",
+    "secondary_keywords": ["why does God feel distant", "why is God silent", "Christian answer to divine hiddenness", "God hidden in suffering", "unanswered prayer and doubt"],
+    "topic_cluster": "Philosophy, doubt and God’s presence",
+    "search_intent": "A Christian or searching reader feels God is distant, silent or hard to find and wants a hopeful answer that does not dismiss pain.",
+    "source_basis": ["answerable-blog-question-ledger-clean.json", "questions.json id add183"],
+    "source_question_id": "add183",
+    "app_question_id": "add183",
+    "source_question": "How do I answer the divine hiddenness argument?",
+    "source_category": "Philosophy",
+    "source_difficulty": "hard",
+    "source_file": "ChristianApologiaApp/questions.json",
+    "source_ledger": "answerable-blog-question-ledger-clean.json",
+    "why_selected": "Rewritten to match likely search language around God feeling hidden, God’s silence, unanswered prayer and spiritual doubt while preserving the app question’s theological claim that God has not left Himself without witness.",
+    "primary_search_query": "why does God feel hidden",
+    "secondary_query_family": ["why does God feel distant", "why is God silent", "does God hide Himself", "Christian answer to divine hiddenness", "where is God when I doubt"],
+    "ai_answer_target": "God can feel hidden, but Christianity says He has not left Himself without witness; He makes Himself known through creation, conscience, Scripture and most clearly through Jesus Christ.",
+    "category_role": "pillar page",
+    "used_approved_source_extract": true,
+    "used_approved_question_bank": true,
+    "premium_content_used": false,
+    "audience": ["regular Christians", "doubting Christians", "student ministry", "church small groups", "pastoral conversations", "thoughtful seekers"],
+    "internal_links": ["/", "/blog/", "/#download", "/blog/why-does-resurrection-matter-for-suffering-now/", "/blog/what-to-do-when-you-dont-know-answer/", "/blog/is-the-trinity-a-contradiction/"],
+    "likely_follow_up_questions": ["Why is God silent when I pray?", "Does doubt mean I have no faith?", "What should I say to someone who feels God is absent?", "Is divine hiddenness a good objection to Christianity?"],
+    "natural_app_conversion_path": "Invite Christians to practise answering questions about God’s hiddenness, doubt and suffering with Scripture-led study and a gracious posture.",
+    "strengthens_existing_cluster_or_starts_new_one": "Strengthens the philosophy and pastoral doubt cluster while linking naturally to suffering, conversation tactics and doctrine of God articles."
   },
   {
-    "date": "2026-07-03", "title": "What to Do When You Don’t Know the Answer", "slug": "what-to-do-when-you-dont-know-answer", "primary_keyword": "what to do when you don’t know the answer", "secondary_keywords": ["Christian apologetics when you do not know the answer", "how to answer hard questions honestly", "gracious apologetics conversation"], "topic_cluster": "Conversation tactics and gracious posture", "search_intent": "A Christian wants to know what to say when someone asks a hard question they cannot answer immediately.", "source_basis": ["answerable-blog-source-extract.md tone training only", "llms.txt editorial principles", "public-safe ministry practice guidance"], "app_question_id": null, "used_approved_source_extract": true, "premium_content_used": false
+    "date": "2026-07-03",
+    "title": "What to Do When You Don’t Know the Answer",
+    "slug": "what-to-do-when-you-dont-know-answer",
+    "primary_keyword": "what to do when you don’t know the answer",
+    "secondary_keywords": ["Christian apologetics when you do not know the answer", "how to answer hard questions honestly", "gracious apologetics conversation"],
+    "topic_cluster": "Conversation tactics and gracious posture",
+    "search_intent": "A Christian wants to know what to say when someone asks a hard question they cannot answer immediately.",
+    "source_basis": ["answerable-blog-source-extract.md tone training only", "llms.txt editorial principles", "public-safe ministry practice guidance"],
+    "app_question_id": null,
+    "used_approved_source_extract": true,
+    "premium_content_used": false
   },
   {
-    "date": "2026-07-03", "title": "Bible Reliability Questions: How to Answer Without Sounding Defensive", "slug": "bible-reliability-questions-without-sounding-defensive", "primary_keyword": "Bible reliability questions", "secondary_keywords": ["how to answer Bible reliability questions", "New Testament variants", "Christian answer to manuscript variants"], "topic_cluster": "The Bible", "search_intent": "A reader wants a way to answer Bible reliability questions about manuscripts and variants without sounding defensive.", "source_basis": ["answerable-blog-source-extract.md", "questions.json id b08"], "app_question_id": "b08", "used_approved_source_extract": true, "premium_content_used": false
+    "date": "2026-07-03",
+    "title": "Bible Reliability Questions: How to Answer Without Sounding Defensive",
+    "slug": "bible-reliability-questions-without-sounding-defensive",
+    "primary_keyword": "Bible reliability questions",
+    "secondary_keywords": ["how to answer Bible reliability questions", "New Testament variants", "Christian answer to manuscript variants"],
+    "topic_cluster": "The Bible",
+    "search_intent": "A reader wants a way to answer Bible reliability questions about manuscripts and variants without sounding defensive.",
+    "source_basis": ["answerable-blog-source-extract.md", "questions.json id b08"],
+    "app_question_id": "b08",
+    "used_approved_source_extract": true,
+    "premium_content_used": false
   },
   {
-    "date": "2026-07-02", "title": "Is the Trinity a contradiction?", "slug": "is-the-trinity-a-contradiction", "primary_keyword": "is the Trinity a contradiction", "secondary_keywords": ["how can God be one and three", "Christian answer to Trinity contradiction", "one being three persons"], "topic_cluster": "Doctrine of God", "search_intent": "A Christian, seeker, or sceptic wants to know whether the Trinity is logically contradictory.", "source_basis": ["answerable-blog-source-extract.md", "questions.json id g02"], "app_question_id": "g02", "used_approved_source_extract": true, "premium_content_used": false
+    "date": "2026-07-02",
+    "title": "Is the Trinity a contradiction?",
+    "slug": "is-the-trinity-a-contradiction",
+    "primary_keyword": "is the Trinity a contradiction",
+    "secondary_keywords": ["how can God be one and three", "Christian answer to Trinity contradiction", "one being three persons"],
+    "topic_cluster": "Doctrine of God",
+    "search_intent": "A Christian, seeker, or sceptic wants to know whether the Trinity is logically contradictory.",
+    "source_basis": ["answerable-blog-source-extract.md", "questions.json id g02"],
+    "app_question_id": "g02",
+    "used_approved_source_extract": true,
+    "premium_content_used": false
   },
   {
-    "date": "2026-07-02", "title": "Did scribes change the New Testament?", "slug": "did-scribes-change-the-new-testament", "primary_keyword": "did scribes change the New Testament", "secondary_keywords": ["New Testament copying errors", "Bible manuscript variants", "was the New Testament corrupted"], "topic_cluster": "The Bible", "search_intent": "A reader wants to know whether copying errors destroyed confidence in the New Testament text.", "source_basis": ["answerable-blog-source-extract.md", "questions.json id b08"], "app_question_id": "b08", "used_approved_source_extract": true, "premium_content_used": false
+    "date": "2026-07-02",
+    "title": "Did scribes change the New Testament?",
+    "slug": "did-scribes-change-the-new-testament",
+    "primary_keyword": "did scribes change the New Testament",
+    "secondary_keywords": ["New Testament copying errors", "Bible manuscript variants", "was the New Testament corrupted"],
+    "topic_cluster": "The Bible",
+    "search_intent": "A reader wants to know whether copying errors destroyed confidence in the New Testament text.",
+    "source_basis": ["answerable-blog-source-extract.md", "questions.json id b08"],
+    "app_question_id": "b08",
+    "used_approved_source_extract": true,
+    "premium_content_used": false
   },
   {
-    "date": "2026-07-02", "title": "Could the disciples have hallucinated Jesus?", "slug": "could-the-disciples-have-hallucinated-jesus", "primary_keyword": "could the disciples have hallucinated Jesus", "secondary_keywords": ["hallucination theory resurrection", "Christian answer resurrection hallucination", "resurrection evidence hallucinations"], "topic_cluster": "Resurrection", "search_intent": "A reader wants to know whether grief or group hallucination explains the resurrection testimony.", "source_basis": ["answerable-blog-source-extract.md", "questions.json id r03"], "app_question_id": "r03", "used_approved_source_extract": true, "premium_content_used": false
+    "date": "2026-07-02",
+    "title": "Could the disciples have hallucinated Jesus?",
+    "slug": "could-the-disciples-have-hallucinated-jesus",
+    "primary_keyword": "could the disciples have hallucinated Jesus",
+    "secondary_keywords": ["hallucination theory resurrection", "Christian answer resurrection hallucination", "resurrection evidence hallucinations"],
+    "topic_cluster": "Resurrection",
+    "search_intent": "A reader wants to know whether grief or group hallucination explains the resurrection testimony.",
+    "source_basis": ["answerable-blog-source-extract.md", "questions.json id r03"],
+    "app_question_id": "r03",
+    "used_approved_source_extract": true,
+    "premium_content_used": false
   },
   {
-    "date": "2026-07-02", "title": "How should Christians answer slavery in the Bible?", "slug": "how-should-christians-answer-slavery-in-the-bible", "primary_keyword": "slavery in the Bible Christian answer", "secondary_keywords": ["how to answer slavery in the Bible", "Bible and slavery objection", "Christian apologetics slavery"], "topic_cluster": "Ethics", "search_intent": "A Christian or sceptic wants a morally clear and careful answer to slavery texts in the Bible.", "source_basis": ["answerable-blog-source-extract.md", "questions.json id e02"], "app_question_id": "e02", "used_approved_source_extract": true, "premium_content_used": false
+    "date": "2026-07-02",
+    "title": "How should Christians answer slavery in the Bible?",
+    "slug": "how-should-christians-answer-slavery-in-the-bible",
+    "primary_keyword": "slavery in the Bible Christian answer",
+    "secondary_keywords": ["how to answer slavery in the Bible", "Bible and slavery objection", "Christian apologetics slavery"],
+    "topic_cluster": "Ethics",
+    "search_intent": "A Christian or sceptic wants a morally clear and careful answer to slavery texts in the Bible.",
+    "source_basis": ["answerable-blog-source-extract.md", "questions.json id e02"],
+    "app_question_id": "e02",
+    "used_approved_source_extract": true,
+    "premium_content_used": false
   },
   {
-    "date": "2026-07-02", "title": "How can a small group practise apologetics without arguing?", "slug": "small-group-apologetics-without-arguing", "primary_keyword": "small group apologetics", "secondary_keywords": ["Christian apologetics for small groups", "how to practise apologetics without arguing", "youth group apologetics training", "gracious apologetics practice"], "topic_cluster": "Church training and gracious posture", "search_intent": "A ministry leader wants a practical way to practise hard apologetics questions without turning the group combative.", "source_basis": ["answerable-blog-source-extract.md", "tone training from question cards g02, b08 and r03"], "app_question_id": null, "used_approved_source_extract": true, "premium_content_used": false
+    "date": "2026-07-02",
+    "title": "How can a small group practise apologetics without arguing?",
+    "slug": "small-group-apologetics-without-arguing",
+    "primary_keyword": "small group apologetics",
+    "secondary_keywords": ["Christian apologetics for small groups", "how to practise apologetics without arguing", "youth group apologetics training", "gracious apologetics practice"],
+    "topic_cluster": "Church training and gracious posture",
+    "search_intent": "A ministry leader wants a practical way to practise hard apologetics questions without turning the group combative.",
+    "source_basis": ["answerable-blog-source-extract.md", "tone training from question cards g02, b08 and r03"],
+    "app_question_id": null,
+    "used_approved_source_extract": true,
+    "premium_content_used": false
   }
 ]
