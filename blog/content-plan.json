@@ -86,16 +86,25 @@
   },
   {
     "date": "2026-07-03",
+    "date_updated": "2026-07-08",
     "title": "Bible Reliability Questions: How to Answer Without Sounding Defensive",
     "slug": "bible-reliability-questions-without-sounding-defensive",
     "primary_keyword": "Bible reliability questions",
-    "secondary_keywords": ["how to answer Bible reliability questions", "New Testament variants", "Christian answer to manuscript variants"],
+    "secondary_keywords": ["how to answer Bible reliability questions", "New Testament variants", "Christian answer to manuscript variants", "can I trust the Bible", "was the Bible changed"],
     "topic_cluster": "The Bible",
-    "search_intent": "A reader wants a way to answer Bible reliability questions about manuscripts and variants without sounding defensive.",
+    "search_intent": "A reader wants a calm, clear way to answer Bible reliability questions about manuscripts and variants without sounding defensive.",
     "source_basis": ["answerable-blog-source-extract.md", "questions.json id b08"],
     "app_question_id": "b08",
     "used_approved_source_extract": true,
-    "premium_content_used": false
+    "premium_content_used": false,
+    "answer_system_quote_target": "Bible variants are real, but they do not mean the Bible’s message has been lost; many manuscript witnesses give evidence that can be compared.",
+    "category_role": "supporting page",
+    "readability_refresh": "Simplified for Hemingway grade 9 or lower: shorter sentences, plain-language variant explanation, clearer distinction from the scribes article, and no AI mention because it is not directly relevant.",
+    "audience": ["regular Christians", "student ministry", "church small groups", "evangelism preparation", "thoughtful seekers"],
+    "internal_links": ["/", "/blog/", "/#download", "/blog/did-scribes-change-the-new-testament/", "/blog/could-the-disciples-have-hallucinated-jesus/", "/blog/small-group-apologetics-without-arguing/"],
+    "likely_follow_up_questions": ["Do variants mean the New Testament was corrupted?", "Should Christians admit variants exist?", "Can I trust the Bible?", "What should I say about one disputed passage?"],
+    "natural_app_conversion_path": "Invite Christians to practise calm Bible reliability answers before real conversations happen.",
+    "strengthens_existing_cluster_or_starts_new_one": "Strengthens the Bible reliability cluster as a posture-and-summary page, while the scribes article handles the specific copying-error objection."
   },
   {
     "date": "2026-07-02",
