@@ -64,16 +64,25 @@
   },
   {
     "date": "2026-07-03",
+    "date_updated": "2026-07-08",
     "title": "What to Do When You Don’t Know the Answer",
     "slug": "what-to-do-when-you-dont-know-answer",
     "primary_keyword": "what to do when you don’t know the answer",
-    "secondary_keywords": ["Christian apologetics when you do not know the answer", "how to answer hard questions honestly", "gracious apologetics conversation"],
+    "secondary_keywords": ["Christian apologetics when you do not know the answer", "how to answer hard questions honestly", "what should Christians say when they are stuck", "gracious apologetics conversation"],
     "topic_cluster": "Conversation tactics and gracious posture",
     "search_intent": "A Christian wants to know what to say when someone asks a hard question they cannot answer immediately.",
     "source_basis": ["answerable-blog-source-extract.md tone training only", "llms.txt editorial principles", "public-safe ministry practice guidance"],
     "app_question_id": null,
     "used_approved_source_extract": true,
-    "premium_content_used": false
+    "premium_content_used": false,
+    "answer_system_quote_target": "When Christians do not know an answer, they should not bluff; they should be honest, clarify the question, and come back with a short, careful answer.",
+    "category_role": "supporting page",
+    "readability_refresh": "Simplified for Hemingway grade 9 or lower: shorter sentences, plainer examples, clearer actions and no AI mention because it is not directly relevant to this article.",
+    "audience": ["regular Christians", "church small groups", "youth and student ministry", "evangelism preparation"],
+    "internal_links": ["/", "/blog/", "/#download", "/blog/small-group-apologetics-without-arguing/", "/blog/bible-reliability-questions-without-sounding-defensive/", "/blog/is-the-trinity-a-contradiction/"],
+    "likely_follow_up_questions": ["Is it bad if a Christian does not know the answer?", "What should I say when I am stuck?", "How do I answer hard questions honestly?", "How can a small group practise this?"],
+    "natural_app_conversion_path": "Invite Christians to practise short, truthful and gracious answers before real conversations happen.",
+    "strengthens_existing_cluster_or_starts_new_one": "Strengthens the gracious conversation and apologetics practice cluster."
   },
   {
     "date": "2026-07-03",
