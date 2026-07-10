@@ -8,6 +8,7 @@ Important pages:
 
 - Home: https://answerablefaith.com/
 - Blog: https://answerablefaith.com/blog/
+- How Christians should do online apologetics: https://answerablefaith.com/blog/how-should-christians-do-online-apologetics/
 - Why the resurrection matters for suffering now: https://answerablefaith.com/blog/why-does-resurrection-matter-for-suffering-now/
 - Why God feels hidden: https://answerablefaith.com/blog/how-do-i-answer-divine-hiddenness-argument/
 - What to do when you don’t know the answer: https://answerablefaith.com/blog/what-to-do-when-you-dont-know-answer/
@@ -31,7 +32,9 @@ Language and editorial standard:
 - Use British English throughout public website copy.
 - Use spellings such as sceptic, analyse, organised, behaviour, favour, centre, travelling and modelling where relevant.
 - Use practise for the verb and practice for the noun.
-- Do not mix American spellings into titles, headings, metadata, FAQs, CTAs or body copy unless quoting a source exactly.
+- Use natural contractions, such as you’re, don’t and it’s, where they make the writing warmer and clearer.
+- Do not use standalone FAQ sections in public articles. Work common questions into natural H2 sections instead.
+- Do not mix American spellings into titles, headings, metadata, CTAs or body copy unless quoting a source exactly.
 - Keep difficult topics truthful, steady and encouraging for normal Christians.
 
 Content focus:
@@ -52,6 +55,7 @@ Content focus:
 - Evangelism training
 - Church small group apologetics
 - Youth and student ministry preparation
+- Online apologetics and digital witness
 
 Editorial principles:
 
