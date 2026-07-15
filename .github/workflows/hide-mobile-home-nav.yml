@@ -1,0 +1,68 @@
+name: Hide mobile homepage navigation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/hide-mobile-home-nav.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  hide-mobile-nav:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Hide homepage menu links on mobile only
+        shell: python
+        run: |
+          from pathlib import Path
+          import json
+          import re
+
+          path = Path('index.html')
+          source = path.read_text(encoding='utf-8')
+          pattern = r'(<script type="__bundler/template">\s*)(".*?")(\s*</script>)'
+          match = re.search(pattern, source, re.S)
+          if not match:
+              raise SystemExit('Bundled homepage template was not found.')
+
+          template = json.loads(match.group(2))
+          marker = '</style>'
+          rule = '''
+  /* Hide homepage header menu links on phone-sized screens only */
+  @media (max-width: 560px) {
+    header[data-screen-label="Hero"] > div:first-child > *:not(:first-child) {
+      display: none !important;
+    }
+
+    header[data-screen-label="Hero"] > div:first-child {
+      justify-content: flex-start !important;
+    }
+  }
+'''
+
+          if 'Hide homepage header menu links on phone-sized screens only' in template:
+              print('Mobile navigation rules are already present.')
+              raise SystemExit(0)
+          if marker not in template:
+              raise SystemExit('Homepage style block was not found.')
+
+          template = template.replace(marker, rule + marker, 1)
+          updated = source[:match.start(2)] + json.dumps(template, ensure_ascii=False) + source[match.end(2):]
+          path.write_text(updated, encoding='utf-8')
+
+      - name: Commit mobile navigation fix
+        run: |
+          if git diff --quiet -- index.html; then
+            echo "No homepage changes were needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Hide homepage menu links on mobile"
+          git push
