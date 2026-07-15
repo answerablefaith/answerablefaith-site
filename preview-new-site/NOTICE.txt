@@ -1,0 +1,1 @@
+The current preview uses the uploaded design bundles for visual review only. Production conversion will preserve SEO metadata, legal wording, internal links, sitemap, robots.txt, llms.txt and existing blog articles.
