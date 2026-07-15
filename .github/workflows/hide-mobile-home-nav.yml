@@ -32,18 +32,7 @@ jobs:
 
           template = json.loads(match.group(2))
           marker = '</style>'
-          rule = '''
-  /* Hide homepage header menu links on phone-sized screens only */
-  @media (max-width: 560px) {
-    header[data-screen-label="Hero"] > div:first-child > *:not(:first-child) {
-      display: none !important;
-    }
-
-    header[data-screen-label="Hero"] > div:first-child {
-      justify-content: flex-start !important;
-    }
-  }
-'''
+          rule = "\n  /* Hide homepage header menu links on phone-sized screens only */\n  @media (max-width: 560px) {\n    header[data-screen-label=\"Hero\"] > div:first-child > *:not(:first-child) {\n      display: none !important;\n    }\n\n    header[data-screen-label=\"Hero\"] > div:first-child {\n      justify-content: flex-start !important;\n    }\n  }\n"
 
           if 'Hide homepage header menu links on phone-sized screens only' in template:
               print('Mobile navigation rules are already present.')
