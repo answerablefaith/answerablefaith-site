@@ -1,0 +1,1 @@
+Redesign preview files. These are excluded from search indexing and do not replace the live site.
