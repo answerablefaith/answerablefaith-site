@@ -1,0 +1,57 @@
+name: Fix mobile homepage spacing
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fix-mobile-home-spacing.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fix-spacing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Reduce homepage spacing below 900px
+        shell: python
+        run: |
+          from pathlib import Path
+          import json
+          import re
+
+          path = Path('index.html')
+          source = path.read_text(encoding='utf-8')
+          pattern = r'(<script type="__bundler/template">\s*)(".*?")(\s*</script>)'
+          match = re.search(pattern, source, re.S)
+          if not match:
+              raise SystemExit('Bundled homepage template was not found.')
+
+          template = json.loads(match.group(2))
+          marker = '  @keyframes af-glow { 0%, 100% { opacity: 0.55; } 50% { opacity: 1; } }\n'
+          if '@media (max-width: 900px)' in template:
+              print('Mobile spacing rules are already present.')
+              raise SystemExit(0)
+          if marker not in template:
+              raise SystemExit('Expected homepage CSS marker was not found.')
+
+          replacement = '''  @keyframes af-glow { 0%, 100% { opacity: 0.55; } 50% { opacity: 1; } }\n\n  /* Homepage spacing adjustments for mobile and tablet only */\n  @media (max-width: 900px) {\n    header[data-screen-label="Hero"] > div:nth-of-type(2) {\n      grid-template-columns: 1fr !important;\n      gap: 24px !important;\n      padding: 48px 40px 56px !important;\n    }\n\n    header[data-screen-label="Hero"] > div:nth-of-type(2) > div:nth-child(2) {\n      display: none !important;\n    }\n\n    section[data-screen-label="Question marquee"] {\n      padding: 16px 0 !important;\n    }\n\n    section[data-screen-label="How it works"] {\n      padding: 56px 40px 64px !important;\n    }\n\n    section[data-screen-label="Practice mode feature"] {\n      grid-template-columns: 1fr !important;\n      gap: 32px !important;\n      padding: 24px 40px 72px !important;\n    }\n\n    section[data-screen-label="Conversation partners feature"] > div:nth-of-type(2) {\n      grid-template-columns: 1fr !important;\n      gap: 28px !important;\n      padding: 64px 40px 72px !important;\n    }\n\n    section[data-screen-label="Conversation partners feature"] > div:nth-of-type(2) > div:nth-child(2) {\n      display: none !important;\n    }\n  }\n\n  @media (max-width: 560px) {\n    header[data-screen-label="Hero"] > div:nth-of-type(2) {\n      padding: 40px 28px 48px !important;\n    }\n\n    section[data-screen-label="How it works"] {\n      padding: 48px 28px 56px !important;\n    }\n\n    section[data-screen-label="Practice mode feature"] {\n      padding: 16px 28px 64px !important;\n    }\n\n    section[data-screen-label="Conversation partners feature"] > div:nth-of-type(2) {\n      padding: 56px 28px 64px !important;\n    }\n  }\n'''
+
+          template = template.replace(marker, replacement, 1)
+          updated = source[:match.start(2)] + json.dumps(template, ensure_ascii=False) + source[match.end(2):]
+          path.write_text(updated, encoding='utf-8')
+
+      - name: Commit homepage spacing fix
+        run: |
+          if git diff --quiet -- index.html; then
+            echo "No homepage changes were needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Reduce mobile homepage spacing"
+          git push
