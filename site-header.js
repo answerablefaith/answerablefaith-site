@@ -27,4 +27,12 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+
+  var iosAppLink = document.querySelector('a.store-button[href="https://apps.apple.com/gb/app/answerable/id6785974132"]');
+
+  if (iosAppLink) {
+    iosAppLink.removeAttribute('onclick');
+    iosAppLink.removeAttribute('aria-disabled');
+    iosAppLink.setAttribute('aria-label', 'Download Answerable on the App Store');
+  }
 });
