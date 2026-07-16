@@ -9,9 +9,26 @@ document.addEventListener('DOMContentLoaded', function () {
     faqSchema.remove();
   });
 
-  var navToggles = document.querySelectorAll('.nav-toggle');
+  /* Keep article navigation identical to the redesigned public pages. */
+  document.querySelectorAll('.nav-links').forEach(function (navLinks) {
+    var links = [
+      { href: '/', label: 'Home' },
+      { href: '/support/', label: 'Support' },
+      { href: '/privacy/', label: 'Privacy Policy' },
+      { href: '/terms/', label: 'Terms of Service' }
+    ];
 
-  navToggles.forEach(function (navToggle) {
+    navLinks.replaceChildren();
+
+    links.forEach(function (item) {
+      var link = document.createElement('a');
+      link.href = item.href;
+      link.textContent = item.label;
+      navLinks.appendChild(link);
+    });
+  });
+
+  document.querySelectorAll('.nav-toggle').forEach(function (navToggle) {
     var nav = navToggle.closest('.nav');
     var navLinks = nav ? nav.querySelector('.nav-links') : document.querySelector('.nav-links');
 
@@ -20,12 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     navToggle.addEventListener('click', function () {
       var isOpen = navToggle.getAttribute('aria-expanded') === 'true';
       navToggle.setAttribute('aria-expanded', String(!isOpen));
-
-      if (isOpen) {
-        navLinks.classList.remove('is-open');
-      } else {
-        navLinks.classList.add('is-open');
-      }
+      navLinks.classList.toggle('is-open', !isOpen);
     });
 
     navLinks.querySelectorAll('a').forEach(function (link) {
