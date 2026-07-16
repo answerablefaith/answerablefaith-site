@@ -1,6 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
   document.body.classList.add('site-header-fix');
 
+  document.querySelectorAll('.faq').forEach(function (faqSection) {
+    faqSection.remove();
+  });
+
+  document.querySelectorAll('script[data-faq-schema]').forEach(function (faqSchema) {
+    faqSchema.remove();
+  });
+
   var navToggles = document.querySelectorAll('.nav-toggle');
 
   navToggles.forEach(function (navToggle) {
