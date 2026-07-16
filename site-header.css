@@ -1,45 +1,53 @@
-/* Shared Answerable Faith header - single source of truth */
+/* Shared Answerable Faith article header — matches the redesigned site navigation */
 html { scroll-padding-top: 96px; }
 
 body.site-header-fix {
-  --header-max-width: 1120px;
-  --header-ink: var(--ink, #071427);
-  --header-navy: var(--navy, #082b4a);
-  --header-navy-2: var(--navy-2, #061f36);
+  --header-max-width: 1180px;
+  --header-ink: #1e2433;
+  --header-navy: #1e2433;
+  --header-gold: #b89a4a;
 }
 
 body.site-header-fix > .wrap:first-child,
 body.site-header-fix .wrap:has(> .nav) {
-  width: min(var(--header-max-width), calc(100% - 36px)) !important;
+  width: min(var(--header-max-width), calc(100% - 40px)) !important;
   margin: 0 auto !important;
 }
 
+/*
+ * Article pages keep their content in .wrap, so the navigation is made
+ * full-bleed here while its contents stay aligned to the redesigned pages.
+ */
 body.site-header-fix .nav {
   box-sizing: border-box !important;
-  min-height: 88px !important;
-  height: 88px !important;
-  padding: 0 !important;
+  width: 100vw !important;
+  min-height: 82px !important;
+  height: 82px !important;
+  margin-left: calc(50% - 50vw) !important;
+  padding-left: max(20px, calc((100vw - var(--header-max-width)) / 2)) !important;
+  padding-right: max(20px, calc((100vw - var(--header-max-width)) / 2)) !important;
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  gap: 18px !important;
+  gap: 24px !important;
   position: sticky !important;
   top: 0 !important;
   z-index: 999 !important;
-  background: rgba(255,255,255,0.92) !important;
+  background: rgba(255, 255, 255, 0.96) !important;
   backdrop-filter: blur(18px) !important;
   -webkit-backdrop-filter: blur(18px) !important;
-  border-bottom: 1px solid rgba(7,20,39,0.07) !important;
+  border-bottom: 1px solid rgba(30, 36, 51, 0.09) !important;
+  box-shadow: 0 1px 0 rgba(30, 36, 51, 0.02) !important;
 }
 
 body.site-header-fix .brand {
   display: inline-flex !important;
   align-items: center !important;
-  gap: 14px !important;
+  gap: 12px !important;
   text-decoration: none !important;
   color: var(--header-ink) !important;
-  font-weight: 780 !important;
-  font-size: 24px !important;
+  font-weight: 700 !important;
+  font-size: 21px !important;
   line-height: 1 !important;
   letter-spacing: -0.025em !important;
   white-space: nowrap !important;
@@ -47,8 +55,8 @@ body.site-header-fix .brand {
 }
 
 body.site-header-fix .logo {
-  width: 44px !important;
-  height: 44px !important;
+  width: 40px !important;
+  height: 40px !important;
   display: grid !important;
   place-items: center !important;
   flex: 0 0 auto !important;
@@ -59,8 +67,8 @@ body.site-header-fix .logo {
 }
 
 body.site-header-fix .logo img {
-  width: 38px !important;
-  height: 38px !important;
+  width: 36px !important;
+  height: 36px !important;
   object-fit: contain !important;
   display: block !important;
 }
@@ -69,7 +77,7 @@ body.site-header-fix .nav-links {
   display: flex !important;
   align-items: center !important;
   justify-content: flex-end !important;
-  gap: 4px !important;
+  gap: 24px !important;
   flex-wrap: nowrap !important;
   margin-left: auto !important;
 }
@@ -77,22 +85,23 @@ body.site-header-fix .nav-links {
 body.site-header-fix .nav-links a {
   display: inline-flex !important;
   align-items: center !important;
-  min-height: 34px !important;
-  padding: 8px 10px !important;
-  border-radius: 999px !important;
-  color: rgba(7,20,39,0.66) !important;
+  min-height: 36px !important;
+  padding: 6px 0 !important;
+  border-radius: 0 !important;
+  color: rgba(30, 36, 51, 0.68) !important;
   text-decoration: none !important;
   font-size: 13px !important;
   line-height: 1.1 !important;
-  font-weight: 650 !important;
+  font-weight: 600 !important;
   white-space: nowrap !important;
   background: transparent !important;
+  transition: color 160ms ease !important;
 }
 
 body.site-header-fix .nav-links a:hover,
 body.site-header-fix .nav-links a.active {
   color: var(--header-navy) !important;
-  background: rgba(8,43,74,0.06) !important;
+  background: transparent !important;
 }
 
 body.site-header-fix .nav-toggle {
@@ -101,18 +110,17 @@ body.site-header-fix .nav-toggle {
   align-items: center !important;
   justify-content: center !important;
   gap: 7px !important;
-  min-height: 38px !important;
-  padding: 7px 10px !important;
-  border-radius: 10px !important;
-  border: 1.2px solid rgba(7,20,39,0.16) !important;
-  background: rgba(255,255,255,0.86) !important;
+  min-height: 40px !important;
+  padding: 8px 11px !important;
+  border-radius: 8px !important;
+  border: 1px solid rgba(30, 36, 51, 0.15) !important;
+  background: #fff !important;
   color: var(--header-ink) !important;
   font: inherit !important;
   font-size: 0.86rem !important;
   line-height: 1 !important;
   font-weight: 700 !important;
   cursor: pointer !important;
-  box-shadow: 0 4px 12px rgba(7,20,39,0.04) !important;
 }
 
 body.site-header-fix .nav-toggle .hamburger {
@@ -131,46 +139,39 @@ body.site-header-fix .nav-toggle .hamburger span {
   background: currentColor !important;
 }
 
-@media (max-width: 920px) {
-  body.site-header-fix .nav-links a {
-    padding-left: 8px !important;
-    padding-right: 8px !important;
-    font-size: 12.5px !important;
-  }
-}
-
 @media (max-width: 760px) {
   html { scroll-padding-top: 72px; }
 
   body.site-header-fix > .wrap:first-child,
   body.site-header-fix .wrap:has(> .nav),
   body.site-header-fix .wrap {
-    width: min(100% - 24px, 1120px) !important;
+    width: min(100% - 24px, 1180px) !important;
   }
 
   body.site-header-fix .nav {
-    min-height: 60px !important;
+    min-height: 64px !important;
     height: auto !important;
-    padding: 8px 0 !important;
+    margin-left: calc(50% - 50vw) !important;
+    padding: 10px 12px !important;
     align-items: center !important;
     flex-direction: row !important;
     flex-wrap: wrap !important;
   }
 
   body.site-header-fix .brand {
-    font-size: clamp(1.02rem, 4.6vw, 1.34rem) !important;
+    font-size: clamp(1.02rem, 4.6vw, 1.3rem) !important;
     gap: 8px !important;
     min-width: 0 !important;
   }
 
   body.site-header-fix .logo {
-    width: 32px !important;
-    height: 32px !important;
+    width: 34px !important;
+    height: 34px !important;
   }
 
   body.site-header-fix .logo img {
-    width: 27px !important;
-    height: 27px !important;
+    width: 29px !important;
+    height: 29px !important;
   }
 
   body.site-header-fix .nav-toggle {
@@ -184,10 +185,10 @@ body.site-header-fix .nav-toggle .hamburger span {
     width: 100% !important;
     margin: 8px 0 0 !important;
     padding: 8px !important;
-    border-radius: 16px !important;
-    background: rgba(255,255,255,0.98) !important;
-    border: 1px solid rgba(7,20,39,0.10) !important;
-    box-shadow: 0 12px 30px rgba(7,20,39,0.08) !important;
+    border-radius: 8px !important;
+    background: #fff !important;
+    border: 1px solid rgba(30, 36, 51, 0.10) !important;
+    box-shadow: 0 12px 30px rgba(30, 36, 51, 0.08) !important;
     gap: 5px !important;
   }
 
@@ -200,19 +201,14 @@ body.site-header-fix .nav-toggle .hamburger span {
     display: block !important;
     min-height: 0 !important;
     padding: 12px 13px !important;
-    border-radius: 12px !important;
-    color: var(--header-navy-2) !important;
-    background: rgba(8,43,74,0.035) !important;
+    border-radius: 6px !important;
+    color: var(--header-navy) !important;
+    background: rgba(30, 36, 51, 0.035) !important;
     font-size: 14.5px !important;
-  }
-
-  body.site-header-fix .nav-links a.active {
-    background: rgba(8,43,74,0.08) !important;
   }
 }
 
 @media (max-width: 390px) {
   body.site-header-fix .brand { font-size: 1.02rem !important; }
-  body.site-header-fix .nav-toggle { min-height: 36px !important; padding: 6px 9px !important; font-size: 0.82rem !important; gap: 6px !important; border-radius: 9px !important; }
-  body.site-header-fix .nav-toggle .hamburger { width: 17px !important; height: 12px !important; }
+  body.site-header-fix .nav-toggle { min-height: 38px !important; padding: 7px 9px !important; font-size: 0.82rem !important; }
 }
