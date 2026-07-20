@@ -8,6 +8,7 @@ Important pages:
 
 - Home: https://answerablefaith.com/
 - Blog: https://answerablefaith.com/blog/
+- Did Jesus say “I am God; worship me”?: https://answerablefaith.com/blog/did-jesus-say-i-am-god-worship-me/
 - What Son of God means: https://answerablefaith.com/blog/what-does-son-of-god-mean/
 - Can you lose your salvation?: https://answerablefaith.com/blog/can-you-lose-your-salvation/
 - How Christians should do online apologetics: https://answerablefaith.com/blog/how-should-christians-do-online-apologetics/
@@ -25,8 +26,8 @@ Important pages:
 
 Public blog source:
 
-- Use `answerable-blog-source-extract.md` as the public source map for blog writing.
-- That file contains selected question-card material only from `ChristianApologiaApp/questions.json`.
+- Use `blog/questions.json` as the approved source bank for new articles.
+- Base each new article on one specific public-safe question-and-answer card.
 - Public articles should quote or closely adapt the approved question-and-answer source material where possible.
 
 Language and editorial standard:
