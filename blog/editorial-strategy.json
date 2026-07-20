@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "purpose": "Choose Answerable Faith articles from the approved app question bank using people-first SEO, answer-engine visibility, topical authority and pastoral usefulness.",
+  "last_updated": "2026-07-20",
+  "core_rule": "The question bank determines what may be written. Search demand, trends, cluster gaps and answer-system usefulness determine what should be written next.",
+  "hard_eligibility_gate": [
+    "The candidate must be one public-safe question-and-answer card from answerable-blog-question-ledger.json.",
+    "The question_id, core answer, reader question, H1 meaning, keyword family and search intent must not duplicate existing coverage.",
+    "The topic must fit Answerable Faith’s apologetics, pastoral and theological purpose.",
+    "The article must be supportable from Scripture and reliable named sources without invented claims.",
+    "A trend must never create a topic outside the approved question bank."
+  ],
+  "candidate_score_out_of_100": {
+    "current_search_demand_or_rising_interest": 25,
+    "strengthens_existing_topic_cluster": 20,
+    "clear_specific_question_people_ask": 15,
+    "strong_40_to_60_word_quote_target": 15,
+    "opportunity_to_outperform_weak_results": 10,
+    "pastoral_usefulness_and_app_relevance": 10,
+    "timeliness_without_becoming_short_lived_news": 5
+  },
+  "publishing_lanes": {
+    "MO": "Evergreen demand: prioritise durable high-intent questions such as suffering, Bible reliability, salvation, doubt and Jesus.",
+    "WE": "Cluster building: prioritise an unused question that deepens a strong existing topic cluster and creates useful internal links.",
+    "FR": "Trend responsive: prioritise a rising or timely search question only when it maps naturally to an unused approved question card; otherwise publish the best evergreen candidate."
+  },
+  "signals_in_priority_order": [
+    "Google Search Console rising queries, impressions, low-ranking pages and queries close to page one when access is available.",
+    "Bing Webmaster Tools keyword data and recommendations when access is available.",
+    "Current search results, related questions, autocomplete-style wording, competitor gaps and weak existing answers.",
+    "Current cultural or news interest only when an approved question card genuinely fits.",
+    "Existing Answerable Faith topic clusters, internal-link gaps and likely follow-up questions."
+  ],
+  "article_visibility_requirements": [
+    "Use one clear primary query and one coherent secondary query family.",
+    "Use a precise question-led H1 and answer the question within the first 100 words.",
+    "Include a self-contained 40–60 word Answer in brief that can be quoted accurately by answer systems.",
+    "Use practical question-led H2 sections, short paragraphs and descriptive internal links.",
+    "Use visible authorship, accurate dates, canonical URLs and matching BlogPosting and BreadcrumbList structured data.",
+    "Keep visible page content consistent with structured data.",
+    "Keep robots.txt open to legitimate search crawlers and OAI-SearchBot unless the site owner changes that policy.",
+    "Do not keyword-stuff, manufacture trends or publish thin content."
+  ],
+  "continuity_fallback": {
+    "condition": "No unused eligible question card is available, or the full question bank is temporarily unavailable.",
+    "action": "Refresh exactly one existing bank-backed article with the highest verified search opportunity. Improve clarity, answer coverage, internal links, metadata or structured data without changing the source question_id or creating a duplicate URL.",
+    "prohibited": [
+      "Do not invent a new app question or answer.",
+      "Do not publish filler.",
+      "Do not disable, pause or delete the automation.",
+      "Do not claim a new article was published when the run only refreshed an existing page."
+    ]
+  }
+}
