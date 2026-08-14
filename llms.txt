@@ -2,12 +2,13 @@
 
 Answerable Faith is a Christian apologetics training app and website at https://answerablefaith.com/.
 
-The app helps regular Christians, evangelical groups, church small groups, youth and student ministries, and ministry leaders practise clear, gracious answers to hard questions about Christianity.
+The app helps regular Christians, church groups, youth and student ministries, and ministry leaders practise clear, gracious answers to hard questions about Christianity.
 
 Important pages:
 
 - Home: https://answerablefaith.com/
 - Blog: https://answerablefaith.com/blog/
+- Does “firstborn” mean Jesus was created?: https://answerablefaith.com/blog/does-firstborn-mean-jesus-was-created/
 - How can God become man without stopping being God?: https://answerablefaith.com/blog/how-can-god-become-man-without-stopping-being-god/
 - Why does God need worship if He is perfect?: https://answerablefaith.com/blog/why-does-god-need-worship-if-he-is-perfect/
 - If Jesus is God, why didn’t He know the hour?: https://answerablefaith.com/blog/if-jesus-is-god-why-didnt-he-know-the-hour/
@@ -47,7 +48,6 @@ Language and editorial standard:
 - Use practise for the verb and practice for the noun.
 - Use natural contractions, such as you’re, don’t and it’s, where they make the writing warmer and clearer.
 - Do not use standalone FAQ sections in public articles. Work common questions into natural H2 sections instead.
-- Do not mix American spellings into titles, headings, metadata, CTAs or body copy unless quoting a source exactly.
 - Keep difficult topics truthful, steady and encouraging for normal Christians.
 
 Content focus:
@@ -57,26 +57,20 @@ Content focus:
 - Providence, sovereignty and human responsibility
 - Christology
 - Jesus as the eternal Son of God
-- Bible questions
-- Bible reliability, canon and manuscript variants
+- Bible questions and reliability
 - Supposed contradictions
 - Islam and Christianity
 - Resurrection
 - Salvation
 - Ethics
 - Philosophy
-- Conversation tactics
-- Gracious posture
-- Evangelism training
-- Church small group apologetics
-- Youth and student ministry preparation
-- Online apologetics and digital witness
-- Church scandals, institutional trust and Christian integrity
+- Conversation tactics and gracious posture
+- Evangelism and church training
 
 Editorial principles:
 
 - Do not invent theological claims.
-- Avoid straw-manning atheists, Muslims, Jewish readers, Jehovah’s Witnesses, deconstructing Christians, or spiritual seekers.
+- Avoid straw-manning people who disagree.
 - Keep answers clear enough for regular Christians and church groups.
 - Emphasise truth and posture: careful answers, patient tone, and gracious conversation.
 - Use Scripture carefully and avoid unsupported claims.
