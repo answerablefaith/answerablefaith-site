@@ -1,6 +1,96 @@
 [
   {
     "action": "new article",
+    "title": "Do Contradictions in the Resurrection Accounts Disprove the Event?",
+    "slug": "do-contradictions-in-resurrection-accounts-disprove-the-event",
+    "date": "2026-09-21",
+    "date_updated": "2026-09-21",
+    "primary_keyword": "do contradictions in resurrection accounts disprove the event",
+    "secondary_keywords": [
+      "resurrection account contradictions",
+      "Gospel resurrection discrepancies",
+      "how to reconcile resurrection accounts",
+      "women angels resurrection accounts"
+    ],
+    "topic_cluster": "Resurrection, Gospel reliability and supposed contradictions",
+    "search_intent": "A Christian, seeker or sceptic wants to know whether differences among Matthew, Mark, Luke and John about the empty tomb, women, angels, timing and appearances make the resurrection historically unreliable.",
+    "source_basis": [
+      "blog/questions.json id add061"
+    ],
+    "source_question_id": "add061",
+    "app_question_id": "add061",
+    "primary_search_query": "do contradictions in resurrection accounts disprove the event",
+    "secondary_query_family": [
+      "do the resurrection accounts contradict each other",
+      "how many women went to the tomb",
+      "one angel or two at the tomb",
+      "was it dark or sunrise at the tomb",
+      "can the resurrection accounts be harmonised"
+    ],
+    "answer_system_quote_target": "The resurrection accounts differ in which witnesses, angels and moments they emphasise, but differences are not contradictions unless the claims cannot both be true. The Gospels agree that Jesus died, was buried, the tomb was found empty by women, resurrection was announced, and the disciples encountered Jesus alive.",
+    "category_role": "resurrection-account discrepancy foundation page",
+    "audience": [
+      "regular Christians",
+      "sceptics",
+      "seekers",
+      "students",
+      "church small groups",
+      "people comparing the four Gospel resurrection narratives"
+    ],
+    "internal_links": [
+      "/blog/do-extraordinary-claims-require-extraordinary-evidence/",
+      "/blog/could-the-disciples-have-hallucinated-jesus/",
+      "/blog/was-jesus-really-crucified/",
+      "/blog/did-scribes-change-the-new-testament/"
+    ],
+    "backlink_opportunities": [
+      {
+        "from": "/blog/do-extraordinary-claims-require-extraordinary-evidence/",
+        "anchor_context": "whether discrepancies in the Gospel accounts weaken the historical case"
+      },
+      {
+        "from": "/blog/could-the-disciples-have-hallucinated-jesus/",
+        "anchor_context": "the reliability and variation of the resurrection testimony"
+      }
+    ],
+    "likely_follow_up_questions": [
+      "How many women went to the tomb?",
+      "Was it dark or sunrise when the women arrived?",
+      "Was there one angel or two?",
+      "Why does Mark end so abruptly?",
+      "Did Jesus appear first in Jerusalem or Galilee?"
+    ],
+    "app_conversion_path": "Invite Christians to practise distinguishing genuine contradictions from selective reporting and to answer resurrection discrepancies one claim at a time rather than relying on slogans.",
+    "cluster_role": "Adds a broad Gospel-discrepancy page to the resurrection cluster, connecting historical evidence, crucifixion, hallucination and textual-reliability pages while leaving narrower tomb-detail questions available for future approved articles.",
+    "selection_score": 99,
+    "selection_score_breakdown": {
+      "current_search_demand_or_rising_interest": 25,
+      "strengthens_existing_topic_cluster": 20,
+      "clear_specific_question_people_ask": 15,
+      "strong_40_to_60_word_quote_target": 15,
+      "opportunity_to_outperform_weak_results": 10,
+      "pastoral_usefulness_and_app_relevance": 10,
+      "timeliness_without_becoming_short_lived_news": 4
+    },
+    "search_trend_evidence": "Checked 21 September 2026. A substantial 11 September DebateReligion thread argues that constructing a coherent crucifixion-and-resurrection timeline from the four Gospels is impossible and attracted extended debate. August and May 2026 Christianity and AskAChristian discussions likewise ask how Gospel resurrection discrepancies should be reconciled. A fresh 21 September Christianity thread asking whether Jesus really rose again shows continuing resurrection demand. The topic is current while remaining evergreen.",
+    "low_response_rate_or_quality_gap": "Current replies often fall into two unsatisfying camps: either insisting every detail can be forced into a complete harmonised timeline, or treating any variation as proof of fabrication. The approved add061 card supports a stronger method: distinguish variation from direct contradiction, test each alleged conflict separately, acknowledge where harmonisations are inferential rather than certain, and focus on the central claims shared across the accounts.",
+    "duplicate_check_summary": "Passed against the current content-plan ledger, blog index, sitemap, llms.txt and published inventory. The site has a resurrection-evidence standards page, a hallucination page and a crucifixion page, but none owns the broader search intent of whether discrepancies among the resurrection narratives disprove the event. Narrow unused cards such as b13 and con070-con075 cover individual details; add061 is the correct parent page and was unused before this run.",
+    "full_bank_accounting_counts": {
+      "total_questions": 502,
+      "used_ids_before_run": 36,
+      "unused_ids_before_run": 466,
+      "deeply_evaluated_candidates": 5,
+      "candidate_notes": "add061 selected over add088 despite strong current UK assisted-dying news because the resurrection-discrepancy discussion has stronger cross-thread demand, directly strengthens an existing underdeveloped resurrection cluster, and maps more precisely to a broad approved parent card. b13 and con070-con075 are narrower children of the same intent; add165 is useful but currently less demanded.",
+      "method": "Read the current main-branch repository, retrieved the complete approved bank through blob fallback, checked the authoritative source-ID ledger and discovery files, compared fresh September 2026 web and forum demand, and selected add061 after verifying distinct search intent and cluster value."
+    },
+    "used_approved_question_bank": true,
+    "premium_content_used": false,
+    "theological_framework": "Orthodox Trinitarian and Reformed in substance, affirming the bodily resurrection of Jesus while distinguishing Scripture's shared historical claims from differences in narrative selection, sequence and emphasis.",
+    "readability_check": "Approximately 850 words, short paragraphs, direct question-led headings and plain British English target Hemingway grade 9 or below.",
+    "editorial_note": "No standalone FAQ or FAQPage schema, no noindex directive, no fabricated quotations or statistics. The article does not claim every proposed harmonisation is certain, handles Mark 16:9-20 transparently, and records IndexNow as unconfigured because repository search found no working implementation."
+  },
+  {
+    "action": "new article",
     "title": "Does Genesis Contradict Modern Science?",
     "slug": "does-genesis-contradict-modern-science",
     "date": "2026-09-18",
