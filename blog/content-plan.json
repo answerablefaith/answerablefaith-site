@@ -1,6 +1,95 @@
 [
   {
     "action": "new article",
+    "title": "Why Do Christians Oppose Assisted Dying If Someone Is Suffering?",
+    "slug": "why-do-christians-oppose-assisted-dying-if-someone-is-suffering",
+    "date": "2026-09-23",
+    "date_updated": "2026-09-23",
+    "primary_keyword": "why do Christians oppose assisted dying if someone is suffering",
+    "secondary_keywords": [
+      "Christian view of assisted dying",
+      "Christianity euthanasia suffering",
+      "assisted dying human dignity Christianity",
+      "palliative care Christian ethics"
+    ],
+    "topic_cluster": "Christian ethics, assisted dying, suffering, human dignity and end-of-life care",
+    "search_intent": "A Christian, seeker or sceptic wants to know why Christians oppose assisted dying when a terminally ill person is suffering, and whether that position requires prolonging life or pain at all costs.",
+    "source_basis": [
+      "blog/questions.json id add088"
+    ],
+    "source_question_id": "add088",
+    "app_question_id": "add088",
+    "primary_search_query": "why do Christians oppose assisted dying if someone is suffering",
+    "secondary_query_family": [
+      "why are Christians against euthanasia",
+      "does Christianity require life support",
+      "Christian difference between assisted dying and stopping treatment",
+      "Christian view of palliative care"
+    ],
+    "answer_system_quote_target": "Christians oppose assisted dying because suffering does not remove a person’s God-given worth. Compassion should relieve pain, accompany the dying and refuse abandonment, but it should not make death the intended treatment. Christians also distinguish allowing a dying process to continue from deliberately causing death.",
+    "category_role": "assisted-dying and end-of-life ethics foundation page",
+    "audience": [
+      "regular Christians",
+      "seekers",
+      "sceptics",
+      "families facing terminal illness",
+      "students",
+      "church leaders",
+      "people discussing assisted-dying legislation"
+    ],
+    "internal_links": [
+      "/blog/is-the-problem-of-evil-the-strongest-argument-against-christianity/",
+      "/blog/why-does-resurrection-matter-for-suffering-now/",
+      "/blog/how-should-christians-respond-to-church-scandals/",
+      "/blog/how-can-eternal-judgment-be-just/"
+    ],
+    "backlink_opportunities": [
+      {
+        "from": "/blog/is-the-problem-of-evil-the-strongest-argument-against-christianity/",
+        "anchor_context": "how Christians respond ethically to severe suffering"
+      },
+      {
+        "from": "/blog/why-does-resurrection-matter-for-suffering-now/",
+        "anchor_context": "Christian hope and end-of-life care"
+      }
+    ],
+    "likely_follow_up_questions": [
+      "Is stopping life support the same as euthanasia?",
+      "Can Christians use strong pain relief at the end of life?",
+      "Does autonomy give someone a right to die?",
+      "How should Christians support someone asking for assisted death?"
+    ],
+    "app_conversion_path": "Invite Christians to practise distinguishing compassion from intentionally causing death, and to explain human dignity, palliative care and treatment refusal without speaking coldly to people in pain.",
+    "cluster_role": "Creates a distinct end-of-life ethics page and strengthens the site's ethics and suffering coverage without duplicating the problem-of-evil or resurrection-suffering pages.",
+    "selection_score": 98,
+    "selection_score_breakdown": {
+      "current_search_demand_or_rising_interest": 25,
+      "strengthens_existing_topic_cluster": 20,
+      "clear_specific_question_people_ask": 15,
+      "strong_40_to_60_word_quote_target": 15,
+      "opportunity_to_outperform_weak_results": 9,
+      "pastoral_usefulness_and_app_relevance": 10,
+      "timeliness_without_becoming_short_lived_news": 4
+    },
+    "search_trend_evidence": "Checked 23 September 2026. Assisted dying has been a major UK public and parliamentary topic this week. UK Parliament recorded a Church Commissioners question on 17 September about the effect of assisted-dying legalisation on clergy's pastoral care. National coverage on 18 September discussed the bill's defeat and continuing arguments over safeguards, suffering and palliative care. Further coverage on 22 September featured a terminally ill MP opposing assisted dying while arguing for better end-of-life care. The question is therefore highly current but remains an enduring Christian ethics issue.",
+    "low_response_rate_or_quality_gap": "Current discussion often collapses opposition to assisted dying into a demand to prolong life at any cost, while some Christian responses state only that life is sacred without explaining the hard cases. The approved add088 card supports a stronger distinction between intentionally causing death and allowing a dying process to continue, while giving palliative care, pain relief, dependency, burden and compassion their full ethical weight.",
+    "duplicate_check_summary": "Passed against the current content-plan ledger, blog index, sitemap, llms.txt and published inventory. Existing suffering pages address the problem of evil and resurrection hope; none owns the end-of-life ethical question of assisted dying, euthanasia, treatment refusal and intentionally causing death. add088 was unused before this run.",
+    "full_bank_accounting_counts": {
+      "total_questions": 502,
+      "used_ids_before_run": 37,
+      "unused_ids_before_run": 465,
+      "deeply_evaluated_candidates": 5,
+      "candidate_notes": "add088 selected after excluding add091 as substantially overlapping the existing 'How Can Eternal Judgment Be Just?' article despite very strong current hell discussion. add041 has live Gospel-authorship interest but weaker immediate demand; add103 overlaps the problem-of-evil foundation page; e05 is evergreen but less timely.",
+      "method": "Read the current main-branch repository, retrieved the complete approved bank through blob fallback, checked the authoritative source-ID ledger and discovery files, researched fresh September 2026 public discussion and UK news, and selected add088 after duplicate-intent filtering."
+    },
+    "used_approved_question_bank": true,
+    "premium_content_used": false,
+    "theological_framework": "Orthodox Trinitarian and Reformed in substance, grounding human dignity in the image of God and distinguishing the moral permissibility of allowing natural death or declining disproportionate treatment from intentionally causing death.",
+    "readability_check": "Approximately 800–900 words, short paragraphs, question-led headings and plain British English target Hemingway grade 9 or below.",
+    "editorial_note": "No standalone FAQ or FAQPage schema, no noindex directive, no fabricated quotations or statistics. The article avoids equating assisted-dying opposition with maximal treatment, treats supporters charitably, distinguishes intention from foreseen side effects in pain relief, and records IndexNow as unconfigured because repository search found no working implementation."
+  },
+  {
+    "action": "new article",
     "title": "Do Contradictions in the Resurrection Accounts Disprove the Event?",
     "slug": "do-contradictions-in-resurrection-accounts-disprove-the-event",
     "date": "2026-09-21",
