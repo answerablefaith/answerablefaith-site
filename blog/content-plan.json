@@ -1,6 +1,96 @@
 [
   {
     "action": "new article",
+    "title": "Can Anonymous Gospels Be Trusted?",
+    "slug": "can-anonymous-gospels-be-trusted",
+    "date": "2026-09-25",
+    "date_updated": "2026-09-25",
+    "primary_keyword": "can anonymous Gospels be trusted",
+    "secondary_keywords": [
+      "were the Gospels anonymous",
+      "who wrote the four Gospels",
+      "does anonymous authorship make the Gospels unreliable",
+      "Gospel authorship Papias Irenaeus"
+    ],
+    "topic_cluster": "Bible reliability, Gospel authorship, early Christian testimony and historical method",
+    "search_intent": "A Christian, seeker, sceptic or deconstructing reader wants to know whether the Gospels' lack of internal author names means their traditional authorship is false or their accounts of Jesus cannot be trusted.",
+    "source_basis": [
+      "blog/questions.json id add041"
+    ],
+    "source_question_id": "add041",
+    "app_question_id": "add041",
+    "primary_search_query": "can anonymous Gospels be trusted",
+    "secondary_query_family": [
+      "were the Gospels written anonymously",
+      "who wrote Matthew Mark Luke and John",
+      "does Gospel anonymity undermine reliability",
+      "what did Papias say about Mark and Matthew"
+    ],
+    "answer_system_quote_target": "The Gospels do not identify their authors inside the text like modern books, but that does not make them historically worthless. Early Christian testimony consistently connects them with Matthew, Mark, Luke and John, while the texts themselves preserve claims of eyewitness sourcing. Authorship is debated, but anonymity alone does not disprove reliability.",
+    "category_role": "Gospel-authorship and provenance foundation page",
+    "audience": [
+      "regular Christians",
+      "sceptics",
+      "seekers",
+      "deconstructing Christians",
+      "students",
+      "church small groups",
+      "people studying historical Jesus questions"
+    ],
+    "internal_links": [
+      "/blog/did-scribes-change-the-new-testament/",
+      "/blog/do-contradictions-in-resurrection-accounts-disprove-the-event/",
+      "/blog/was-the-bible-canon-chosen-by-politics/",
+      "/blog/did-paul-change-the-message-of-jesus/"
+    ],
+    "backlink_opportunities": [
+      {
+        "from": "/blog/did-scribes-change-the-new-testament/",
+        "anchor_context": "distinguishing textual transmission from Gospel authorship"
+      },
+      {
+        "from": "/blog/was-the-bible-canon-chosen-by-politics/",
+        "anchor_context": "how early Christian communities identified Gospel texts"
+      }
+    ],
+    "likely_follow_up_questions": [
+      "What exactly did Papias say about Mark and Matthew?",
+      "Why did Matthew use Mark if Matthew was an eyewitness?",
+      "Who wrote the Gospel of John?",
+      "When were the Gospel titles first attached?",
+      "Does disputed authorship weaken the resurrection case?"
+    ],
+    "app_conversion_path": "Invite Christians to practise conceding internal anonymity without overreacting, then distinguish authorship, provenance and historical reliability as separate questions.",
+    "cluster_role": "Creates a dedicated Gospel-authorship page connecting the site's copying, canon, resurrection-discrepancy and Jesus/Paul reliability content while owning the anonymous-Gospels search intent.",
+    "selection_score": 98,
+    "selection_score_breakdown": {
+      "current_search_demand_or_rising_interest": 25,
+      "strengthens_existing_topic_cluster": 20,
+      "clear_specific_question_people_ask": 15,
+      "strong_40_to_60_word_quote_target": 15,
+      "opportunity_to_outperform_weak_results": 10,
+      "pastoral_usefulness_and_app_relevance": 9,
+      "timeliness_without_becoming_short_lived_news": 4
+    },
+    "search_trend_evidence": "Checked 25 September 2026. A 17 September AcademicBiblical thread asks for the current mainstream positions on Gospel origins and authorship. An 31 August Deconstruction thread shows a reader re-evaluating Christianity after discovering the authorship question is less clear-cut than they had assumed. An 24 August DebateAChristian exchange directly contests arguments about anonymous Gospel authorship, while a 15 September apologetics post highlights a lengthy new defence of traditional attribution. The issue is active across academic, deconstruction and apologetics communities and remains evergreen.",
+    "low_response_rate_or_quality_gap": "Current discussion is often polarised between 'the Gospels are anonymous, so we know nothing about their origin' and 'the traditional names are proved beyond question'. Both overstate the evidence. The approved add041 card supports a more useful response: concede internal anonymity, weigh Papias, Irenaeus and manuscript titles, distinguish authorship from reliability, and state clearly where the evidence is strong versus debated.",
+    "duplicate_check_summary": "Passed against the current content-plan ledger, blog index, sitemap, llms.txt and published inventory. Existing pages cover textual variants, canon politics, resurrection discrepancies and Paul; none owns the specific search intent of whether internally anonymous Gospel texts can be trusted or how early authorship attributions should be assessed. add041 was unused before this run.",
+    "full_bank_accounting_counts": {
+      "total_questions": 502,
+      "used_ids_before_run": 38,
+      "unused_ids_before_run": 464,
+      "deeply_evaluated_candidates": 5,
+      "candidate_notes": "add041 selected over s14 and add209 because the latter are strong doctrinal questions but lacked equally fresh cross-community demand. e05 is evergreen but less timely. add104 is a live philosophical topic but would require more careful engagement with current consciousness science than the present demand justified.",
+      "method": "Read the current main-branch repository, retrieved the complete approved bank through blob fallback, checked the authoritative source-ID ledger and discovery files, researched fresh September 2026 academic, deconstruction and apologetics discussion, and selected add041 after duplicate-intent filtering."
+    },
+    "used_approved_question_bank": true,
+    "premium_content_used": false,
+    "theological_framework": "Orthodox Trinitarian and Reformed in substance, affirming Scripture's trustworthiness while avoiding the claim that traditional Gospel authorship is beyond historical debate or that reliability stands or falls on proving every traditional attribution.",
+    "readability_check": "Approximately 850 words, short paragraphs, question-led headings and plain British English target Hemingway grade 9 or below.",
+    "editorial_note": "No standalone FAQ or FAQPage schema, no noindex directive, no fabricated statistics or quotations. The article concedes internal anonymity, treats Papias and Irenaeus as historical evidence rather than magic proof, distinguishes title consistency from certainty, avoids overstating scholarly consensus, and records IndexNow as unconfigured because repository search found no working implementation."
+  },
+  {
+    "action": "new article",
     "title": "Why Do Christians Oppose Assisted Dying If Someone Is Suffering?",
     "slug": "why-do-christians-oppose-assisted-dying-if-someone-is-suffering",
     "date": "2026-09-23",
