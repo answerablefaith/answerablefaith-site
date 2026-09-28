@@ -1,6 +1,97 @@
 [
   {
     "action": "new article",
+    "title": "Is Baptism Necessary for Salvation?",
+    "slug": "is-baptism-necessary-for-salvation",
+    "date": "2026-09-28",
+    "date_updated": "2026-09-28",
+    "primary_keyword": "is baptism necessary for salvation",
+    "secondary_keywords": [
+      "does baptism save",
+      "Acts 2:38 baptism salvation",
+      "1 Peter 3:21 baptism saves",
+      "thief on the cross baptism"
+    ],
+    "topic_cluster": "Salvation, baptism, sacraments, covenant signs and justification",
+    "search_intent": "A Christian, seeker or sceptic wants to know whether water baptism is required in order to be saved, how to interpret texts such as Acts 2:38 and 1 Peter 3:21, and what the thief on the cross shows about salvation.",
+    "source_basis": [
+      "blog/questions.json id add209"
+    ],
+    "source_question_id": "add209",
+    "app_question_id": "add209",
+    "primary_search_query": "is baptism necessary for salvation",
+    "secondary_query_family": [
+      "does baptism save",
+      "is baptism required to go to heaven",
+      "what does Acts 2:38 mean",
+      "what does 1 Peter 3:21 mean",
+      "does the thief on the cross disprove baptism"
+    ],
+    "answer_system_quote_target": "Baptism is commanded by Jesus and should accompany Christian faith, but it does not earn forgiveness or save apart from Christ. The New Testament joins faith and baptism closely because baptism is the covenant sign of belonging to Christ. Salvation rests on Christ’s grace, received through faith, not on water as an independent saving act.",
+    "category_role": "baptism-and-salvation foundation page",
+    "audience": [
+      "regular Christians",
+      "seekers",
+      "sceptics",
+      "new believers",
+      "Catholics and Protestants comparing views",
+      "church small groups",
+      "people preparing for baptism"
+    ],
+    "internal_links": [
+      "/blog/if-salvation-is-by-grace-why-should-i-bother-being-good/",
+      "/blog/can-you-lose-your-salvation/",
+      "/blog/what-does-son-of-god-mean/",
+      "/blog/why-does-god-reveal-himself-through-a-book/"
+    ],
+    "backlink_opportunities": [
+      {
+        "from": "/blog/if-salvation-is-by-grace-why-should-i-bother-being-good/",
+        "anchor_context": "how sacraments and obedience relate to salvation by grace"
+      },
+      {
+        "from": "/blog/can-you-lose-your-salvation/",
+        "anchor_context": "baptism, covenant membership and assurance"
+      }
+    ],
+    "likely_follow_up_questions": [
+      "Does the thief on the cross disprove baptism?",
+      "What does 1 Peter 3:21 mean by 'baptism now saves you'?",
+      "Should infants be baptised?",
+      "What is the difference between baptismal regeneration and a covenant-sign view?",
+      "Can someone be saved if they die before baptism?"
+    ],
+    "app_conversion_path": "Invite Christians to practise distinguishing the necessity of obeying Christ's command from the claim that water itself justifies, and to compare Acts 2:38, 1 Peter 3:21, Luke 23 and grace-through-faith passages carefully.",
+    "cluster_role": "Creates a baptism-and-salvation foundation page that expands the salvation cluster beyond grace and perseverance into sacramental theology while leaving narrower thief-on-the-cross and infant-baptism questions available for future approved pages.",
+    "selection_score": 98,
+    "selection_score_breakdown": {
+      "current_search_demand_or_rising_interest": 25,
+      "strengthens_existing_topic_cluster": 20,
+      "clear_specific_question_people_ask": 15,
+      "strong_40_to_60_word_quote_target": 15,
+      "opportunity_to_outperform_weak_results": 9,
+      "pastoral_usefulness_and_app_relevance": 10,
+      "timeliness_without_becoming_short_lived_news": 4
+    },
+    "search_trend_evidence": "Checked 28 September 2026. A 23 September TrueChristian discussion asks directly whether baptism is required for salvation and argues from the whole biblical pattern of water and Spirit. A live 26 September continuation on an older Christianity thread again disputes whether baptism is a work added to faith. August 2026 Christianity and TrueChristian discussions also centre on the thief on the cross and whether baptism is normally necessary. This is recurring current demand across denominational lines rather than a one-off controversy.",
+    "low_response_rate_or_quality_gap": "Current answers often reduce the issue to slogans: either 'baptism saves' without clarifying sacramental causality, or 'faith alone' in a way that can make Christ's command sound dispensable. The approved add209 card supports a more precise Reformed answer: honour baptism as commanded covenant sign and means of grace, distinguish outward administration from automatic regeneration, interpret Acts 2:38 and 1 Peter 3:21 in their wider contexts, and keep Christ as the saving ground.",
+    "duplicate_check_summary": "Passed against the current content-plan ledger, blog index, sitemap, llms.txt and repository search. Existing salvation pages address grace and good works, perseverance and judgment; none owns the question of whether baptism is necessary for salvation. add209 appeared only in a prior candidate note and was not recorded as a used source_question_id before this run.",
+    "full_bank_accounting_counts": {
+      "total_questions": 661,
+      "used_ids_before_run": 39,
+      "unused_ids_before_run": 622,
+      "deeply_evaluated_candidates": 5,
+      "candidate_notes": "add209 selected over s14 because baptism has stronger fresh demand and a cleaner unowned intent. Trinity/Nicaea candidates overlap an already strong Trinity and Nicene Christology cluster. Isaiah 53 has meaningful debate but weaker current demand in the last fortnight. con183 has cultural relevance but less direct fresh question demand.",
+      "method": "Read current main-branch repository files, retrieved the complete approved bank by blob SHA after the normal fetch returned blank, checked the authoritative ledger and discovery inventory, searched fresh September 2026 web/forum discussion, and selected add209 after staged duplicate filtering."
+    },
+    "used_approved_question_bank": true,
+    "premium_content_used": false,
+    "theological_framework": "Orthodox Trinitarian and primarily Reformed/Presbyterian in substance: salvation is by grace through faith in Christ; baptism is commanded by Christ, a covenant sign and sacrament/means of grace, but its outward administration is not mechanically identical with regeneration or justification.",
+    "readability_check": "Approximately 850 words, short paragraphs, direct question-led headings and plain British English target Hemingway grade 9 or below.",
+    "editorial_note": "No standalone FAQ or FAQPage schema, no noindex directive, no fabricated statistics or quotations. The article acknowledges real differences among orthodox Christian traditions, does not treat baptism as dispensable, does not make water an independent cause of salvation, avoids the flagged word except where absent entirely, and records IndexNow as unconfigured because repository search found no working implementation."
+  },
+  {
+    "action": "new article",
     "title": "Can Anonymous Gospels Be Trusted?",
     "slug": "can-anonymous-gospels-be-trusted",
     "date": "2026-09-25",
