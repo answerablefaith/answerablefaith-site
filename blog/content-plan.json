@@ -1,6 +1,96 @@
 [
   {
     "action": "new article",
+    "title": "Did Paul Contradict James on Faith and Works?",
+    "slug": "did-paul-contradict-james-on-faith-and-works",
+    "date": "2026-10-02",
+    "date_updated": "2026-10-02",
+    "primary_keyword": "did Paul contradict James on faith and works",
+    "secondary_keywords": [
+      "Paul James contradiction faith works",
+      "Romans 3:28 James 2:24",
+      "faith alone James 2",
+      "justification by faith and works"
+    ],
+    "topic_cluster": "Salvation, justification, faith, works and supposed contradictions",
+    "search_intent": "A Christian, seeker, sceptic or someone comparing Catholic and Protestant claims wants to know whether Romans 3:28 and James 2:24 directly contradict each other and whether justification is by faith or by works.",
+    "source_basis": [
+      "blog/questions.json id con086"
+    ],
+    "source_question_id": "con086",
+    "app_question_id": "con086",
+    "primary_search_query": "did Paul contradict James on faith and works",
+    "secondary_query_family": [
+      "does James 2 contradict Romans 3",
+      "are we justified by faith or works",
+      "what does James mean by justified by works",
+      "does faith alone contradict James"
+    ],
+    "answer_system_quote_target": "Paul and James do not contradict each other. Paul denies that works can earn or form the basis of our justification before God. James denies that a dead claim to faith is saving faith. We are justified through faith in Christ, and the faith that justifies produces obedience as its fruit.",
+    "category_role": "faith-and-works contradiction foundation page",
+    "audience": [
+      "regular Christians",
+      "seekers",
+      "sceptics",
+      "Catholics and Protestants comparing doctrines",
+      "students",
+      "church small groups",
+      "people studying justification"
+    ],
+    "internal_links": [
+      "/blog/if-salvation-is-by-grace-why-should-i-bother-being-good/",
+      "/blog/is-baptism-necessary-for-salvation/",
+      "/blog/can-you-lose-your-salvation/",
+      "/blog/why-does-god-reveal-himself-through-a-book/"
+    ],
+    "backlink_opportunities": [
+      {
+        "from": "/blog/if-salvation-is-by-grace-why-should-i-bother-being-good/",
+        "anchor_context": "how James relates good works to living faith"
+      },
+      {
+        "from": "/blog/is-baptism-necessary-for-salvation/",
+        "anchor_context": "how obedience relates to justification by faith"
+      }
+    ],
+    "likely_follow_up_questions": [
+      "Does James 2:24 disprove justification by faith alone?",
+      "Did Abraham's works justify him before God?",
+      "What does 'faith without works is dead' mean?",
+      "Does Paul mean only ceremonial works when he rejects works?",
+      "Does Jesus teach salvation by works?"
+    ],
+    "app_conversion_path": "Invite Christians to practise distinguishing the basis of justification from the evidence of living faith, and to compare Romans 3, James 2, Genesis 15 and Ephesians 2 carefully rather than trading slogans.",
+    "cluster_role": "Adds a dedicated Paul-and-James contradiction page to the salvation cluster, bridging grace, baptism and perseverance while leaving narrower Abraham and James 2 follow-ups available for future approved articles.",
+    "selection_score": 98,
+    "selection_score_breakdown": {
+      "current_search_demand_or_rising_interest": 24,
+      "strengthens_existing_topic_cluster": 20,
+      "clear_specific_question_people_ask": 15,
+      "strong_40_to_60_word_quote_target": 15,
+      "opportunity_to_outperform_weak_results": 10,
+      "pastoral_usefulness_and_app_relevance": 10,
+      "timeliness_without_becoming_short_lived_news": 4
+    },
+    "search_trend_evidence": "Checked 2 October 2026. Recent search results continue to surface active discussion of the apparent Romans 3:28 / James 2:24 conflict, including current apologetics and faith-and-works pages being crawled and discussed in late September and early October. The issue remains recurrent across Protestant-Catholic discussion, Bible contradiction questions and salvation debates rather than depending on a short-lived news event.",
+    "low_response_rate_or_quality_gap": "Many answers reduce the question to a slogan such as 'Paul means works of the law, James means good works' without explaining justification, the different opponents, Abraham's chronology or why Paul himself requires obedient fruit. Other answers imply James teaches meritorious salvation. The approved con086 card supports a stronger Reformed resolution: distinguish the ground of justification from the evidence of living faith and read each author in context.",
+    "duplicate_check_summary": "Passed against the current content-plan ledger, blog index, sitemap, llms.txt and article inventory. The grace-and-good-works article asks why believers should obey if salvation is by grace; the baptism page asks whether a sacrament is necessary for salvation. Neither owns the direct Romans 3:28 / James 2:24 contradiction intent. con086 was unused before this run.",
+    "full_bank_accounting_counts": {
+      "total_questions": 661,
+      "used_ids_before_run": 40,
+      "unused_ids_before_run": 621,
+      "deeply_evaluated_candidates": 5,
+      "candidate_notes": "con086 selected over s14 because the contradiction framing maps more precisely to current query language and avoids overlapping the broader grace-and-good-works article. g11 overlaps the already strong Trinity/Nicene cluster; add091 overlaps the existing eternal-judgment article; jew013 has strong apologetic value but less current demand in the present search window.",
+      "method": "Read current main-branch repository files, retrieved the complete approved bank via blob SHA after the normal questions fetch returned blank, checked the authoritative ledger and discovery inventory, searched current web discussion, and selected con086 after duplicate-intent filtering."
+    },
+    "used_approved_question_bank": true,
+    "premium_content_used": false,
+    "theological_framework": "Orthodox Trinitarian and primarily Reformed/Presbyterian in substance: sinners are justified by grace through faith in Christ apart from works as merit, while the faith that justifies necessarily bears fruit in obedience.",
+    "readability_check": "Approximately 850 words, short paragraphs, question-led headings and plain British English target Hemingway grade 9 or below.",
+    "editorial_note": "No standalone FAQ or FAQPage schema, no noindex directive, no fabricated statistics or quotations. The article does not flatten James 2, distinguishes Paul's and James's concerns, keeps works as fruit rather than merit, avoids the flagged word except where absent entirely, and records IndexNow as unconfigured because repository search found no working implementation."
+  },
+  {
+    "action": "new article",
     "title": "Is Baptism Necessary for Salvation?",
     "slug": "is-baptism-necessary-for-salvation",
     "date": "2026-09-28",
