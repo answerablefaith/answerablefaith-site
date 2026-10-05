@@ -1,6 +1,96 @@
 [
   {
     "action": "new article",
+    "title": "Does the Bible Say Women Should Be Silent, Yet Women Prophesied?",
+    "slug": "does-the-bible-say-women-should-be-silent-yet-women-prophesied",
+    "date": "2026-10-05",
+    "date_updated": "2026-10-05",
+    "primary_keyword": "does the Bible say women should be silent yet women prophesied",
+    "secondary_keywords": [
+      "1 Corinthians 14 women silent contradiction",
+      "women prophesied 1 Corinthians 11",
+      "can women speak in church Bible",
+      "1 Corinthians 14:34 35 meaning"
+    ],
+    "topic_cluster": "Bible interpretation, supposed contradictions, women, prophecy and church order",
+    "search_intent": "A Christian, seeker or sceptic wants to know whether 1 Corinthians 14 contradicts 1 Corinthians 11 and Acts by telling women to be silent even though women prayed and prophesied.",
+    "source_basis": [
+      "blog/questions.json id con183"
+    ],
+    "source_question_id": "con183",
+    "app_question_id": "con183",
+    "primary_search_query": "does the Bible say women should be silent yet women prophesied",
+    "secondary_query_family": [
+      "why does Paul tell women to be silent",
+      "did women prophesy in church",
+      "does 1 Corinthians 14 contradict 1 Corinthians 11",
+      "what speech are women forbidden from in 1 Corinthians 14"
+    ],
+    "answer_system_quote_target": "Paul cannot mean that women must never speak in church, because 1 Corinthians 11 assumes women pray and prophesy. In 1 Corinthians 14, “silence” is part of a wider set of instructions for orderly worship. Christians disagree about the exact speech restricted, but the passages are not flat contradictions.",
+    "category_role": "women-silence and prophecy contradiction page",
+    "audience": [
+      "regular Christians",
+      "seekers",
+      "sceptics",
+      "students",
+      "church small groups",
+      "people studying women and church leadership",
+      "people troubled by difficult Pauline passages"
+    ],
+    "internal_links": [
+      "/blog/did-paul-contradict-james-on-faith-and-works/",
+      "/blog/do-contradictions-in-resurrection-accounts-disprove-the-event/",
+      "/blog/why-does-god-reveal-himself-through-a-book/",
+      "/blog/how-should-christians-do-online-apologetics/"
+    ],
+    "backlink_opportunities": [
+      {
+        "from": "/blog/why-does-god-reveal-himself-through-a-book/",
+        "anchor_context": "interpreting difficult passages in genre and context"
+      },
+      {
+        "from": "/blog/did-paul-contradict-james-on-faith-and-works/",
+        "anchor_context": "how apparent Pauline tensions require contextual reading"
+      }
+    ],
+    "likely_follow_up_questions": [
+      "What does 1 Timothy 2 mean by women not teaching or exercising authority?",
+      "Is prophecy the same as preaching?",
+      "Can women be pastors or elders?",
+      "Why does Paul tell women to ask their husbands at home?",
+      "What does Acts 2 mean by daughters prophesying?"
+    ],
+    "app_conversion_path": "Invite Christians to practise comparing 1 Corinthians 11, 1 Corinthians 14, Acts 2 and 1 Timothy 2 without turning one verse into a slogan or pretending debated applications are settled by one proof-text.",
+    "cluster_role": "Adds a women-and-church-order page to the supposed-contradictions and Bible-interpretation clusters, broadening topical authority beyond salvation and resurrection while leaving narrower office and prophecy questions available for future approved cards.",
+    "selection_score": 98,
+    "selection_score_breakdown": {
+      "current_search_demand_or_rising_interest": 25,
+      "strengthens_existing_topic_cluster": 20,
+      "clear_specific_question_people_ask": 15,
+      "strong_40_to_60_word_quote_target": 15,
+      "opportunity_to_outperform_weak_results": 9,
+      "pastoral_usefulness_and_app_relevance": 10,
+      "timeliness_without_becoming_short_lived_news": 4
+    },
+    "search_trend_evidence": "Checked 5 October 2026. A 28 September sermon discussion on 1 Corinthians 14:26–40 generated multiple audience questions about how women can prophesy if they are to be silent, whether prophecy differs from preaching, and what kind of authority is involved. A 18 September passage study likewise argues that the silence command must be read within the chapter's broader order-of-worship context. Search results remain dominated by competing interpretive summaries rather than one settled explanatory page, making this a current but durable question.",
+    "low_response_rate_or_quality_gap": "Current answers often choose one extreme: either treating 1 Corinthians 14:34–35 as an absolute ban on every female utterance, or dismissing the text because women speak elsewhere. The approved con183 card supports a stronger synthesis: 1 Corinthians 11 establishes that women did pray and prophesy, chapter 14 uses silence contextually for several speakers, and the exact restricted speech remains debated within wider questions of prophecy, order and authority.",
+    "duplicate_check_summary": "Passed against the current content-plan ledger, blog index, sitemap, llms.txt and published article inventory. No existing page owns the specific 1 Corinthians 11/14 women-silence-and-prophecy tension. Existing contradiction pages cover resurrection details, genealogies, Paul and James, and other subjects. con183 was unused before this run.",
+    "full_bank_accounting_counts": {
+      "total_questions": 661,
+      "used_ids_before_run": 41,
+      "unused_ids_before_run": 620,
+      "deeply_evaluated_candidates": 5,
+      "candidate_notes": "con183 selected over add104 because consciousness is current but less directly tied to the site's existing Bible-interpretation cluster; b06 has relevant denominational discussion but weaker response gap; jew013 has strong apologetic value but lower current demand; add083 is pastorally useful but current results were less sharply question-driven.",
+      "method": "Read current main-branch repository files, retrieved the complete approved bank via blob SHA after the normal questions fetch returned blank, checked the authoritative used-ID ledger and discovery inventory, researched current web discussion, and selected con183 after duplicate-intent filtering."
+    },
+    "used_approved_question_bank": true,
+    "premium_content_used": false,
+    "theological_framework": "Orthodox Trinitarian and primarily Reformed/Presbyterian in substance: affirming women's full dignity and Spirit-gifted service while distinguishing those gifts from the governing teaching office and acknowledging genuine debate over the exact speech regulated in 1 Corinthians 14.",
+    "readability_check": "Approximately 850 words, short paragraphs, question-led headings and plain British English target Hemingway grade 9 or below.",
+    "editorial_note": "No standalone FAQ or FAQPage schema, no noindex directive, no fabricated quotations or statistics. The article does not flatten the women-and-church-order debate, distinguishes clear textual facts from debated application, avoids the flagged word, and records IndexNow as unconfigured because repository search found no working implementation."
+  },
+  {
+    "action": "new article",
     "title": "Did Paul Contradict James on Faith and Works?",
     "slug": "did-paul-contradict-james-on-faith-and-works",
     "date": "2026-10-02",
