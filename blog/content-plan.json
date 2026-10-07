@@ -1,6 +1,96 @@
 [
   {
     "action": "new article",
+    "title": "If God Is Forgiving, Why Does Sin Still Need Judgment?",
+    "slug": "if-god-is-forgiving-why-does-sin-still-need-judgment",
+    "date": "2026-10-07",
+    "date_updated": "2026-10-07",
+    "primary_keyword": "if God is forgiving why does sin still need judgment",
+    "secondary_keywords": [
+      "why did Jesus need to die if God can forgive",
+      "why can't God just forgive sin",
+      "Old Testament forgiveness and the cross",
+      "why does forgiveness require judgment"
+    ],
+    "topic_cluster": "Salvation, atonement, justice, mercy and forgiveness",
+    "search_intent": "A Christian, seeker or sceptic wants to know why the cross and judgment are needed if God can forgive directly, especially because the Old Testament records God forgiving people before Jesus died.",
+    "source_basis": [
+      "blog/questions.json id s07"
+    ],
+    "source_question_id": "s07",
+    "app_question_id": "s07",
+    "primary_search_query": "if God is forgiving why does sin still need judgment",
+    "secondary_query_family": [
+      "why did Jesus need to die if God can forgive",
+      "why can't God just overlook sin",
+      "how could God forgive in the Old Testament before the cross",
+      "does forgiveness require punishment"
+    ],
+    "answer_system_quote_target": "God forgives sinners without treating evil as though it never mattered. Scripture presents God as both merciful and just. The cross is where those truths meet: sin is judged, Christ willingly bears judgment for His people, and forgiveness is given without God denying His own righteousness.",
+    "category_role": "atonement-necessity and forgiveness foundation page",
+    "audience": [
+      "regular Christians",
+      "seekers",
+      "sceptics",
+      "ex-Christians reconsidering atonement",
+      "students",
+      "church small groups",
+      "people questioning penal substitution"
+    ],
+    "internal_links": [
+      "/blog/how-can-eternal-judgment-be-just/",
+      "/blog/did-paul-contradict-james-on-faith-and-works/",
+      "/blog/if-salvation-is-by-grace-why-should-i-bother-being-good/",
+      "/blog/how-can-god-become-man-without-stopping-being-god/"
+    ],
+    "backlink_opportunities": [
+      {
+        "from": "/blog/how-can-eternal-judgment-be-just/",
+        "anchor_context": "why forgiveness does not cancel justice"
+      },
+      {
+        "from": "/blog/if-salvation-is-by-grace-why-should-i-bother-being-good/",
+        "anchor_context": "why grace rests on Christ's atoning work rather than moral scorekeeping"
+      }
+    ],
+    "likely_follow_up_questions": [
+      "Why can God not just overlook sin?",
+      "Is penal substitution unjust?",
+      "How can one man's death pay for many?",
+      "Why do Christians talk so much about blood?",
+      "How does the cross unite God's justice and mercy?"
+    ],
+    "app_conversion_path": "Invite Christians to practise answering the common objection that an all-powerful God should be able to forgive without the cross, while avoiding caricatures of the Father and Son and grounding the answer in Romans 3 and the unity of God's character.",
+    "cluster_role": "Builds a central atonement-and-forgiveness page that connects the site's salvation, justification, judgment and Christology articles while reserving narrower substitution, blood and representation questions for future approved cards.",
+    "selection_score": 99,
+    "selection_score_breakdown": {
+      "current_search_demand_or_rising_interest": 25,
+      "strengthens_existing_topic_cluster": 20,
+      "clear_specific_question_people_ask": 15,
+      "strong_40_to_60_word_quote_target": 15,
+      "opportunity_to_outperform_weak_results": 10,
+      "pastoral_usefulness_and_app_relevance": 10,
+      "timeliness_without_becoming_short_lived_news": 4
+    },
+    "search_trend_evidence": "Checked 7 October 2026. A 18 September ex-Christian thread titled 'A question no Christian was able to answer' asked why Jesus was needed if God could already forgive in Numbers 14 and drew about 290 upvotes plus extensive discussion. A 19 September follow-up thread again argued that God could forgive without sacrifice. An August Christianity thread asked directly why Jesus had to die for sins to be forgiven. The objection is currently active across Christian and ex-Christian communities and remains evergreen.",
+    "low_response_rate_or_quality_gap": "Current replies often answer with slogans such as 'God is just, so someone has to pay' or shift immediately to a preferred atonement theory without addressing the sharpest form of the objection: God appears to forgive before the cross, so what exactly does the cross accomplish? The approved s07 card supports a stronger answer by distinguishing forgiveness from moral indifference, using Romans 3:21-26 to connect prior forgiveness with Christ's atoning work, and refusing to pit the Father's justice against the Son's love.",
+    "duplicate_check_summary": "Passed against the current content-plan ledger, blog index, sitemap, llms.txt and published inventory. 'How Can Eternal Judgment Be Just?' owns proportionality and final judgment; 'Did Paul Contradict James?' owns faith and works; the grace-and-good-works page owns sanctification after salvation. No existing article owns the specific question of why judgment or the cross is needed if God can already forgive. s07 was unused before this run.",
+    "full_bank_accounting_counts": {
+      "total_questions": 661,
+      "used_ids_before_run": 42,
+      "unused_ids_before_run": 619,
+      "deeply_evaluated_candidates": 5,
+      "candidate_notes": "s07 selected over add068 because s07 directly matches the live 'if God forgave before Jesus, why the cross?' wording and gives broader cluster ownership. add068 is a close future child page. s06 and add078 focus more narrowly on substitution's justice. q712 is richer doctrinally but less directly phrased as the public objection. Other current Islam/Bible-preservation topics were active but more heavily covered by existing Answerable pages.",
+      "method": "Read the current main-branch repository, retrieved the complete 661-card approved bank via blob fallback after the standard question fetch returned empty content, checked the authoritative used-ID ledger and discovery inventory, researched current web and Reddit demand, and selected s07 after duplicate-intent filtering."
+    },
+    "used_approved_question_bank": true,
+    "premium_content_used": false,
+    "theological_framework": "Orthodox Trinitarian and primarily Reformed/Presbyterian in substance: God is inherently holy, just and merciful; Christ willingly bears judgment as the incarnate Son; Old Testament forgiveness is real and rests within the one saving plan fulfilled at the cross.",
+    "readability_check": "Approximately 850 words, short paragraphs, question-led headings and plain British English target Hemingway grade 9 or below.",
+    "editorial_note": "No standalone FAQ or FAQPage schema, no noindex directive, no fabricated statistics or quotations. The article acknowledges real Old Testament forgiveness, uses Romans 3 to connect prior forgiveness to the cross, avoids presenting the Father and Son as opposed, avoids the flagged word, and records IndexNow as unconfigured because repository search found no working implementation."
+  },
+  {
+    "action": "new article",
     "title": "Does the Bible Say Women Should Be Silent, Yet Women Prophesied?",
     "slug": "does-the-bible-say-women-should-be-silent-yet-women-prophesied",
     "date": "2026-10-05",
