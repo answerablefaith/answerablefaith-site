@@ -1,6 +1,83 @@
 [
   {
     "action": "new article",
+    "title": "What Does Original Sin Actually Mean?",
+    "slug": "what-does-original-sin-actually-mean",
+    "date": "2026-10-09",
+    "date_updated": "2026-10-09",
+    "primary_keyword": "what does original sin mean",
+    "secondary_keywords": [
+      "do we inherit Adam's sin",
+      "what is inherited guilt",
+      "original sin and corrupted nature",
+      "does Ezekiel 18 deny original sin"
+    ],
+    "topic_cluster": "Original sin, Adam, inherited corruption, guilt, representation and salvation",
+    "search_intent": "Understand original sin, inherited guilt and corruption, and how Ezekiel 18, Romans 5 and Christ's work relate.",
+    "source_question_id": "isl132",
+    "app_question_id": "isl132",
+    "primary_search_query": "what does original sin mean",
+    "secondary_query_family": [
+      "what is original sin in Christianity",
+      "are babies guilty of Adam's sin",
+      "difference between original guilt and corruption",
+      "Adam and Christ in Romans 5"
+    ],
+    "category_role": "Original sin foundation page",
+    "audience": [
+      "Christians",
+      "Muslims comparing theology",
+      "seekers",
+      "sceptics",
+      "students",
+      "church small groups"
+    ],
+    "internal_links": [
+      "/blog/if-god-is-forgiving-why-does-sin-still-need-judgment/",
+      "/blog/if-salvation-is-by-grace-why-should-i-bother-being-good/",
+      "/blog/did-paul-contradict-james-on-faith-and-works/",
+      "/blog/does-genesis-contradict-modern-science/"
+    ],
+    "backlink_opportunities": [
+      {
+        "from": "/blog/if-god-is-forgiving-why-does-sin-still-need-judgment/",
+        "anchor_context": "why humanity needs forgiveness"
+      },
+      {
+        "from": "/blog/if-salvation-is-by-grace-why-should-i-bother-being-good/",
+        "anchor_context": "why grace changes our nature"
+      }
+    ],
+    "likely_follow_up_questions": [
+      "Does Ezekiel 18 contradict original sin?",
+      "Does Islam have original sin?",
+      "Is it fair for Adam to represent humanity?",
+      "What happens to infants who die?",
+      "How does Christ reverse Adam's failure?"
+    ],
+    "app_conversion_path": "Practise explaining the differences between fallen nature, inherited guilt, individual responsibility and Christ's representative work charitably.",
+    "cluster_role": "Foundational doctrine page bridging Genesis, salvation, atonement and Muslim-Christian dialogue.",
+    "selection_score": 97,
+    "selection_score_breakdown": {
+      "current_search_demand_or_rising_interest": 24,
+      "strengthens_existing_topic_cluster": 20,
+      "clear_specific_question_people_ask": 15,
+      "strong_40_to_60_word_quote_target": 15,
+      "opportunity_to_outperform_weak_results": 9,
+      "pastoral_usefulness_and_app_relevance": 10,
+      "timeliness_without_becoming_short_lived_news": 4
+    },
+    "search_trend_evidence": "Checked 9 October 2026: A 7 October DebateReligion thread compared Islam and Christianity on original sin. August 2026 Christianity, TrueChristian and AskAChristian threads asked whether infants inherit guilt and how Romans 5 relates to Ezekiel 18. A June 2026 DebateACatholic debate asked whether inherited sin is just. These show qualitative recurring discussion, not measured search volume.",
+    "low_response_rate_or_quality_gap": "Discussion often conflates conscious commission, inherited corruption, representative guilt, and personal accountability; the article explains each and directly discusses fairness.",
+    "duplicate_check_summary": "isl132 was unused in the current ledger; no published index/sitemap page owned the original sin definition intent. Other approved cards isl135, add190 and jew026 address narrower follow-ups.",
+    "used_approved_question_bank": true,
+    "premium_content_used": false,
+    "theological_framework": "Orthodox Trinitarian, chiefly Reformed: imputed guilt and inherited corruption clearly distinguished; alternative orthodox Christian views acknowledged.",
+    "readability_check": "Plain British English, question-led sections, direct opening and carefully explained terms.",
+    "editorial_note": "Static template styling preserved; no FAQPage/noindex. IndexNow was not configured in the repo search; technical follow-up only. Ledger history retained."
+  },
+  {
+    "action": "new article",
     "title": "If God Is Forgiving, Why Does Sin Still Need Judgment?",
     "slug": "if-god-is-forgiving-why-does-sin-still-need-judgment",
     "date": "2026-10-07",
