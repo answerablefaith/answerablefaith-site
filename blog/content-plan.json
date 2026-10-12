@@ -1,6 +1,87 @@
 [
   {
     "action": "new article",
+    "title": "Why Should Christians Care About Justice If Salvation Is Spiritual?",
+    "slug": "why-should-christians-care-about-justice-if-salvation-is-spiritual",
+    "date": "2026-10-12",
+    "date_updated": "2026-10-12",
+    "publication_date": "2026-10-12",
+    "updated_date": "2026-10-12",
+    "primary_keyword": "why should Christians care about justice if salvation is spiritual",
+    "secondary_keywords": [
+      "Christianity salvation and social justice",
+      "does the Gospel require caring for the poor",
+      "Christian faith and justice",
+      "does justice earn salvation"
+    ],
+    "topic_cluster": "Christian ethics, neighbour-love, grace, Gospel, justice and mercy",
+    "search_intent": "Explain why biblical justice and mercy matter to Christians saved by grace and distinguish their practical duties from salvation by works or party-political allegiance.",
+    "source_question_id": "add151",
+    "app_question_id": "add151",
+    "source_basis": [
+      "blog/questions.json id add151"
+    ],
+    "primary_search_query": "why should Christians care about justice if salvation is spiritual",
+    "secondary_query_family": [
+      "does salvation by grace mean justice is optional",
+      "why does the Bible command care for the poor",
+      "what is the relationship between Gospel and social justice",
+      "is Christian justice the same as politics"
+    ],
+    "category_role": "Christian justice and grace foundation page",
+    "audience": [
+      "Christians",
+      "seekers",
+      "sceptics",
+      "students",
+      "church leaders",
+      "people asking whether Christian faith should affect the treatment of the poor and vulnerable"
+    ],
+    "internal_links": [
+      "/blog/if-salvation-is-by-grace-why-should-i-bother-being-good/",
+      "/blog/did-paul-contradict-james-on-faith-and-works/",
+      "/blog/how-should-christians-answer-slavery-in-the-bible/",
+      "/blog/how-should-christians-respond-to-church-scandals/"
+    ],
+    "backlink_opportunities": [
+      {
+        "from": "/blog/if-salvation-is-by-grace-why-should-i-bother-being-good/",
+        "anchor_context": "works of neighbour-love and justice flowing from grace"
+      },
+      {
+        "from": "/blog/how-should-christians-answer-slavery-in-the-bible/",
+        "anchor_context": "Christian duty to oppose exploitation"
+      }
+    ],
+    "likely_follow_up_questions": [
+      "How can Christians oppose racism from Scripture?",
+      "Can Christianity ground objective moral wrongs?",
+      "What is the relationship between Christian faith and politics?",
+      "How should Christians care for refugees and strangers?"
+    ],
+    "app_conversion_path": "Practise distinguishing the Gospel's saving work from its ethical fruits while answering genuine objections with conviction and care.",
+    "cluster_role": "Connects the grace-and-works cluster with the site's ethics, slavery and scandal articles while answering the separate justice-versus-spiritual-salvation intent.",
+    "selection_score": 97,
+    "selection_score_breakdown": {
+      "current_search_demand_or_rising_interest": 24,
+      "strengthens_existing_topic_cluster": 19,
+      "clear_specific_question_people_ask": 15,
+      "strong_40_to_60_word_quote_target": 15,
+      "opportunity_to_outperform_weak_results": 9,
+      "pastoral_usefulness_and_app_relevance": 10,
+      "timeliness_without_becoming_short_lived_news": 5
+    },
+    "search_trend_evidence": "Research checked 12 October 2026. Theos published a UK study on Christian nationalism and Britishness on 11 October, prompting public questions about cultural Christian identity versus Christian practice. A 10 October DebateAChristian discussion challenged Christians who speak often about sexual ethics while neglecting the poor; a 5 October discussion asked whether Christianity made the world more ethical. These are live prompts for an enduring question, not the article's thesis.",
+    "low_response_rate_or_quality_gap": "Much discussion equates Christian justice with a partisan political identity, while some Christian defences retreat into private belief and neglect tangible neighbour-love. The precise unresolved question is how salvation by grace leads to justice without turning justice into a way to earn salvation or replacing proclamation with politics.",
+    "duplicate_check_summary": "Compared with the 47-record authoritative ledger, 44 distinct used IDs, blog index, sitemap, llms and 47 published article folders. Existing grace-and-works and Paul/James pages treat justification and obedience; none owns the specific why-justice-if-salvation-is-spiritual intent. Card add151 was confirmed unused. Alternative approved cards e05 (objective morality), b06 (denominations), add150 (racism), add081 (atheist morality) were compared; add151 had the strongest fit to the new October public debate.",
+    "approved_bank_confirmation": "Full GitHub questions blob retrieved and parsed: 661 approved cards; add151 exact question and answer confirmed in bank; unused in content-plan before run.",
+    "used_approved_question_bank": true,
+    "theological_framework": "Orthodox Trinitarian, primarily Reformed: justification by grace alone, sanctification and embodied neighbour-love; justice is fruit of saving grace rather than merit or a substitute for Christ's atonement.",
+    "readability_check": "896 visible words including headings and CTA; clear British English, direct answer near the top, varied short paragraphs and question-led headings. Grade 9 or lower targeted, not independently measured.",
+    "editorial_note": "No FAQPage schema, no indexing restriction, no invented personal experiences. Bible texts linked; Theos primary 2026 research linked for bounded contextual claim. Recognises political disagreement among Christians without erasing biblical obligations. IndexNow not found in recursive repo tree, so technical configuration is a future improvement."
+  },
+  {
+    "action": "new article",
     "title": "What Does Original Sin Actually Mean?",
     "slug": "what-does-original-sin-actually-mean",
     "date": "2026-10-09",
