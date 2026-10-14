@@ -1,6 +1,88 @@
 [
   {
     "action": "new article",
+    "title": "Why Are There So Many Denominations If the Bible Is Clear?",
+    "slug": "why-are-there-so-many-christian-denominations",
+    "date": "2026-10-14",
+    "date_updated": "2026-10-14",
+    "publication_date": "2026-10-14",
+    "updated_date": "2026-10-14",
+    "primary_keyword": "why are there so many denominations if the Bible is clear",
+    "secondary_keywords": [
+      "why do Christians have different denominations",
+      "why Protestant Catholic and Orthodox churches disagree",
+      "is the Bible clear if Christians disagree",
+      "Bible clarity and Christian unity"
+    ],
+    "topic_cluster": "Scripture interpretation, denominational differences, church authority and Christian unity",
+    "search_intent": "Explain why Christians remain divided despite the Bible's clarity, distinguishing Gospel essentials, genuinely substantial doctrinal disagreements and human historical causes.",
+    "source_question_id": "b06",
+    "app_question_id": "b06",
+    "source_basis": [
+      "blog/questions.json id b06"
+    ],
+    "primary_search_query": "why are there so many denominations if the Bible is clear",
+    "secondary_query_family": [
+      "why are there so many Christian denominations",
+      "Catholic Protestant Orthodox differences",
+      "does denominational division disprove biblical clarity",
+      "how to tell which denomination is right"
+    ],
+    "category_role": "Christian denominations and clarity-of-Scripture foundation article",
+    "audience": [
+      "Christians",
+      "seekers",
+      "sceptics",
+      "people exploring Catholic, Orthodox and Protestant claims",
+      "students",
+      "church groups"
+    ],
+    "internal_links": [
+      "/blog/is-baptism-necessary-for-salvation/",
+      "/blog/did-paul-contradict-james-on-faith-and-works/",
+      "/blog/was-the-bible-canon-chosen-by-politics/",
+      "/blog/why-does-god-reveal-himself-through-a-book/"
+    ],
+    "backlink_opportunities": [
+      {
+        "from": "/blog/is-baptism-necessary-for-salvation/",
+        "anchor_context": "why baptism disagreement persists across denominations"
+      },
+      {
+        "from": "/blog/why-does-god-reveal-himself-through-a-book/",
+        "anchor_context": "biblical clarity and difficult interpretation"
+      }
+    ],
+    "likely_follow_up_questions": [
+      "How can Scripture be clear if Christians disagree?",
+      "Why do Protestants and Catholics disagree about authority?",
+      "Why do Christians baptise infants or believers?",
+      "What is the place of church councils and creeds?",
+      "How should Christians distinguish essentials from disputed doctrines?"
+    ],
+    "app_conversion_path": "Practise answering questions about division without dismissing concerns or misrepresenting other Christian traditions.",
+    "cluster_role": "Connects the existing Scripture authority, baptism, justification and canon-history pages through a new denominations-and-unity hub.",
+    "selection_score": 95,
+    "selection_score_breakdown": {
+      "current_search_demand_or_rising_interest": 23,
+      "strengthens_existing_topic_cluster": 20,
+      "clear_specific_question_people_ask": 15,
+      "strong_40_to_60_word_quote_target": 15,
+      "opportunity_to_outperform_weak_results": 8,
+      "pastoral_usefulness_and_app_relevance": 10,
+      "timeliness_without_becoming_short_lived_news": 4
+    },
+    "search_trend_evidence": "14 October 2026: The 13 October Summit Ministries interview with Fred Sanders addresses why be Protestant amid increased Catholic/Orthodox interest and how Scripture, tradition and justification relate; Reasonable Faith's 12 October response to a viral John 6 Catholic claim and infant-baptism exchange shows parallel active debates. On 13 October an AskAChristian question explicitly asks why Christianity has so many branches. These are qualitative current discussion signals, not quantified search volume.",
+    "low_response_rate_or_quality_gap": "Current answers often say all denominations are basically the same or treat every difference as proof that the Bible is unintelligible. Both fail to distinguish the central apostolic Gospel, questions that require more interpretation, genuine disagreements on authority and sacraments, and failures of human conduct.",
+    "duplicate_check_summary": "Card b06 was absent from the 48-record ledger and blog index, sitemap and 48 article folders. Existing baptism and faith/works pages discuss individual disagreements but do not own the broader denomination-vs-biblical-clarity intent. add044 is a related narrower future card, not a duplicate publication.",
+    "approved_bank_confirmation": "Retrieved the full 661-question bank through GitHub blob SHA and verified exact unused b06 question and answer.",
+    "used_approved_question_bank": true,
+    "theological_framework": "Orthodox Trinitarian and primarily Presbyterian/Reformed, recognising the clarity of Scripture in saving doctrine, the reality of disputed interpretations and the duty of church unity without treating substantial doctrinal conflict as trivial.",
+    "readability_check": "British English, direct answer near the top, 50-plus-word standalone brief, short question-led sections and accessible wording; grade target not independently measured.",
+    "editorial_note": "No FAQPage/noindex, no fabricated testimony; historic Westminster Confession chapter 1 section 7 linked, plus direct Scripture. Does not use prohibited wording. IndexNow not configured; recommend future technical implementation."
+  },
+  {
+    "action": "new article",
     "title": "Why Should Christians Care About Justice If Salvation Is Spiritual?",
     "slug": "why-should-christians-care-about-justice-if-salvation-is-spiritual",
     "date": "2026-10-12",
