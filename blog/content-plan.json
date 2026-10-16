@@ -1,6 +1,79 @@
 [
   {
     "action": "new article",
+    "title": "Could the Gospels Have Changed Before Our Earliest Manuscripts?",
+    "slug": "could-the-gospels-have-changed-before-our-earliest-manuscripts",
+    "date": "2026-10-16",
+    "date_updated": "2026-10-16",
+    "publication_date": "2026-10-16",
+    "updated_date": "2026-10-16",
+    "primary_keyword": "could the Gospels have changed before our earliest manuscripts",
+    "secondary_keywords": [
+      "earliest Gospel manuscript gap",
+      "were the Gospels rewritten before surviving copies",
+      "P52 papyrus dating",
+      "what New Testament manuscript variants prove"
+    ],
+    "topic_cluster": "Bible reliability, Gospel transmission and textual criticism",
+    "search_intent": "Determine whether the gap between original Gospels and surviving manuscripts gives grounds for wholesale textual corruption, distinguishing copying evidence from authorship and historical truth.",
+    "source_question_id": "b09",
+    "app_question_id": "b09",
+    "source_basis": [
+      "blog/questions.json question b09"
+    ],
+    "primary_search_query": "could the Gospels have changed before our earliest manuscripts",
+    "secondary_query_family": [
+      "were the Gospels changed before the oldest copies",
+      "do earliest Gospel manuscripts prove accurate preservation",
+      "does P52 date the Gospel of John",
+      "what do New Testament textual variants mean"
+    ],
+    "category_role": "Gospel manuscript gap and text-critical evidence hub",
+    "audience": [
+      "Christian readers",
+      "sceptics",
+      "students",
+      "Muslims comparing textual preservation",
+      "apologetics discussion groups"
+    ],
+    "internal_links": [
+      "/blog/can-anonymous-gospels-be-trusted/",
+      "/blog/did-scribes-change-the-new-testament/",
+      "/blog/did-christianity-change-jesus-original-message/",
+      "/blog/do-extraordinary-claims-require-extraordinary-evidence/"
+    ],
+    "backlink_opportunities": [
+      "/blog/did-scribes-change-the-new-testament/",
+      "/blog/can-anonymous-gospels-be-trusted/"
+    ],
+    "likely_follow_up_questions": [
+      "Why is P52 difficult to date precisely?",
+      "How do scholars choose between textual variants?",
+      "What does the longer ending of Mark reveal about transmission?",
+      "How do patristic quotations help reconstruct Gospel text?"
+    ],
+    "app_conversion_path": "Practise accurately distinguishing textual transmission, manuscript dating, authorship, historical claims and unfounded sweeping corruption claims.",
+    "cluster_role": "Bridges the text-variants, Gospel authorship and historical-Jesus clusters without repeating their principal search intents.",
+    "selection_score": 97,
+    "selection_score_breakdown": {
+      "current_search_demand_or_rising_interest": 25,
+      "strengthens_existing_topic_cluster": 20,
+      "clear_specific_question_people_ask": 15,
+      "strong_40_to_60_word_quote_target": 15,
+      "opportunity_to_outperform_weak_results": 9,
+      "pastoral_usefulness_and_app_relevance": 9,
+      "timeliness_without_becoming_short_lived_news": 4
+    },
+    "search_trend_evidence": "Bart Ehrman’s 6 October 2026 Misquoting Jesus podcast episode 'How Apologists Use (and Misuse) Manuscripts' examines P52, manuscript dating and inflated claims about textual preservation; 2026 debate over early Gospel testimonies and authorship has also continued. Public episode at https://learn.bartehrman.com/episode/0rMHFYBQeBo; primary academic discussion of P52 at https://www.cambridge.org/core/journals/new-testament-studies/article/abs/palaeography-precision-and-publicity-further-thoughts-on-pryliii457-p52/1D4E56BF0E9D4DDDA313D0C2754E2F28.",
+    "response_quality_gap_evidence": "Some apologetic content overstates what manuscript numbers or P52 prove, while sceptical commentary sometimes moves too fast from a gap in surviving copies to an alleged wholesale replacement. A useful direct response must distinguish survival, copying, authorship and whether narrated events happened.",
+    "duplicate_check_summary": "b09 confirmed unused in content-plan. Blog index and sitemap have separate articles on scribal changes, anonymous Gospel authorship, Jesus’ original message and extraordinary evidence; none owns the survival gap between Gospel composition and earliest extant manuscripts.",
+    "approved_bank_confirmation": "Question b09 exists in the complete 661-card blog/questions.json bank, retrieved through the GitHub blob SHA; was not in the 46-entry used-ID ledger before this run.",
+    "theological_framework": "Orthodox Trinitarian, Scripture-led and broadly Reformed; combines confidence in Scripture with measured historical claims and scholarly humility.",
+    "readability_editorial_notes": "British English, direct 58-word extractable answer, question-led sections, no FAQPage or noindex. Avoids unsupported claims about precise manuscript dates. IndexNow was not configured in checked repository search.",
+    "word_count_approx": 910
+  },
+  {
+    "action": "new article",
     "title": "Why Are There So Many Denominations If the Bible Is Clear?",
     "slug": "why-are-there-so-many-christian-denominations",
     "date": "2026-10-14",
