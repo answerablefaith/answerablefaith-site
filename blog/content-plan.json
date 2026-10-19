@@ -1,6 +1,82 @@
 [
   {
     "action": "new article",
+    "title": "Can Christianity Ground Objective Moral Right and Wrong?",
+    "slug": "can-christianity-ground-objective-morality",
+    "date": "2026-10-19",
+    "date_updated": "2026-10-19",
+    "primary_keyword": "can Christianity ground objective morality",
+    "secondary_keywords": [
+      "objective morality and God",
+      "can atheists be moral",
+      "Euthyphro dilemma Christian response",
+      "moral argument for God"
+    ],
+    "topic_cluster": "Ethics and philosophy of religion: objective morality, God's nature, human dignity",
+    "search_intent": "Does Christian theism provide an objective basis for right and wrong; is invoking God arbitrary; what about secular moral realism?",
+    "source_basis": [
+      "blog/questions.json e05"
+    ],
+    "source_question_id": "e05",
+    "app_question_id": "e05",
+    "primary_search_query": "can Christianity ground objective moral right and wrong",
+    "secondary_query_family": [
+      "what makes morality objective",
+      "is morality arbitrary if God commands it",
+      "can atheists recognise moral truths",
+      "can objective morality exist without God"
+    ],
+    "category_role": "objective morality philosophy-and-ethics foundation page",
+    "audience": [
+      "Christians in dialogue with atheists",
+      "sceptics",
+      "students",
+      "church study groups"
+    ],
+    "internal_links": [
+      "/blog/why-should-christians-care-about-justice-if-salvation-is-spiritual/",
+      "/blog/how-should-christians-answer-slavery-in-the-bible/",
+      "/blog/how-should-christians-respond-to-church-scandals/",
+      "/blog/how-can-christianity-be-uniquely-true-when-billions-believe-other-religions/"
+    ],
+    "backlink_opportunities": [
+      {
+        "from": "/blog/why-should-christians-care-about-justice-if-salvation-is-spiritual/",
+        "anchor_context": "why moral obligations have authority beyond preference"
+      },
+      {
+        "from": "/blog/how-should-christians-answer-slavery-in-the-bible/",
+        "anchor_context": "objective moral wrongs and God's image"
+      }
+    ],
+    "likely_follow_up_questions": [
+      "Can atheists be moral?",
+      "Can materialism account for human rights?",
+      "Is morality just evolution helping groups survive?",
+      "How should Christians answer the Canaanite conquest objection?"
+    ],
+    "app_conversion_path": "Practise distinguishing moral behaviour, moral knowledge and moral grounding while listening carefully to secular arguments.",
+    "cluster_role": "Foundational metaethical article linking the site's justice, slavery and religious-truth pages.",
+    "selection_score": 97,
+    "selection_score_breakdown": {
+      "current_search_demand_or_rising_interest": 24,
+      "strengthens_existing_topic_cluster": 19,
+      "clear_specific_question_people_ask": 15,
+      "strong_concise_answer_target": 15,
+      "opportunity_to_outperform_weak_results": 9,
+      "pastoral_usefulness_and_app_relevance": 10,
+      "timeliness_without_short_lived_news": 5
+    },
+    "search_trend_evidence": "On 2 October 2026 a DebateReligion thread 'Morality is NOT a problem for atheism' drew extensive discussion of how atheists recognise suffering and whether God solves the Euthyphro dilemma. A 5 October DebateAChristian open-question thread discussed whether Christianity improved ethics; its conversation continued through 15 October. On 12 October a TrueChristian thread reported a believer's shaken confidence after an atheist challenged divine commands and the killing of children. Public October discussion continues to ask for a serious account of moral obligation rather than insults.",
+    "response_quality_gap_evidence": "The popular retort 'atheists have no morality' fails to distinguish moral action, moral knowledge and moral grounding. Equally, answers invoking God without addressing arbitrary commands leave the Euthyphro objection intact. This article distinguishes all three and acknowledges secular moral realism as a live competitor.",
+    "duplicate_check_summary": "Verified e05 unused in the main-branch content-plan ledger. Checked live blog index, sitemap, llms and recursive article folders. Existing justice, slavery and church-scandals pages concern particular duties, historical wrongs or institutional failures; none owns metaethical grounding/objectivity intent. add081, add176, add177 and t02 are distinct narrower future topics. Five candidates evaluated: e05 (97), add177 (89), add081 (87), t02 (88), add176 (86).",
+    "approved_bank_confirmation": "Exact approved public-safe card e05 in full blob of blog/questions.json; confidence medium; previously unused.",
+    "theological_framework": "Orthodox Trinitarian and Reformed in substance; goodness grounded in God's nature; image of God confers dignity; all people can recognise moral obligations.",
+    "readability_check": "Approximately 875 words in article body including headings and related links; plain British English, short sentences and question-led sections.",
+    "editorial_notes": "Avoids claim atheists cannot be moral, engages Euthyphro and secular moral realism, rejects claims that every proposed harmony solves a difficult moral text, includes Bible links and Stanford Encyclopedia of Philosophy. No FAQPage, no noindex, no synthetic expertise. IndexNow not configured; recommend a genuine implementation rather than introducing credentials."
+  },
+  {
+    "action": "new article",
     "title": "Could the Gospels Have Changed Before Our Earliest Manuscripts?",
     "slug": "could-the-gospels-have-changed-before-our-earliest-manuscripts",
     "date": "2026-10-16",
