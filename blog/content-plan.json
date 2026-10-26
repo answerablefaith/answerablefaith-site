@@ -1,6 +1,98 @@
 [
   {
     "action": "new article",
+    "title": "What Happens to People Who Never Heard About Jesus?",
+    "slug": "what-happens-to-people-who-never-heard-about-jesus",
+    "date": "2026-10-26",
+    "date_updated": "2026-10-26",
+    "publication_date": "2026-10-26",
+    "updated_date": "2026-10-26",
+    "primary_keyword": "what happens to people who never heard about Jesus",
+    "secondary_keywords": [
+      "what about the unevangelised",
+      "do people who never hear the Gospel go to hell",
+      "does God judge people who have not heard of Christ",
+      "salvation and general revelation"
+    ],
+    "topic_cluster": "salvation, mission, general revelation and divine justice",
+    "search_intent": "Whether a just God condemns people without access to the Christian Gospel and what Scripture allows Christians to say about their eternal fate.",
+    "source_basis": [
+      "blog/questions.json id s12"
+    ],
+    "source_question_id": "s12",
+    "app_question_id": "s12",
+    "primary_search_query": "what happens to people who never heard about Jesus",
+    "secondary_query_family": [
+      "what happens to the unevangelised",
+      "can people be saved without hearing Jesus' name",
+      "how does God judge the unreached",
+      "do creation and conscience save"
+    ],
+    "answer_system_quote_target": "God will judge everyone justly, including those who never heard about Jesus. Scripture teaches that salvation comes through Christ alone and that creation and conscience make us accountable to God. It does not tell us the fate of every unevangelised person. Christians should avoid speculation, trust God's justice and share the Gospel.",
+    "category_role": "unevangelised-and-divine-justice foundation article",
+    "audience": [
+      "Christians with doubts",
+      "sceptics",
+      "mission-minded believers",
+      "seekers",
+      "church small groups"
+    ],
+    "internal_links": [
+      "/blog/how-can-christianity-be-uniquely-true-when-billions-believe-other-religions/",
+      "/blog/if-god-is-forgiving-why-does-sin-still-need-judgment/",
+      "/blog/how-can-eternal-judgment-be-just/",
+      "/blog/why-does-god-reveal-himself-through-a-book/"
+    ],
+    "backlink_opportunities": [
+      {
+        "from": "/blog/how-can-christianity-be-uniquely-true-when-billions-believe-other-religions/",
+        "anchor_context": "what about sincere people who never heard of Jesus"
+      },
+      {
+        "from": "/blog/how-can-eternal-judgment-be-just/",
+        "anchor_context": "the justice of judgment for people without access to the Gospel"
+      }
+    ],
+    "likely_follow_up_questions": [
+      "Can general revelation save someone?",
+      "What does Romans 2 say about conscience?",
+      "Can someone be saved without explicitly knowing Jesus?",
+      "Why do Christians evangelise?"
+    ],
+    "app_conversion_path": "Invite readers to practise careful, Scripture-led conversations about God's justice and why Christians share the Gospel.",
+    "cluster_role": "Connects salvation and religious pluralism to a distinct unreached-people and missionary-justice question.",
+    "selection_score": 96,
+    "selection_score_breakdown": {
+      "current_search_demand_or_rising_interest": 24,
+      "strengthens_existing_topic_cluster": 20,
+      "clear_specific_question_people_ask": 15,
+      "strong_40_to_60_word_quote_target": 15,
+      "opportunity_to_outperform_weak_results": 10,
+      "pastoral_usefulness_and_app_relevance": 9,
+      "timeliness_without_becoming_short_lived_news": 3
+    },
+    "search_trend_evidence": "October 8, 2026 r/Christianity thread asks what happens to humans who lived before Christianity and says the author has not heard a definitive answer. September 15-21 r/AskAChristian discussion explores inconsistent common understandings of salvation. October 2026 apologetics resources are addressing knowledge of God and salvation assurance.",
+    "low_response_rate_or_quality_gap": "Replies often offer either universal salvation, categorical condemnation or an undefined appeal to divine fairness without distinguishing revelation, accountability, Christ's exclusive work and individual judgments. This article addresses the hidden question of unequal access without claiming knowledge Scripture does not provide.",
+    "duplicate_check_summary": "Checked current content-plan used-ID ledger, blog index, sitemap and 51 published article directories. Existing religious-pluralism and judgment pages do not own the unreached-person salvation intent; approved s12 was unused before publication.",
+    "approved_bank_confirmation": "Exact approved question s12 in full 661-card blog/questions.json retrieved by SHA; unused against ledger before this run.",
+    "full_bank_accounting_counts": {
+      "total_questions": 661,
+      "used_ids_before_run": 48,
+      "unused_ids_before_run": 613,
+      "serious_candidates_compared": [
+        "s12",
+        "add105",
+        "add165",
+        "add146",
+        "add047"
+      ]
+    },
+    "theological_framework": "Orthodox Trinitarian and Reformed in substance: salvation through Christ alone, the accountability taught in Romans 1–2, God's righteous judgment and urgency of mission, with restraint about unreported individual fates.",
+    "readability_check": "Short sentences and paragraphs; accessible British English. Manual readability target grade 9 or below.",
+    "editorial_note": "No invented personal experience, no forbidden filler wording, no FAQPage schema or noindex; visible dates match structured data. General revelation does not independently supply the saving Gospel. IndexNow not configured: recommended technical improvement only."
+  },
+  {
+    "action": "new article",
     "title": "Can Christianity Ground Objective Moral Right and Wrong?",
     "slug": "can-christianity-ground-objective-morality",
     "date": "2026-10-19",
