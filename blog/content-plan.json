@@ -1,6 +1,79 @@
 [
   {
     "action": "new article",
+    "title": "Is Christianity Wishful Thinking?",
+    "slug": "is-christianity-wishful-thinking",
+    "date": "2026-10-28",
+    "date_updated": "2026-10-28",
+    "publication_date": "2026-10-28",
+    "updated_date": "2026-10-28",
+    "primary_keyword": "is Christianity wishful thinking",
+    "primary_search_query": "is Christianity wishful thinking",
+    "secondary_query_family": [
+      "is religion a coping mechanism",
+      "is believing in God wish fulfilment",
+      "is Christianity just comfort about death",
+      "does psychological need disprove religion"
+    ],
+    "topic_cluster": "Philosophy of religion, faith and evidence, psychological objections",
+    "parent_cluster": "Philosophy of religion",
+    "search_intent": "Evaluate whether Christianity is false because religious belief can offer emotional comfort, purpose and hope after death.",
+    "source_question_id": "add105",
+    "app_question_id": "add105",
+    "source_basis": [
+      "blog/questions.json approved public question add105"
+    ],
+    "category_role": "psychological objection to Christian truth claims",
+    "cluster_role": "Distinct philosophical page connecting religious motivation, resurrection evidence and competing worldview claims.",
+    "audience": [
+      "sceptics",
+      "seekers",
+      "Christians struggling with doubt",
+      "church discussion groups"
+    ],
+    "internal_links": [
+      "/blog/do-extraordinary-claims-require-extraordinary-evidence/",
+      "/blog/could-the-disciples-have-hallucinated-jesus/",
+      "/blog/how-can-christianity-be-uniquely-true-when-billions-believe-other-religions/",
+      "/blog/how-do-i-answer-divine-hiddenness-argument/"
+    ],
+    "backlink_opportunities": [
+      {
+        "from": "/blog/do-extraordinary-claims-require-extraordinary-evidence/",
+        "anchor_context": "psychological motives and evaluation of miracle evidence"
+      },
+      {
+        "from": "/blog/how-do-i-answer-divine-hiddenness-argument/",
+        "anchor_context": "whether faith can persist amid uncertainty"
+      }
+    ],
+    "likely_follow_up_questions": [
+      "Can religious experiences be explained by psychology?",
+      "Is faith irrational without proof?",
+      "Why do religious people fear death?",
+      "Is hope evidence for God?"
+    ],
+    "app_conversion_path": "Help readers practise distinguishing a belief's emotional appeal from arguments about its truth and respond charitably to those who doubt.",
+    "selection_score": 94,
+    "selection_score_breakdown": {
+      "current_search_demand_or_rising_discussion": 22,
+      "strengthens_existing_cluster": 19,
+      "clear_real_question": 15,
+      "quotable_answer": 15,
+      "response_quality_gap": 10,
+      "pastoral_app_usefulness": 9,
+      "evergreen_timeliness": 4
+    },
+    "trend_search_evidence": "An October 4 2026 Reddit Christianity thread about losing faith explicitly proposes that religion was invented to cope with existence and offers no physical evidence; a September 1 thread asks whether belief in God is merely coping with death. A 26 October ChristianApologetics discussion questions religious experience and psychological bias. Current niche apologetics discussions still address psychological explanations of faith.",
+    "response_quality_gap_evidence": "Forum responses often switch to personal reassurance or defensiveness without separating the causal question (why a person believes) from the evidential question (whether the resurrection and other Christian claims are true). Recognised philosophical sources discuss wish fulfilment while warning against treating motivation as proof of falsity.",
+    "duplicate_check_summary": "Current ledger, index, sitemap and published folders contain pages about resurrection evidence, hallucinations, religious pluralism and divine hiddenness, but no page whose primary intent is whether the psychological comfort of Christianity makes it wishful thinking. This article does not repeat those pages' central arguments.",
+    "approved_bank_confirmation": "Verified add105 exists in the repository's complete 661-card blog/questions.json bank and was not among the 49 used source IDs before publication.",
+    "theological_framework": "Orthodox Trinitarian Christian doctrine, Reformed in substance, treating Scripture as primary and the bodily resurrection as a factual claim while avoiding claims that mere desire, psychological benefit or suffering prove Christianity.",
+    "readability_editorial_notes": "British English, plain language and short paragraphs. Original synthesis distinguishes motives for belief from grounds for belief, including the limits of appealing to costly discipleship. No FAQPage schema or noindex; publication and structured-data dates match.",
+    "indexnow": "No working IndexNow configuration located in repository search; recommend future integration with legitimate key rather than fabricating credentials."
+  },
+  {
+    "action": "new article",
     "title": "What Happens to People Who Never Heard About Jesus?",
     "slug": "what-happens-to-people-who-never-heard-about-jesus",
     "date": "2026-10-26",
