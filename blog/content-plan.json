@@ -1,6 +1,85 @@
 [
   {
     "action": "new article",
+    "title": "Did Christianity Borrow from Pagan Myths?",
+    "slug": "did-christianity-borrow-from-pagan-myths",
+    "date": "2026-10-30",
+    "date_updated": "2026-10-30",
+    "publication_date": "2026-10-30",
+    "updated_date": "2026-10-30",
+    "primary_keyword": "did Christianity borrow from pagan myths",
+    "primary_search_query": "did Christianity borrow from pagan myths",
+    "secondary_keywords": [
+      "was Jesus copied from Horus",
+      "did Mithras inspire Christianity",
+      "Jesus dying and rising god myth",
+      "pagan parallels and Jesus"
+    ],
+    "secondary_query_family": [
+      "Horus and virgin birth comparison",
+      "Mithras and resurrection comparison",
+      "Osiris and the afterlife",
+      "sources predating first-century Christianity"
+    ],
+    "topic_cluster": "Historical Christianity; early Gospel origins and pagan myth comparisons",
+    "search_intent": "Assess whether the earliest Christian claims about Jesus were taken from earlier pagan myths and distinguish proven influence from superficial parallels.",
+    "source_basis": [
+      "Approved question add039 in blog/questions.json"
+    ],
+    "source_question_id": "add039",
+    "app_question_id": "add039",
+    "category_role": "historical origins / pagan borrowing objection",
+    "audience": [
+      "Christians",
+      "sceptics",
+      "seekers",
+      "church groups",
+      "students"
+    ],
+    "internal_links": [
+      "/blog/did-christianity-change-jesus-original-message/",
+      "/blog/do-extraordinary-claims-require-extraordinary-evidence/",
+      "/blog/do-contradictions-in-resurrection-accounts-disprove-the-event/",
+      "/blog/was-jesus-really-crucified/"
+    ],
+    "backlink_opportunities": [
+      {
+        "from": "/blog/did-christianity-change-jesus-original-message/",
+        "context": "alternative explanations of first-century Christianity"
+      },
+      {
+        "from": "/blog/do-extraordinary-claims-require-extraordinary-evidence/",
+        "context": "positive evidence versus debunking competing accounts"
+      }
+    ],
+    "likely_follow_up_questions": [
+      "Was Jesus copied from Mithras?",
+      "Was Horus crucified?",
+      "Did Osiris rise from the dead?",
+      "Was Christmas adopted from pagan customs?"
+    ],
+    "app_conversion_path": "Help users practise requesting historical sources and treating objections charitably.",
+    "cluster_role": "Fills historical Christianity and pagan-comparisons gap, connecting Christian origins, Gospel reliability and resurrection evidence.",
+    "selection_score": 96,
+    "selection_score_breakdown": {
+      "current_demand": 23,
+      "cluster_value": 20,
+      "question_clarity": 15,
+      "quotable_answer": 15,
+      "response_gap": 9,
+      "pastoral_relevance": 9,
+      "evergreen_timeliness": 5
+    },
+    "trend_search_evidence": "Researched 30 October 2026: a new 21 October article revisited Jesus–pagan god claims and several October Reddit discussions about the supposed pagan roots of Christianity and holidays renewed demand. https://www.catholic.com/magazine/online-edition/jesus-the-pagan-god ; https://www.reddit.com/r/mildlyinfuriating/comments/1x1z7c5/ . These are current discussion signals, not verified Google search volumes.",
+    "response_quality_gap_evidence": "Online arguments often confuse Christian festival customs with earliest Gospel sources, rely on unsourced comparison lists and omit the test of earlier texts and credible access. The article identifies evidence necessary to demonstrate borrowing.",
+    "duplicate_check_summary": "The authoritative ledger has no add039 record and the index, sitemap and article folders have no page owning Horus/Mithras/Osiris myth-dependence search intent; existing pages cover different issues in Christian origins and resurrection evidence.",
+    "approved_bank_confirmation": "Exact unused public question card add039 verified in complete GitHub blob (661 questions).",
+    "theological_framework": "Orthodox Trinitarian; Reformed in substance; earliest Christian testimony assessed in its Jewish Scriptural setting.",
+    "readability_editorial_notes": "Direct answer at top, quotable answer, short question-led sections, British English, no FAQ/noindex, no unsupported statistical claims. 30 October 2026 publication date. IndexNow implementation not found.",
+    "indexnow_recommendation": "Implement IndexNow separately if desired; no keys or deployment settings fabricated."
+  },
+  {
+    "action": "new article",
     "title": "Is Christianity Wishful Thinking?",
     "slug": "is-christianity-wishful-thinking",
     "date": "2026-10-28",
