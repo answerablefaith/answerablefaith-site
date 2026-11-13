@@ -1,5 +1,112 @@
 [
   {
+    "action": "new_article",
+    "title": "Why Did Jesus Curse the Fig Tree?",
+    "slug": "why-did-jesus-curse-the-fig-tree",
+    "date": "2026-11-13",
+    "date_updated": "2026-11-13",
+    "publication_date": "2026-11-13",
+    "updated_date": "2026-11-13",
+    "primary_keyword": "why did Jesus curse the fig tree",
+    "primary_search_query": "why did Jesus curse the fig tree",
+    "secondary_query_family": [
+      "why did Jesus curse a fig tree when it was not fig season",
+      "was Jesus angry with the fig tree",
+      "what does the fig tree mean in Mark 11",
+      "fig tree and temple cleansing"
+    ],
+    "topic_cluster": "Christology and Bible interpretation",
+    "parent_cluster": "Jesus’ actions and teachings",
+    "search_intent": "Explain the apparently unfair cursing of the fig tree in Mark 11, including its out-of-season detail and temple setting.",
+    "source_basis": "Approved public-safe blog/questions.json card add021: Why did Jesus curse the fig tree, and was it petty?",
+    "source_question_id": "add021",
+    "app_question_id": "add021",
+    "category_role": "Bible difficulty, Jesus’ prophetic actions and gracious apologetics",
+    "cluster_role": "Child article on a distinct Mark 11 objection; complements rather than duplicates existing prayer, worship and hypocrisy articles.",
+    "audience": [
+      "Curious non-Christians and sceptics",
+      "Christians troubled by the fig-tree story",
+      "Small groups and youth ministry leaders"
+    ],
+    "internal_links": [
+      "/blog/how-should-christians-respond-to-church-scandals/",
+      "/blog/did-jesus-say-ask-anything-and-receive-even-though-prayers-go-unanswered/",
+      "/blog/why-does-god-need-worship-if-he-is-perfect/",
+      "/blog/is-the-problem-of-evil-the-strongest-argument-against-christianity/"
+    ],
+    "backlink_opportunities": [
+      "/blog/how-should-christians-respond-to-church-scandals/",
+      "/blog/did-jesus-say-ask-anything-and-receive-even-though-prayers-go-unanswered/"
+    ],
+    "likely_follow_up_questions": [
+      "Why did Jesus clear the temple?",
+      "How do Jesus’ symbolic acts resemble those of Old Testament prophets?",
+      "What is the meaning of fruit in Jesus’ teaching?",
+      "Why did Jesus say faith can move mountains?"
+    ],
+    "app_conversion_path": "Article → Answer in brief and gentle model response → related Bible questions → /#download",
+    "selection_score": 96,
+    "selection_score_breakdown": {
+      "current_search_demand_or_rising_discussion": 25,
+      "strengthens_existing_topic_cluster": 18,
+      "clear_specific_question_people_ask": 15,
+      "strong_quotable_answer": 15,
+      "opportunity_to_outperform_weak_answers": 9,
+      "pastoral_usefulness_and_app_relevance": 9,
+      "evergreen_timeliness": 5
+    },
+    "candidate_comparison": [
+      {
+        "source_question_id": "add021",
+        "score": 96,
+        "decision": "selected",
+        "reason": "Same-day November discussion and high-interaction July debate match the approved source and out-of-season response gap."
+      },
+      {
+        "source_question_id": "e08",
+        "score": 91,
+        "decision": "not_selected",
+        "reason": "Canaanite conquest has current September discussion, but demands more space and faces established academic competition."
+      },
+      {
+        "source_question_id": "c04",
+        "score": 89,
+        "decision": "not_selected",
+        "reason": "Jesus’ prayer to the Father is topical, but recently published answers already cover its central distinction."
+      },
+      {
+        "source_question_id": "c19",
+        "score": 80,
+        "decision": "not_selected",
+        "reason": "Jesus’ baptism offers a weaker recent response gap and has detailed existing answers."
+      }
+    ],
+    "trend_search_evidence": [
+      {
+        "date": "2026-11-13",
+        "url": "https://www.reddit.com/r/Christianity/comments/1xv0v3k/lets_grow_in_scripture/",
+        "observation": "Same-day discussion explores Mark 11 and the scope of the fig-tree warning."
+      },
+      {
+        "date": "2026-07-27",
+        "url": "https://www.reddit.com/r/HistoryMemes/comments/1v7z0ac/the_time_that_jesus_cursed_a_fig_tree/",
+        "observation": "Highly engaged debate specifically questions the out-of-season curse; thousands of upvotes at research time."
+      },
+      {
+        "date": "2026-06-21",
+        "url": "https://www.reddit.com/r/Christianity/comments/1ubmo6j/why_do_jesus_took_out_his_anger_on_the_fig_tree/",
+        "observation": "A Sunday-school example explicitly asks why Jesus seems angry at a tree out of season."
+      }
+    ],
+    "response_quality_gap_evidence": "Discussion replies often mention symbolism but fail to address the explicit ‘not the season’ clause, or assume contested fig botany is certain. This article identifies that a tree is not a moral agent, explains the Mark 11 temple framing and rejects collective blame of Jewish people. Academic context: https://fuller.edu/next-faithful-step/resources/jesus-curses-the-fig-tree/ ; https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002778298 . No Google search-volume data is claimed.",
+    "duplicate_check_summary": "Compared 54 article folders, 54 content-plan records, the blog index and sitemap. No article owns the fig-tree curse/out-of-season Mark 11 intent; nearby church scandal, prayer and worship pages have distinct primary questions.",
+    "approved_bank_confirmation": "Verified unused add021 against complete 661-question GitHub questions.json blob; absent from the authoritative 54-entry ledger before publication.",
+    "theological_framework": "Orthodox Trinitarian, broadly Reformed understanding of Jesus’ prophetic warning, grounded in Scripture; acknowledges live scholarly disagreement on the symbolic target and season detail.",
+    "readability_check": "Approx. 943 words in article body, British English, short paragraphs and question-led headings. Hemingway grade 9 is targeted, not instrument-tested.",
+    "editorial_notes": "Original synthesis distinguishes the innocent plant from the moral subject of the prophetic act; rejects invented botanical certainties and antisemitic readings; two scholarly references; no FAQPage schema or invented search statistics.",
+    "indexing_note": "No IndexNow implementation found in repository tree; recommend a separately configured technical improvement, without keys. Blog index, sitemap and llms.txt updated."
+  },
+  {
     "action": "new article",
     "title": "Did Christianity Borrow from Pagan Myths?",
     "slug": "did-christianity-borrow-from-pagan-myths",
