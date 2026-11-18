@@ -1,6 +1,113 @@
 [
   {
     "action": "new_article",
+    "title": "Did God Command Genocide Against the Canaanites?",
+    "slug": "did-god-command-genocide-against-the-canaanites",
+    "date": "2026-11-18",
+    "date_updated": "2026-11-18",
+    "publication_date": "2026-11-18",
+    "updated_date": "2026-11-18",
+    "primary_keyword": "did God command genocide against the Canaanites",
+    "primary_search_query": "did God command genocide against the Canaanites",
+    "secondary_query_family": [
+      "why did God command destruction of the Canaanites",
+      "was the conquest of Canaan genocide",
+      "why were women and children killed in Joshua",
+      "does Joshua justify religious violence today"
+    ],
+    "topic_cluster": "Ethics and Old Testament violence",
+    "parent_cluster": "Biblical ethics and the problem of evil",
+    "search_intent": "The moral question of God's reported command to destroy Canaanite communities, especially children, and whether the conquest supplies any present-day mandate to use religious violence.",
+    "source_basis": "Approved public-safe question card e08: How do I respond when the Canaanite conquest is raised as a moral objection?",
+    "source_question_id": "e08",
+    "app_question_id": "e08",
+    "category_role": "Moral objection and Old Testament interpretation",
+    "cluster_role": "New cluster page for Canaanite-conquest ethics, complementing existing problem-of-evil and slavery articles without overlapping their core search intent.",
+    "audience": [
+      "Sceptics and non-Christians concerned by Joshua",
+      "Christians troubled by Old Testament commands",
+      "Apologetics small groups and pastors"
+    ],
+    "internal_links": [
+      "/blog/is-the-problem-of-evil-the-strongest-argument-against-christianity/",
+      "/blog/how-should-christians-answer-slavery-in-the-bible/",
+      "/blog/why-should-christians-care-about-justice-if-salvation-is-spiritual/",
+      "/blog/how-can-eternal-judgment-be-just/"
+    ],
+    "backlink_opportunities": [
+      "/blog/is-the-problem-of-evil-the-strongest-argument-against-christianity/",
+      "/blog/how-should-christians-answer-slavery-in-the-bible/"
+    ],
+    "likely_follow_up_questions": [
+      "How should Christians understand Joshua's military exaggerations?",
+      "Why did Rahab and the Gibeonites survive the conquest?",
+      "What does the New Testament say about holy war?",
+      "Are the Amalekite judgment passages morally defensible?"
+    ],
+    "app_conversion_path": "Article → Answer in brief → reading Scripture and considering strongest moral objection → How to say it gently → Answerable app CTA /#download",
+    "selection_score": 97,
+    "selection_score_breakdown": {
+      "current_search_demand_or_rising_discussion": 24,
+      "strengthens_existing_topic_cluster": 19,
+      "clear_specific_question_people_ask": 15,
+      "strong_quotable_answer": 15,
+      "opportunity_to_outperform_weak_answers": 9,
+      "pastoral_usefulness_and_app_relevance": 10,
+      "evergreen_timeliness": 5
+    },
+    "candidate_comparison": [
+      {
+        "source_question_id": "e08",
+        "score": 97,
+        "decision": "selected",
+        "reason": "New 14 November and 21 October threads directly demand a satisfactory account of killing non-combatants, matching e08."
+      },
+      {
+        "source_question_id": "add035",
+        "score": 88,
+        "decision": "not_selected",
+        "reason": "Judas' death contradiction is recently discussed, but main November thread is removed and harmonisation answers remain common."
+      },
+      {
+        "source_question_id": "b14",
+        "score": 83,
+        "decision": "not_selected",
+        "reason": "Mark 16 and John 8 textual concerns have demand, but prior Bible reliability articles and established technical resources narrow fresh cluster value."
+      },
+      {
+        "source_question_id": "add103",
+        "score": 80,
+        "decision": "not_selected",
+        "reason": "Children's suffering is pastorally important, but overlaps the site's broad problem-of-evil page and its strongest new evidence is less specific."
+      }
+    ],
+    "trend_search_evidence": [
+      {
+        "date": "2026-11-14",
+        "url": "https://www.reddit.com/r/Christianity/comments/1xwdahm/why_genocide_against_cannanite_nations/",
+        "observation": "New Christianity discussion raises genocide and rejects the justification that the nations were immoral."
+      },
+      {
+        "date": "2026-10-21",
+        "url": "https://www.reddit.com/r/AskAChristian/comments/1xbucqy/why_did_god_allow_genocide_against_canaanites/",
+        "observation": "A Christian explicitly says apologetic answers were unsatisfactory and asks why innocent civilians including children died."
+      },
+      {
+        "date": "2026-06-01",
+        "url": "https://www.thegospelcoalition.org/article/did-god-command-genocide/",
+        "observation": "A 2026 evangelical article treats the question as live; its focus on identifying genocide helps explain why the child-death question deserves separate direct treatment."
+      }
+    ],
+    "response_quality_gap_evidence": "In October–November forum threads, defences citing adult sin or a divine order frequently fail to address innocent children. Other responses assert total conquest language is figurative without acknowledging that this does not prove zero civilian deaths. Competing material includes solid academic work (https://www.thegospelcoalition.org/themelios/article/destruction-and-dispossession-of-the-canaanites-in-the-book-of-joshua/ and https://www.tandfonline.com/doi/full/10.1080/00393380701300452), but it is often long or technical. The article separates interpretation of the narrative, judgment rationale, the civilian-death question and modern imitation; no measured search-volume statistics are claimed.",
+    "duplicate_check_summary": "Checked the complete 56-entry content-plan ledger, blog index, sitemap and all 56 existing article-folder paths. No published page owns the Canaanite conquest/children/genocide search intent; slavery and problem-of-evil articles have different search intents. e08 absent from authoritative used-ID ledger before publication.",
+    "approved_bank_confirmation": "Verified unused public-safe e08 in complete 661-question blog/questions.json via GitHub blob SHA after normal file fetch was blank. Based on this one approved card only.",
+    "theological_framework": "Orthodox Trinitarian and broadly Presbyterian/Reformed: the conquest is framed in Scripture as unique divine judgment within redemptive history; Jesus' mission to the church forbids taking the conquest as a modern warrant for violence. Distinguishes certain biblical text from debated historical/literary inferences, and admits unresolved moral weight regarding children.",
+    "readability_check": "Approximately 933 article words in British English, question-led H2 headings, 59-word standalone answer; Hemingway grade 9 targeted but not measured.",
+    "editorial_notes": "Original synthesis: identifies that arguments about terminology, stock military rhetoric and adult guilt do not settle the question of civilian deaths. Acknowledges skeptical concerns without straw men, cites Scripture with linked passages and two academic sources, avoids imagined historical certainty. No FAQPage schema or invented quotes.",
+    "indexing_note": "robots.txt already includes correct canonical sitemap; no working IndexNow implementation in repo tree. Recommend configuring separately with an actual key, not invented credentials."
+  },
+  {
+    "action": "new_article",
     "title": "Why Should I Forgive Someone Who Hurt Me?",
     "slug": "why-should-i-forgive-someone-who-hurt-me",
     "date": "2026-11-18",
