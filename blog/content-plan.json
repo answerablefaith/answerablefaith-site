@@ -1,6 +1,118 @@
 [
   {
     "action": "new_article",
+    "title": "Why Should I Forgive Someone Who Hurt Me?",
+    "slug": "why-should-i-forgive-someone-who-hurt-me",
+    "date": "2026-11-18",
+    "date_updated": "2026-11-18",
+    "publication_date": "2026-11-18",
+    "updated_date": "2026-11-18",
+    "primary_keyword": "why should I forgive someone who hurt me",
+    "primary_search_query": "why should I forgive someone who hurt me",
+    "secondary_query_family": [
+      "does forgiveness mean reconciliation",
+      "can you forgive someone without trusting them",
+      "does Christianity require forgiving an abuser",
+      "can Christians forgive while seeking justice"
+    ],
+    "topic_cluster": "Christian living, forgiveness and justice",
+    "parent_cluster": "Ethics and gracious apologetic method",
+    "search_intent": "Explain why Christians forgive someone who caused harm without treating forgiveness as excusing evil, dropping a report, rebuilding trust or reconciling when unsafe.",
+    "source_basis": "Approved public-safe blog/questions.json question-and-answer card add085",
+    "source_question_id": "add085",
+    "app_question_id": "add085",
+    "category_role": "Christian ethics and pastoral apologetics",
+    "cluster_role": "Child article on interpersonal forgiveness after harm, distinct from coverage of divine atonement, church scandals and social justice.",
+    "audience": [
+      "Christians facing betrayal or abuse",
+      "Sceptics concerned about coercive Christian forgiveness",
+      "Church leaders and small groups"
+    ],
+    "internal_links": [
+      "/blog/how-should-christians-respond-to-church-scandals/",
+      "/blog/if-god-is-forgiving-why-does-sin-still-need-judgment/",
+      "/blog/why-should-christians-care-about-justice-if-salvation-is-spiritual/",
+      "/blog/how-should-christians-do-online-apologetics/"
+    ],
+    "backlink_opportunities": [
+      "/blog/how-should-christians-respond-to-church-scandals/",
+      "/blog/if-god-is-forgiving-why-does-sin-still-need-judgment/"
+    ],
+    "likely_follow_up_questions": [
+      "Does forgiveness require a spoken apology?",
+      "How can church leaders respond to spiritual abuse?",
+      "What does biblical repentance look like in practice?",
+      "Can a Christian forgive someone while ending contact?"
+    ],
+    "app_conversion_path": "New article → Answer in brief → gentle model response → related articles → practise in app /#download",
+    "selection_score": 93,
+    "selection_score_breakdown": {
+      "current_search_demand_or_rising_discussion": 23,
+      "strengthens_existing_topic_cluster": 18,
+      "clear_specific_question_people_ask": 15,
+      "strong_quotable_answer": 15,
+      "opportunity_to_outperform_weak_answers": 8,
+      "pastoral_usefulness_and_app_relevance": 10,
+      "evergreen_timeliness": 4
+    },
+    "candidate_comparison": [
+      {
+        "source_question_id": "add085",
+        "score": 93,
+        "decision": "selected",
+        "reason": "Fresh criticism reveals a response-quality gap over forgiveness being used to demand unsafe reconciliation."
+      },
+      {
+        "source_question_id": "e08",
+        "score": 91,
+        "decision": "not_selected",
+        "reason": "November 14 discussion demonstrates live interest in Canaanite conquest, but multiple substantial scholarly and pastoral articles already address central objections."
+      },
+      {
+        "source_question_id": "c20",
+        "score": 82,
+        "decision": "not_selected",
+        "reason": "Debate on whether God can be tempted is active, yet strong existing Christology answers make the response gap smaller."
+      },
+      {
+        "source_question_id": "b14",
+        "score": 80,
+        "decision": "not_selected",
+        "reason": "Mark 16 and John 7 textual questions are valid but show weaker near-term demand and higher overlap risk with Bible-manuscript coverage."
+      }
+    ],
+    "trend_search_evidence": [
+      {
+        "date": "2026-11-08",
+        "url": "https://www.reddit.com/r/exchristian/comments/1xr343j/has_christian_teachings_sometimes_made_you_too/",
+        "observation": "Recent criticism of Christian forgiveness and vulnerability to being hurt repeatedly."
+      },
+      {
+        "date": "2026-10-29",
+        "url": "https://www.reddit.com/r/Christianity/comments/1xip6ds/forgiveness_and_reconciliation/",
+        "observation": "Discussion of forgiveness versus reconciliation following years of abuse."
+      },
+      {
+        "date": "2026-10-15",
+        "url": "https://www.reddit.com/r/exchristian/comments/1x6z329/forgiveness_can_be_healthy_but_has_anyone_else/",
+        "observation": "First-person reports that forgiveness language can be misused to pressure abuse victims."
+      },
+      {
+        "date": "2026-02-12",
+        "url": "https://www.reddit.com/r/Christianity/comments/1r2hnid/please_stop_telling_me_to_forgive_my_rapist/",
+        "observation": "Highly engaged criticism of pressure to forgive an abuser illustrates the pastoral stakes."
+      }
+    ],
+    "response_quality_gap_evidence": "Some existing pages correctly distinguish forgiveness from reconciliation (Boston College and Mainline Christian), but current forum discussions show people continue to receive advice implying they must forgive by restoring contact or trust. The article separates forgiveness from revenge, justice, trust and access, addresses abuse safeguards and avoids promised healing schedules. No measured search-volume statistics.",
+    "duplicate_check_summary": "Cross-checked all 55 published blog folders, content-plan (55 entries), index and sitemap. Divine forgiveness articles discuss atonement, church scandals discuss institutional safeguarding, and other related pages focus on justice and apologetic tone. None owns the personal question of forgiving an offender while maintaining safety.",
+    "approved_bank_confirmation": "Exact public-safe question card add085 found in complete 661-card GitHub questions.json retrieved via blob SHA (normal fetch blank); unused before this publication. No premium scenario text.",
+    "theological_framework": "Orthodox Trinitarian, predominantly Presbyterian/Reformed; Christ-centred forgiveness, no personal vengeance, justice and repentance both matter. Trust and reconciliation are distinct and safekeeping is paramount.",
+    "readability_check": "British English, 830 words, 49-word standalone brief, short paragraphs and question-led headings; Hemingway grade 9 target not instrument-measured.",
+    "editorial_notes": "Original synthesis: distinguish refusing revenge from refusing justice; forgiveness from restored access and trust; repentance from swift restoration. References accurate, external resources from Boston College and the Presbyterian Church in America, no invented quotations, no FAQ schema.",
+    "indexing_note": "No IndexNow implementation detected in recursive repository tree. Recommendation: configure separately if desired. Existing robots.txt correctly points to sitemap; index, sitemap and llms.txt updated for crawlability."
+  },
+  {
+    "action": "new_article",
     "title": "Why Did Jesus Curse the Fig Tree?",
     "slug": "why-did-jesus-curse-the-fig-tree",
     "date": "2026-11-13",
